@@ -60,4 +60,8 @@ bat\publish_results.bat
 
 公開 URL（例）: `https://lalakuma.github.io/KabuRadar2/`
 
-初回のみ GitHub リポジトリの **Settings → Pages → Build and deployment → Source: GitHub Actions** を確認してください。
+初回のみ GitHub リポジトリで Pages を有効化してください:
+
+**Settings → Pages → Build and deployment → Deploy from a branch → Branch: `gh-pages` / `/ (root)`**
+
+（push 後、Actions が `gh-pages` ブランチを自動作成します）
