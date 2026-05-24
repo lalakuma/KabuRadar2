@@ -41,3 +41,23 @@ bat\1.kabu_main.bat
   project.
 - Batch flow names are normalized and can be adjusted in
   `src/kaburadar/launcher.py`.
+
+## GitHub Pages（スマホで結果を見る）
+
+1. 解析を実行する:
+
+```bat
+python src\kaburadar\tasks\analyze_all.py
+```
+
+2. 結果を Web 用 JSON に書き出す:
+
+```bat
+bat\publish_results.bat
+```
+
+3. `docs/data.json` をコミットして `master` に push する（GitHub Actions が Pages を更新）。
+
+公開 URL（例）: `https://lalakuma.github.io/KabuRadar2/`
+
+初回のみ GitHub リポジトリの **Settings → Pages → Build and deployment → Source: GitHub Actions** を確認してください。
