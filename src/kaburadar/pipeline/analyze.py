@@ -171,25 +171,18 @@ def run() -> int:
         summary_csv = _find_summary_csv(Path(kekka_path))
         exit_code = compute_exit_code(stats, summary_csv)
 
+        summary = (
+            f"enabled={stats.enabled} written={stats.written} skipped={stats.skipped}"
+        )
         if exit_code == EXIT_OK:
-            logger.info(
-                "解析を完了しました (enabled=%d written=%d skipped=%d).",
-                stats.enabled,
-                stats.written,
-                stats.skipped,
-            )
+            logger.info("解析を完了しました (%s).", summary)
+            print(f"解析完了: {summary}")
         elif exit_code == EXIT_NO_OUTPUT:
-            logger.error(
-                "解析失敗: 有効銘柄 %d 件のうち出力 0 件 (skipped=%d)。",
-                stats.enabled,
-                stats.skipped,
-            )
+            logger.error("解析失敗: 有効銘柄のうち出力 0 件 (%s).", summary)
+            print(f"解析失敗 (exit={exit_code}): {summary}")
         else:
-            logger.error(
-                "解析失敗: 集計 CSV がありません (enabled=%d written=%d)。",
-                stats.enabled,
-                stats.written,
-            )
+            logger.error("解析失敗: 集計 CSV がありません (%s).", summary)
+            print(f"解析失敗 (exit={exit_code}): {summary}")
         return exit_code
     finally:
         db.close_db(conn)

@@ -2,6 +2,13 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-05 すぐ効く改善
+
+- `publish --push` のブランチを `.env` / git 自動検出に変更
+- 解析完了時に `enabled/written/skipped` をコンソール表示
+- 取説に Windows 11 タスクスケジューラ手順、LINE 設定手順を追記
+- `development.md` の拡張候補を現状に合わせて更新
+
 ## 2026-05 Linux 対応
 
 - `sh/` ランチャー、`Makefile`、`docs/guide/linux.md`

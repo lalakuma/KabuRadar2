@@ -11,6 +11,7 @@ from pathlib import Path
 import pandas as pd
 
 from kaburadar.settings.encoding import read_csv
+from kaburadar.settings.git_publish import resolve_publish_branch
 from kaburadar.settings.loader import read_path_config
 from kaburadar.settings.paths import DOCS_DIR, PROJECT_ROOT
 
@@ -148,11 +149,12 @@ def push_to_github(payload: dict) -> int:
         print(commit.stderr or commit.stdout)
         return commit.returncode
 
-    push = _run_git(["push", "origin", "master"])
+    branch = resolve_publish_branch()
+    push = _run_git(["push", "origin", branch])
     if push.returncode != 0:
         print(push.stderr or push.stdout)
         return push.returncode
 
-    print("GitHub へ push 完了。1〜2分後に Pages が更新されます。")
+    print(f"GitHub へ push 完了 (origin/{branch})。1〜2分後に Pages が更新されます。")
     print("https://lalakuma.github.io/KabuRadar2/")
     return 0

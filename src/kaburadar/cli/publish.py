@@ -12,7 +12,7 @@ def main() -> int:
     parser.add_argument(
         "--push",
         action="store_true",
-        help="docs/data.json を commit して origin/master へ push する",
+        help="docs/data.json を commit して origin へ push（ブランチは自動検出または .env）",
     )
     args = parser.parse_args()
 

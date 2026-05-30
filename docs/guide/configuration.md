@@ -35,7 +35,14 @@
 
 ## 環境変数（.env）
 
-`.env.example` 参照。ini 内の `${KABUS_API_PASSWD}` 形式で参照可能（現行解析では未使用の項目あり）。
+`.env.example` 参照。
+
+| 変数 | 用途 |
+|------|------|
+| `LINE_CHANNEL_ACCESS_TOKEN` | LINE 通知（Messaging API） |
+| `LINE_USER_IDS` | 送信先ユーザー ID（カンマ区切り） |
+| `KABURADAR_GIT_BRANCH` | `publish --push` の push 先（未設定時は git が自動検出） |
+| `KABUS_API_PASSWD` 等 | 将来の API 連携用（ini の `${...}` からも参照可） |
 
 ## 設定のコピー
 

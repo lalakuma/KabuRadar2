@@ -39,7 +39,28 @@ copy C:\share\MorinoFolder\Python\KabuRadar\DB\KabuRadar.db data\kaburadar.db
 copy .env.example .env
 ```
 
-`.env` を編集します。解析だけなら不要です。LINE 通知を使う場合は `LINE_CHANNEL_ACCESS_TOKEN` と `LINE_USER_IDS` を設定し、`bat\screening_notify.bat` または `analyze.py --notify` を使います。
+`.env` を編集します。解析だけなら不要です。
+
+### LINE 通知の設定（任意）
+
+1. [LINE Developers](https://developers.line.biz/) で Messaging API チャネルを作成
+2. チャネルアクセストークンを `LINE_CHANNEL_ACCESS_TOKEN` に設定
+3. 自分のユーザー ID を `LINE_USER_IDS` に設定（カンマ区切りで複数可）
+4. 動作確認:
+
+```bat
+bat\screening_notify.bat
+```
+
+週末は送信されません。未設定のときは「LINE: .env 未設定のため送信しません。」と表示され、解析は続行します。
+
+### Git push ブランチ（任意）
+
+デフォルトブランチが `main` のリポジトリでは通常は自動検出されます。明示する場合:
+
+```
+KABURADAR_GIT_BRANCH=master
+```
 
 ## 5. 動作確認
 

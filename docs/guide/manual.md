@@ -225,7 +225,7 @@ python src\kaburadar\cli\analyze.py --publish
 
 ## 8. 自動実行（スケジューラ）
 
-`bat\run_scheduler.bat` を **タスクスケジューラ** などで 5〜15 分おきに実行すると、時刻に応じて bat が起動します。
+`bat\run_scheduler.bat` を **タスクスケジューラ** で定期実行すると、時刻に応じて bat が起動します。
 
 | 時刻帯（目安） | 実行内容 |
 |----------------|----------|
@@ -233,7 +233,34 @@ python src\kaburadar\cli\analyze.py --publish
 | 11:30〜12:00 | 同上 |
 | 15:00〜15:30 | `update_prices.bat`（株価更新のみ） |
 
-時刻の変更: `src/kaburadar/scheduling/launcher.py` を編集（詳細は [日常運用](operations.md)）。
+時刻の変更: `src/kaburadar/scheduling/launcher.py` を編集。
+
+### Windows 11: タスクスケジューラ登録例
+
+1. **タスクスケジューラ** を開く → **タスクの作成**
+2. **全般**
+   - 名前: `KabuRadar2 scheduler`
+   - 「ユーザーがログオンしているときのみ実行」でも可
+3. **トリガー** → **新規**
+   - 毎日、繰り返し間隔 **10 分**、継続時間 **10 時間**（9:00 開始など）
+4. **操作** → **新規**
+   - 操作: プログラムの開始
+   - プログラム/スクリプト:
+
+     ```
+     C:\share\MorinoFolder\Python\KabuRadar2\bat\run_scheduler.bat
+     ```
+
+   - **開始**（作業フォルダ）:
+
+     ```
+     C:\share\MorinoFolder\Python\KabuRadar2\bat
+     ```
+
+5. **条件**タブで「コンピューターを AC 電源で使用している場合のみ」をオフ（ノート PC 向け）
+6. 保存後、右クリック → **実行** で一度テスト。`output\logs\debug.log` に `Launcher started` が出れば OK
+
+**Linux:** cron で `bash /path/to/KabuRadar2/sh/run_scheduler.sh`（[linux.md](linux.md) 参照）。
 
 ---
 
