@@ -5,9 +5,9 @@ set SCRIPT_DIR=%~dp0
 set ROOT_DIR=%SCRIPT_DIR%..
 set PYTHONPATH=%ROOT_DIR%\src;%PYTHONPATH%
 
-python "%ROOT_DIR%\scripts\publish_results.py" || goto :fail
+python "%ROOT_DIR%\scripts\publish_results.py" %* || goto :fail
 echo.
-echo Next: commit docs\data.json and push to update the site.
+echo GitHub へ自動反映する場合: bat\analyze_and_publish.bat または --push オプション
 endlocal & exit /b 0
 
 :fail

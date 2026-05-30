@@ -56,9 +56,24 @@ python src\kaburadar\tasks\analyze_all.py
 bat\publish_results.bat
 ```
 
-3. `docs/data.json` をコミットして `master` に push する（GitHub Actions が Pages を更新）。
+3. **自動で GitHub に反映**（解析 + push を一括）:
 
-公開 URL（例）: `https://lalakuma.github.io/KabuRadar2/`
+```bat
+bat\analyze_and_publish.bat
+```
+
+または:
+
+```bat
+python src\kaburadar\tasks\analyze_all.py --publish
+python scripts\publish_results.py --push
+```
+
+push 成功後、GitHub Actions が `gh-pages` を更新し、1〜2分でサイトに反映されます。
+
+**前提:** PC 上で `git push` がパスワード入力なしでできること（SSH 鍵または Git Credential Manager）。
+
+公開 URL: `https://lalakuma.github.io/KabuRadar2/`
 
 初回のみ GitHub リポジトリで Pages を有効化してください:
 

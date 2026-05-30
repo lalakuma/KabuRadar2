@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -89,13 +91,69 @@ def build_payload() -> dict:
     }
 
 
-def main() -> int:
+def publish() -> dict:
     payload = build_payload()
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Published: {DATA_FILE}")
     print(f"  symbols: {payload['summary']['symbol_count']}")
     print(f"  win_rate: {payload['summary'].get('win_rate')}%")
+    return payload
+
+
+def _run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        ["git", *args],
+        cwd=str(PROJECT_ROOT),
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+
+def push_to_github(payload: dict) -> int:
+    """docs/data.json を commit して origin/master へ push する。"""
+    add = _run_git(["add", "docs/data.json"])
+    if add.returncode != 0:
+        print(add.stderr or add.stdout)
+        return add.returncode
+
+    diff = _run_git(["diff", "--cached", "--quiet", "docs/data.json"])
+    if diff.returncode == 0:
+        print("変更なし: push をスキップしました。")
+        return 0
+
+    win_rate = payload["summary"].get("win_rate")
+    income = payload["summary"].get("total_income")
+    msg = f"解析結果を更新 (勝率 {win_rate}%, 損益 {income})"
+    commit = _run_git(["commit", "-m", msg])
+    if commit.returncode != 0:
+        print(commit.stderr or commit.stdout)
+        return commit.returncode
+
+    push = _run_git(["push", "origin", "master"])
+    if push.returncode != 0:
+        print(push.stderr or push.stdout)
+        print("push に失敗しました。git の認証設定を確認してください。")
+        return push.returncode
+
+    print("GitHub へ push 完了。1〜2分後に Pages が更新されます。")
+    print("https://lalakuma.github.io/KabuRadar2/")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="解析結果を GitHub Pages 用 JSON に書き出す")
+    parser.add_argument(
+        "--push",
+        action="store_true",
+        help="docs/data.json を commit して origin/master へ push する",
+    )
+    args = parser.parse_args()
+
+    payload = publish()
+    if args.push:
+        return push_to_github(payload)
     return 0
 
 

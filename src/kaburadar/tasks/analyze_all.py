@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import logging
 import os
 import sys
@@ -147,7 +148,23 @@ def run() -> int:
 
 
 def main() -> int:
-    return run()
+    parser = argparse.ArgumentParser(description="全銘柄バックテスト解析 (config_lo.ini)")
+    parser.add_argument(
+        "--publish",
+        action="store_true",
+        help="完了後に GitHub Pages 用 JSON を生成し push する",
+    )
+    args = parser.parse_args()
+
+    rc = run()
+    if rc != 0 or not args.publish:
+        return rc
+
+    import subprocess
+
+    cmd = [sys.executable, str(PROJECT_ROOT / "scripts" / "publish_results.py"), "--push"]
+    completed = subprocess.run(cmd, cwd=str(PROJECT_ROOT))
+    return int(completed.returncode)
 
 
 if __name__ == "__main__":
