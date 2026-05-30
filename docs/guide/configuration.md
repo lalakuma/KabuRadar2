@@ -1,0 +1,47 @@
+# 設定リファレンス
+
+設定ファイル: [`config/config_lo.ini`](../../config/config_lo.ini)
+
+読み込み: `kaburadar.settings`（`config.py` は後方互換）。環境変数 `${...}` の展開あり。
+
+## [SCREENING] スクリーニング・バックテスト
+
+| キー | 例 | 説明 |
+|------|-----|------|
+| `SCR_JDG_RSI4` | `1` | 短期 RSI 戦略を有効化（**本リポジトリは 1 固定運用**） |
+| `SCR_JDG_RSI4REV` | `0` | RSI 反転パターンを使うか |
+| `SCR_JDG_RSVENT` | `0` | 予約エントリー時の追加判定 |
+| `SCR_SELLBUY` | `0` | 売買モード（`0` = 両建て切替） |
+| `SCR_ENT_TIMING` | `0` | エントリータイミング（`0` 当日 / `1` 翌日） |
+| `SCR_PAST_PERIOD` | `100` | 過去何日分を読むか（日数 × -1 で内部計算） |
+| `SCR_SELL_PERIOD` | `100` | ポジション最大保有日数 |
+| `SCR_RSI_*` / `SCR_SRSI_*` | — | RSI 閾値・期間 |
+| `SCR_ENTRY_REST` | `0` | 決済後の再エントリー休止日数 |
+
+削除済みの旧戦略（MACD・移動平均など）用 `SCR_JDG_*` キーは ini から除去済みです。
+
+## [SHUUKEI] 出力パス
+
+| キー | 既定値 | 説明 |
+|------|--------|------|
+| `PATH_HONBAN` | `output\results\` | 解析結果・集計 CSV の出力先 |
+| `PATH_SHUUKEI` | `output\workspace\` | 作業用ディレクトリ |
+
+## [DATABASE]
+
+| キー | 既定値 | 説明 |
+|------|--------|------|
+| `PATH_DB` | `data\kaburadar.db` | SQLite ファイル（プロジェクトルート相対） |
+
+## 環境変数（.env）
+
+`.env.example` 参照。ini 内の `${KABUS_API_PASSWD}` 形式で参照可能（現行解析では未使用の項目あり）。
+
+## 設定のコピー
+
+解析実行時、`config_lo.ini` のスナップショットが `output/results/` に保存されます（`copy_config_snapshot`）。
+
+## CSV 文字コード
+
+- **新規出力:** UTF-8 BOM（`utf-8-sig`）— Excel・Linux 両方で扱いやすい
+- **読込:** 同形式を優先し、過去の cp932 ファイルも `settings.encoding.read_csv` で自動判定

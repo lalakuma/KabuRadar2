@@ -1,11 +1,3 @@
 @echo off
-setlocal
-
-set SCRIPT_DIR=%~dp0
-set ROOT_DIR=%SCRIPT_DIR%..
-set PYTHONPATH=%ROOT_DIR%\src;%PYTHONPATH%
-
-python "%ROOT_DIR%\src\kaburadar\launcher.py"
-set EXIT_CODE=%ERRORLEVEL%
-
-endlocal & exit /b %EXIT_CODE%
+rem 互換: 時間帯スケジューラ起動
+call "%~dp0run_scheduler.bat" %*

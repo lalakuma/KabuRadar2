@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-30T15:57:16+09:00",
+  "generated_at": "2026-05-30T20:09:59+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 3.299,
-    "wins": 57,
+    "pf": 3.311,
+    "wins": 58,
     "losses": 15,
-    "win_rate": 79.17,
-    "total_income": 337900,
-    "symbol_count": 82,
-    "neutral_count": 13,
-    "source_file": "Y0_PF3.299_W57L15_rate79.17_all337900.csv"
+    "win_rate": 79.45,
+    "total_income": 347900,
+    "symbol_count": 83,
+    "neutral_count": 14,
+    "source_file": "Y0_PF3.311_W58L15_rate79.45_all347900.csv"
   },
   "symbols": [
     {
@@ -123,6 +123,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4503",
+      "name": "アステラス製薬",
+      "industry": "nan",
+      "incomes": 14100,
+      "pf": 19.4,
+      "winlose": "W1L1",
+      "win_per": 50,
+      "plus_gain": 6530,
+      "minus_gain": 340
+    },
+    {
       "code": "1419",
       "name": "タマホーム",
       "industry": "nan",
@@ -156,17 +167,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4911",
-      "name": "資生堂",
-      "industry": "nan",
-      "incomes": 11500,
-      "pf": 40.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4090,
-      "minus_gain": 0
-    },
-    {
       "code": "6005",
       "name": "三浦工業",
       "industry": "nan",
@@ -175,6 +175,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3440,
+      "minus_gain": 0
+    },
+    {
+      "code": "4911",
+      "name": "資生堂",
+      "industry": "nan",
+      "incomes": 11300,
+      "pf": 40.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4020,
       "minus_gain": 0
     },
     {
@@ -695,6 +706,17 @@
       "minus_gain": 0
     },
     {
+      "code": "7649",
+      "name": "スギホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "8194",
       "name": "ライフコーポレーション",
       "industry": "nan",
@@ -775,23 +797,12 @@
       "code": "2379",
       "name": "ディップ",
       "industry": "nan",
-      "incomes": -800,
+      "incomes": -1100,
       "pf": 0.0,
       "winlose": "W0L1",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 459
-    },
-    {
-      "code": "4503",
-      "name": "アステラス製薬",
-      "industry": "nan",
-      "incomes": -800,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 340
+      "minus_gain": 630
     },
     {
       "code": "4507",
@@ -827,17 +838,6 @@
       "minus_gain": 2930
     },
     {
-      "code": "3291",
-      "name": "飯田グループホールディングス",
-      "industry": "nan",
-      "incomes": -6900,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 3220
-    },
-    {
       "code": "9744",
       "name": "メイテック",
       "industry": "nan",
@@ -847,6 +847,17 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 2250
+    },
+    {
+      "code": "3291",
+      "name": "飯田グループホールディングス",
+      "industry": "nan",
+      "incomes": -8100,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 3800
     },
     {
       "code": "9119",
@@ -896,12 +907,12 @@
       "code": "5021",
       "name": "コスモエネルギーホールディングス",
       "industry": "nan",
-      "incomes": -42600,
+      "incomes": -45800,
       "pf": 0.0,
       "winlose": "W0L1",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 11300
+      "minus_gain": 12250
     },
     {
       "code": "3038",

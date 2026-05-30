@@ -1,11 +1,3 @@
 @echo off
-setlocal
-
-set SCRIPT_DIR=%~dp0
-set ROOT_DIR=%SCRIPT_DIR%..
-set PYTHONPATH=%ROOT_DIR%\src;%PYTHONPATH%
-
-python "%ROOT_DIR%\src\kaburadar\tasks\update_prices.py" --menu 1
-set EXIT_CODE=%ERRORLEVEL%
-
-endlocal & exit /b %EXIT_CODE%
+rem 互換: 株価更新のみ
+call "%~dp0update_prices.bat" --menu 1 %*

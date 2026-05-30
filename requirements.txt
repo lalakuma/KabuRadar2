@@ -9,6 +9,6 @@ scipy
 matplotlib
 mplfinance
 mplcursors
-pywin32
 websocket-client
 python-dotenv
+pytest

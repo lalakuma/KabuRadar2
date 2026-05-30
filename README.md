@@ -1,82 +1,82 @@
-# KabuRadar Refactored (Workspace Copy)
+# KabuRadar2
 
-This folder is a cleaned and safer workspace copy based on the investigation of
-`C:\share\MorinoFolder\Python\KabuRadar`.
+短期 RSI 戦略のバックテスト・集計・GitHub Pages 公開用ワークスペース。
 
-## What is improved
+**ドキュメント:** [取扱説明書](docs/guide/manual.md) · [docs/guide/](docs/guide/)（セットアップ・運用・設定・構成）
 
-- Centralized config loading (`ini` + environment variable override)
-- Removed hardcoded absolute paths from launcher logic
-- Removed hardcoded LINE token/user IDs from source code
-- Added dependency manifest (`requirements.txt`)
-- Added sample environment file (`.env.example`)
+## ディレクトリ構成
 
-## Directory layout
+```
+KabuRadar2/
+├── bat/                 # Windows 10/11 用ランチャー（*.bat）
+├── sh/                  # Linux / macOS 用（*.sh・[linux.md](docs/guide/linux.md)）
+├── Makefile             # Linux 向け make ターゲット（任意）
+├── config/
+│   └── config_lo.ini    # 実行設定
+├── data/
+│   └── kaburadar.db     # SQLite（Git 除外・要コピー）
+├── docs/                # GitHub Pages + [プロジェクト文書](docs/guide/)
+├── output/              # 生成物（Git 除外）
+│   ├── results/         # 解析 CSV・集計 Excel
+│   ├── workspace/       # 作業用
+│   └── logs/            # ログ
+├── src/kaburadar/
+│   ├── settings/        # 設定・パス
+│   ├── data/            # DB アクセス
+│   ├── strategy/        # RSI バックテスト
+│   ├── pipeline/        # 解析・集計
+│   ├── market_data/     # 株価更新
+│   ├── publishing/      # GitHub Pages
+│   ├── cli/             # 実行エントリ
+│   └── scheduling/    # 時間帯起動
+└── tests/
+```
 
-- `src/kaburadar/config.py`: config access helpers
-- `src/kaburadar/launcher.py`: time-window batch launcher
-- `src/kaburadar/notification/line_notify.py`: LINE notification client
-- `bat/1.kabu_main.bat`: launcher entrypoint (compatible naming)
-- `bat/2-1.kabu_screening_trade_GetYahooF.bat`: HI workflow
-- `bat/2-2.KabuStation_kessai_GetYahooF.bat`: LO workflow
-- `bat/2-3.GetKabuka_GetYahooF.bat`: price update workflow
-- `bat/screening.bat`: run HI then LO
-- `bat/3.suspend.bat`: workspace-safe placeholder
-- `config/config_hi.ini`, `config/config_lo.ini`: sample runtime configs
+旧 bat 名（`2-2.KabuStation_...` 等）は互換用ラッパーとして残しています。
 
 ## Quick start
 
-1. Create virtual environment and install dependencies.
-2. Copy `.env.example` to `.env` and fill secrets.
-3. Adjust `config/config_hi.ini` / `config/config_lo.ini`.
-4. Run:
+1. 仮想環境を作成し `pip install -r requirements.txt`
+2. `.env.example` を `.env` にコピー（任意）
+3. `data/kaburadar.db` を配置（[data/README.md](data/README.md) 参照）
+4. 実行例:
+
+**Windows**
 
 ```bat
-bat\1.kabu_main.bat
+bat\screening.bat
+bat\publish.bat
 ```
 
-## Notes
+**Linux / macOS**
 
-- This is intentionally non-destructive and kept separate from the original
-  project.
-- Batch flow names are normalized and can be adjusted in
-  `src/kaburadar/launcher.py`.
+```bash
+bash sh/screening.sh
+bash sh/publish.sh
+# または: make screening && make publish
+```
 
-## GitHub Pages（スマホで結果を見る）
+## GitHub Pages
 
-1. 解析を実行する:
+**Windows:** `bat\analyze_and_publish.bat`  
+**Linux:** `bash sh/analyze_and_publish.sh`
+
+解析済みのときだけ JSON 生成 + push:
 
 ```bat
-python src\kaburadar\tasks\analyze_all.py
+bat\publish.bat --push
 ```
 
-2. 結果を Web 用 JSON に書き出す:
+```bash
+bash sh/publish.sh --push
+```
+
+公開 URL: https://lalakuma.github.io/KabuRadar2/
+
+## 開発
 
 ```bat
-bat\publish_results.bat
+set PYTHONPATH=src
+pytest
+python src\kaburadar\cli\analyze.py
 ```
-
-3. **自動で GitHub に反映**（解析 + push を一括）:
-
-```bat
-bat\analyze_and_publish.bat
-```
-
-または:
-
-```bat
-python src\kaburadar\tasks\analyze_all.py --publish
-python scripts\publish_results.py --push
-```
-
-push 成功後、GitHub Actions が `gh-pages` を更新し、1〜2分でサイトに反映されます。
-
-**前提:** PC 上で `git push` がパスワード入力なしでできること（SSH 鍵または Git Credential Manager）。
-
-公開 URL: `https://lalakuma.github.io/KabuRadar2/`
-
-初回のみ GitHub リポジトリで Pages を有効化してください:
-
-**Settings → Pages → Build and deployment → Deploy from a branch → Branch: `gh-pages` / `/ (root)`**
-
-（push 後、Actions が `gh-pages` ブランチを自動作成します）

@@ -1,0 +1,41 @@
+---
+description: コード・設定・運用変更時は docs/guide のドキュメントも同期して更新する
+alwaysApply: true
+---
+
+# ドキュメント同期
+
+このリポジトリを変更するときは、**実装とあわせてドキュメントを更新**する。コードだけ直してドキュメントを残す変更は避ける。
+
+## 更新対象
+
+| 変更内容 | 主に直すドキュメント |
+|----------|----------------------|
+| ディレクトリ・パス・bat 名 | `README.md`, `docs/guide/architecture.md`, `docs/guide/operations.md` |
+| `config_lo.ini` のキー・既定値 | `docs/guide/configuration.md` |
+| CLI / bat の追加・削除・挙動 | `docs/guide/operations.md`, `README.md` |
+| セットアップ手順・DB 配置 | `docs/guide/setup.md`, `data/README.md` |
+| 戦略・analysis の仕様変更 | `docs/guide/architecture.md`, `docs/guide/configuration.md` |
+| リファクタ・構成の大きな変更 | `docs/guide/changelog.md`（要点を追記） |
+| GitHub Pages / publish の流れ | `docs/guide/operations.md`, `README.md` |
+
+入口・目次: `docs/README.md`, `docs/guide/README.md`
+
+## 触らない／最小限
+
+- `docs/index.html`, `docs/assets/`, `docs/data.json` — 公開サイト用（解析結果・UI）。**手順や構成の説明は `docs/guide/` に書く**
+- ユーザーがドキュメントのみ依頼したときは、コードを勝手に変えない
+
+## 作業チェックリスト
+
+変更完了前に確認:
+
+1. ユーザー向け手順（bat / パス）がドキュメントと一致しているか
+2. `config_lo.ini` を変えたら `configuration.md` を反映したか
+3. ルート `README.md` のディレクトリツリーが現状と合っているか
+4. 互換ラッパー（旧 bat 名）を増減したら `operations.md` に記載したか
+
+## 例
+
+- `output/honban` → `output/results` にしたら、`operations.md` と `configuration.md` のパス表記も直す
+- 新規 `bat/foo.bat` を追加したら、`operations.md` の一覧と `README.md` に追記する
