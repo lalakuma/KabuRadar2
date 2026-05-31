@@ -2,6 +2,12 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-05 無料クラウド（GitHub Actions）
+
+- `data/kaburadar.db` を Git LFS でリポジトリ管理可能に
+- `.github/workflows/daily-screening.yml` … 平日 16:00 JST に解析 + push
+- `docs/guide/cloud.md` を追加
+
 ## 2026-05 すぐ効く改善
 
 - `publish --push` のブランチを `.env` / git 自動検出に変更

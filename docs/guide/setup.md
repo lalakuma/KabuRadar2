@@ -24,14 +24,15 @@ pip install -r requirements.txt
 
 ## 3. データベース
 
-`data/kaburadar.db` は Git に含まれません。元プロジェクトからコピーします。
+`data/kaburadar.db` は **Git LFS** でリポジトリに含まれます（clone 後に `git lfs pull`）。
 
-```bat
-mkdir data
-copy C:\share\MorinoFolder\Python\KabuRadar\DB\KabuRadar.db data\kaburadar.db
+```bash
+git lfs install
+git lfs pull
 ```
 
-パスは `config/config_lo.ini` の `PATH_DB = data\kaburadar.db` と一致している必要があります。
+初回から DB が無い場合のみ、手元の `KabuRadar.db` を `data/kaburadar.db` にコピーして LFS で commit します。  
+詳細: [data/README.md](../../data/README.md) · [無料クラウド実行](cloud.md)
 
 ## 4. 環境変数（任意）
 

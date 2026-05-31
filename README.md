@@ -2,7 +2,7 @@
 
 短期 RSI 戦略のバックテスト・集計・GitHub Pages 公開用ワークスペース。
 
-**ドキュメント:** [取扱説明書](docs/guide/manual.md) · [docs/guide/](docs/guide/)（セットアップ・運用・設定・構成）
+**ドキュメント:** [取扱説明書](docs/guide/manual.md) · [無料クラウド](docs/guide/cloud.md) · [docs/guide/](docs/guide/)
 
 ## ディレクトリ構成
 
@@ -14,7 +14,7 @@ KabuRadar2/
 ├── config/
 │   └── config_lo.ini    # 実行設定
 ├── data/
-│   └── kaburadar.db     # SQLite（Git 除外・要コピー）
+│   └── kaburadar.db     # SQLite（Git LFS・[cloud.md](docs/guide/cloud.md)）
 ├── docs/                # GitHub Pages + [プロジェクト文書](docs/guide/)
 ├── output/              # 生成物（Git 除外）
 │   ├── results/         # 解析 CSV・集計 Excel
