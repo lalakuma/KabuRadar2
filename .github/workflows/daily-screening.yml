@@ -50,6 +50,19 @@ jobs:
           PYTHONPATH: src
         run: python src/kaburadar/cli/publish.py
 
+      - name: LINE notify (optional)
+        if: success()
+        env:
+          PYTHONPATH: src
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_IDS: ${{ secrets.LINE_USER_IDS }}
+        run: |
+          if [ -n "$LINE_CHANNEL_ACCESS_TOKEN" ] && [ -n "$LINE_USER_IDS" ]; then
+            python -c "from kaburadar.notifications.line import notify_analysis_summary; notify_analysis_summary()"
+          else
+            echo "LINE secrets not set, skipping."
+          fi
+
       - name: Commit results
         env:
           PYTHONPATH: src

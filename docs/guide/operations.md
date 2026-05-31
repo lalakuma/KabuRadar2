@@ -1,135 +1,82 @@
-# 日常運用
+# 日常運用（クラウド専用）
 
-## OS 別ランチャー
+**本番運用は GitHub Actions のみ**です。PC 上の `bat` / タスクスケジューラは使いません。
 
-| OS | フォルダ | 例 |
-|----|----------|-----|
-| Windows 10/11 | `bat\` | `bat\screening.bat` |
-| Linux / macOS | `sh/` | `bash sh/screening.sh` または `make screening` |
+詳細: **[cloud.md](cloud.md)**
 
-Python の処理本体は同じです。`scheduling/launcher.py` は OS を見て `bat` / `sh` を自動選択します。
+## あなたがすること
 
-## 推奨 bat 一覧（Windows）
-
-| bat | 処理内容 |
-|-----|----------|
-| `screening.bat` | 株価更新 → 全銘柄解析 |
-| `analyze.bat` | 解析のみ |
-| `update_prices.bat` | 株価更新のみ |
-| `publish.bat` | `docs/data.json` 生成 |
-| `publish.bat --push` | 上記 + `master` へ push |
-| `analyze_and_publish.bat` | 解析 + JSON 生成 + push |
-| `screening_notify.bat` | 株価更新 → 解析 → LINE サマリー（.env 設定時） |
-| `healthcheck.bat` | 設定・DB・CLI の存在確認 |
-| `run_scheduler.bat` | 時間帯に応じて上記を自動起動 |
-
-いずれも `bat\_env.bat` で `PYTHONPATH=src` を設定します。
-
-## 推奨 sh 一覧（Linux / macOS）
-
-| sh | 処理内容（bat と同等） |
-|----|------------------------|
-| `sh/screening.sh` | 株価更新 → 全銘柄解析 |
-| `sh/analyze.sh` | 解析のみ |
-| `sh/update_prices.sh` | 株価更新のみ |
-| `sh/publish.sh` | `docs/data.json` 生成 |
-| `sh/analyze_and_publish.sh` | 解析 + JSON + push |
-| `sh/screening_notify.sh` | 更新 + 解析 + LINE |
-| `sh/healthcheck.sh` | 環境チェック |
-| `sh/run_scheduler.sh` | 時間帯スケジューラ |
-
-詳細: [linux.md](linux.md)
-
-## 典型的な流れ
-
-### 平日の解析 → スマホで確認
-
-```bat
-bat\screening.bat
-bat\publish.bat --push
-```
-
-### 解析結果を LINE にも送る（個人運用）
-
-`.env` に `LINE_CHANNEL_ACCESS_TOKEN` と `LINE_USER_IDS` を設定したうえで:
-
-```bat
-bat\screening_notify.bat
-```
-
-または:
-
-```bat
-bat\screening.bat
-python src\kaburadar\cli\analyze.py --notify
-```
-
-### 環境チェック（トラブル時）
-
-```bat
-bat\healthcheck.bat
-```
-
-1〜2 分後: https://lalakuma.github.io/KabuRadar2/
-
-### 解析済みで Web だけ更新
-
-```bat
-bat\publish.bat --push
-```
-
-### 一括（解析 + 公開）
-
-```bat
-bat\analyze_and_publish.bat
-```
-
-**前提:** `git push` がパスワード入力なしでできること（SSH 鍵または Git Credential Manager）。
-
-## CLI から直接実行
-
-```bat
-set PYTHONPATH=src
-python src\kaburadar\cli\update_prices.py --menu 1
-python src\kaburadar\cli\analyze.py
-python src\kaburadar\cli\publish.py --push
-```
-
-## 旧 bat 名（互換）
-
-| 旧名 | 実体 |
+| 頻度 | 操作 |
 |------|------|
-| `2-2.KabuStation_kessai_GetYahooF.bat` | `screening.bat` |
-| `2-3.GetKabuka_GetYahooF.bat` | `update_prices.bat` |
-| `1.kabu_main.bat` | `run_scheduler.bat` |
-| `publish_results.bat` | `publish.bat` |
+| **初回** | Actions で **Daily screening (cloud)** を Run workflow |
+| **平日** | 何もしない（16:00 JST に自動実行） |
+| **確認** | https://lalakuma.github.io/KabuRadar2/ |
+| **設定変更** | `config/config_lo.ini` を編集 → commit & push |
 
-## 出力の場所
+## 自動処理の内容（Actions）
 
-| パス | 内容 |
+```
+株価更新 (yfinance)
+  → 全銘柄バックテスト
+  → docs/data.json 生成
+  → data/kaburadar.db + JSON を commit & push
+  → GitHub Pages 更新
+```
+
+## 手動実行（急ぎのとき）
+
+GitHub → **Actions** → **Daily screening (cloud)** → **Run workflow**
+
+## ローカルでやらないこと
+
+| やらない | 理由 |
+|----------|------|
+| `bat\screening.bat` | DB が Actions の push と競合する |
+| `run_scheduler.bat` / タスクスケジューラ | クラウド側でスケジュール済み |
+| `publish.bat --push` | Actions が JSON も push する |
+
+ローカルに **Python 環境は不要**（コード編集・`pytest` だけする場合は除く）。
+
+## ローカルを止めるチェックリスト
+
+- [ ] タスクスケジューラの `KabuRadar2` タスクを **無効化または削除**
+- [ ] 平日の `screening.bat` 実行を止める
+- [ ] GitHub **Actions** が緑（成功）になることを一度確認
+
+## LINE 通知（任意）
+
+リポジトリ **Settings → Secrets** に設定すると、Actions 成功後に損益上位を送信します。
+
+- `LINE_CHANNEL_ACCESS_TOKEN`
+- `LINE_USER_IDS`
+
+未設定ならスキップされます。
+
+## 結果の見方
+
+| 場所 | 内容 |
 |------|------|
-| `output/results/` | 銘柄別 CSV、集計 CSV（`Y*_PF*.csv`）、Excel |
-| `output/logs/debug.log` | 解析・スケジューラのログ |
-| `output/workspace/` | 作業用（設定スナップショット等） |
-| `docs/data.json` | GitHub Pages 用 JSON |
+| **GitHub Pages** | スマホ向けサマリー |
+| **Actions ログ** | 実行詳細・エラー |
+| **output/results/** | Actions 内で生成（リポジトリには含めない） |
 
-## スケジューラ
+## トラブル時
 
-`run_scheduler.bat` → `scheduling/launcher.py`（`scheduler/launcher.py` は互換シム）が時刻で bat を起動します。
+| 症状 | 確認 |
+|------|------|
+| Actions が赤 | ログの末尾。yfinance / 解析失敗が多い |
+| サイトが更新されない | 直近 workflow が成功したか。Pages デプロイ 1〜2 分待つ |
+| DB 競合 | ローカルで screening していないか |
 
-| 時刻帯 | 実行 |
-|--------|------|
-| 11:30〜12:00 | `screening.bat` |
-| 9:00〜14:30 | `screening.bat` |
-| 15:00〜15:30 | `update_prices.bat` |
+---
 
-必要に応じて `src/kaburadar/scheduling/launcher.py` を編集してください。
+## 参考: ローカル実行（開発・緊急時のみ）
 
-## トラブルシュート
+`bat/` / `sh/` は **開発・デバッグ用**として残しています。本番では使わないでください。
 
-| 症状 | 確認事項 |
-|------|----------|
-| DB エラー | `data/kaburadar.db` の存在、`PATH_DB` |
-| push 失敗 | `git remote`, 認証, リモートが先行していないか |
-| 集計 CSV がない | `analyze` が完走したか、`output/results/` を確認 |
-| 高値株だけスキップ | `price over` は仕様（価格上限フィルタ） |
+| bat / sh | 用途（開発のみ） |
+|----------|------------------|
+| `healthcheck.bat` | 環境確認 |
+| `screening.bat` | **本番では使わない** |
+
+旧 bat 名の互換ラッパーも同様です。

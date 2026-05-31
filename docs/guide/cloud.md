@@ -1,4 +1,6 @@
-# 無料クラウド実行（GitHub Actions）
+# 無料クラウド実行（GitHub Actions）— 本番運用
+
+**KabuRadar2 の本番はクラウド専用**です。株価収集・DB 更新・解析・Web 公開まで、すべて GitHub Actions 上で完結します。
 
 **条件: 無料** — 公開リポジトリなら Actions / Pages / LFS の無料枠内で運用可能です。
 
@@ -8,44 +10,31 @@
 平日 16:00 JST (cron)
   → GitHub Actions (Ubuntu)
   → git lfs pull で data/kaburadar.db を取得
-  → 株価更新 → 全銘柄解析 → docs/data.json 生成
+  → yfinance で株価更新 → SQLite に書込
+  → 全銘柄バックテスト → 集計
+  → docs/data.json 生成
   → DB + JSON を commit & push
-  → Pages デプロイ（docs/ 変更時）
+  → GitHub Pages 更新
 ```
 
-PC がオフでも **解析〜Web 公開まで自動**できます。
+**PC は不要**（設定ファイルを編集するときだけ git clone があれば足ります）。
 
-## 前提
+## 日常の運用
 
-| 項目 | 内容 |
-|------|------|
-| リポジトリ | **公開**推奨（Actions 無料枠が広い） |
-| DB | `data/kaburadar.db` を **Git LFS** で管理（約 100MB 超のため） |
-| ブランチ | push 先は `KABURADAR_GIT_BRANCH` または git 自動検出 |
+| やること | 頻度 |
+|----------|------|
+| 結果を見る | https://lalakuma.github.io/KabuRadar2/ |
+| Actions 成功確認 | 初回のみ / 障害時 |
+| 手動再実行 | 必要時 → Actions → Run workflow |
+| ローカル screening | **しない** |
 
-## 初回セットアップ（ローカル）
+## 初回確認
 
-### 1. Git LFS を有効化
+1. リポジトリ **Actions** → **Daily screening (cloud)**
+2. **Run workflow** → 成功（緑）になるまで待つ（10〜30 分程度）
+3. Pages を開いて結果を確認
 
-```bash
-git lfs install
-```
-
-Windows では [Git LFS](https://git-lfs.com/) をインストールしてください。
-
-### 2. DB を LFS で追加（初回のみ）
-
-```bash
-git lfs track data/kaburadar.db
-git add .gitattributes data/kaburadar.db data/README.md
-git commit -m "DB を Git LFS で追加"
-git push origin master
-```
-
-### 3. Actions を確認
-
-リポジトリ **Actions** タブ → **Daily screening (cloud)**  
-手動実行: **Run workflow**
+DB はすでに Git LFS でリポジトリに含まれています。
 
 ## スケジュール
 
@@ -55,48 +44,59 @@ git push origin master
 | 既定 | 平日 **16:00 JST**（`0 7 * * 1-5` UTC） |
 | 手動 | Actions → Run workflow |
 
-時刻変更は workflow 内の `cron` を編集してください。
+時刻変更は workflow 内の `cron` を編集して push してください。
+
+## 設定変更
+
+1. `config/config_lo.ini` を編集
+2. commit & push
+3. 次回 Actions 実行から反映
+
+## LINE 通知（任意）
+
+**Settings → Secrets and variables → Actions** に追加:
+
+| Secret | 内容 |
+|--------|------|
+| `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API トークン |
+| `LINE_USER_IDS` | ユーザー ID（カンマ区切り） |
+
+解析成功後、損益上位銘柄を自動送信します。未設定ならスキップ。
 
 ## 無料枠の目安
 
 | サービス | 公開 repo |
 |----------|-----------|
-| GitHub Actions | 実質十分（全銘柄解析 〜20 分 × 平日） |
-| Git LFS | ストレージ 1GB / 帯域 1GB・月（DB 更新 push で消費） |
+| GitHub Actions | 平日 1 回/日 → 通常問題なし |
+| Git LFS | ストレージ 1GB / **帯域 1GB・月** |
 | GitHub Pages | 無料 |
 
-**注意:** DB を毎日 push すると LFS **帯域**を消費します。月 1GB を超える場合は、ローカル解析 + JSON のみ push（従来方式）に戻すか、更新頻度を下げてください。
+**LFS 帯域:** DB（約 128MB）を毎日 push すると月 ~2.8GB 相当になり、**無料 1GB を超える可能性**があります。超えた場合は GitHub の LFS 帯域追加（有料）か、DB push 頻度の見直しが必要です。
 
-## LINE 通知（任意）
+## ローカル clone する人へ
 
-Actions から LINE を送る場合はリポジトリ **Secrets** に設定:
+結果をローカルで見る必要はありません。コード編集時のみ:
 
-- `LINE_CHANNEL_ACCESS_TOKEN`
-- `LINE_USER_IDS`
+```bash
+git lfs install
+git clone <url>
+cd KabuRadar2
+git lfs pull
+```
 
-workflow に `--notify` ステップを足す拡張が可能（現状は未配線）。
-
-## ローカル運用との併用
-
-| 方式 | 用途 |
-|------|------|
-| **クラウド only** | PC 不要。Actions に任せる |
-| **ローカル only** | `bat\screening.bat`（従来） |
-| **併用** | どちらか一方を主に（同日両方は DB 競合に注意） |
-
-同日にローカルと Actions の両方で解析すると、**後から push した方が DB を上書き**します。
+**`bat\screening.bat` は実行しないでください**（DB が競合します）。
 
 ## トラブルシュート
 
 | 症状 | 対処 |
 |------|------|
-| push で 100MB エラー | LFS 未設定 → `git lfs track data/kaburadar.db` |
-| clone 後 DB が小さい/壊れる | `git lfs pull` |
-| Actions が DB なし | LFS ファイルがリモートに push されているか確認 |
-| 解析タイムアウト | workflow の `timeout-minutes` を増やす |
+| Actions 失敗 | ログ確認。yfinance エラー・解析 exit 1/2 |
+| DB なし | LFS が pull されているか |
+| サイト古い | 最新 workflow 成功後 1〜2 分待つ |
+| ローカルと結果が違う | ローカル screening を止める |
 
 ## 関連
 
-- [linux.md](linux.md) — 自前 VPS / cron
-- [setup.md](setup.md) — 初回環境
-- [operations.md](operations.md) — bat / sh 一覧
+- [operations.md](operations.md) — 運用概要
+- [configuration.md](configuration.md) — ini 項目
+- [setup.md](setup.md) — 初回セットアップ

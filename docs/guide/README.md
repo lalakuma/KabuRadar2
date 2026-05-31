@@ -6,7 +6,8 @@
 
 | ドキュメント | 内容 |
 |--------------|------|
-| **[取扱説明書](manual.md)** | **全体の使い方（まずここ）** |
+| **[クラウド運用](cloud.md)** | **本番（Actions 専用）** |
+| **[取扱説明書](manual.md)** | 全体の使い方 |
 | [セットアップ](setup.md) | 初回環境構築・DB 配置 |
 | [Linux / macOS](linux.md) | `sh/`・Makefile・cron |
 | [無料クラウド実行](cloud.md) | GitHub Actions + Git LFS |

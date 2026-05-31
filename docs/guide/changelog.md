@@ -2,6 +2,12 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-05 クラウド専用運用
+
+- 本番を GitHub Actions のみとする方針にドキュメントを統一
+- Actions workflow に LINE 通知（Secrets 設定時）を追加
+- ローカル bat / タスクスケジューラは本番では使わない旨を明記
+
 ## 2026-05 無料クラウド（GitHub Actions）
 
 - `data/kaburadar.db` を Git LFS でリポジトリ管理可能に

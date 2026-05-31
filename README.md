@@ -1,82 +1,51 @@
 # KabuRadar2
 
-短期 RSI 戦略のバックテスト・集計・GitHub Pages 公開用ワークスペース。
+短期 RSI 戦略のバックテスト・集計・GitHub Pages 公開。**本番は GitHub Actions（クラウド専用）**。
 
-**ドキュメント:** [取扱説明書](docs/guide/manual.md) · [無料クラウド](docs/guide/cloud.md) · [docs/guide/](docs/guide/)
+**運用:** [クラウド運用ガイド](docs/guide/cloud.md) · [取扱説明書](docs/guide/manual.md)
+
+## 本番の流れ（PC 不要）
+
+```
+平日 16:00 JST
+  GitHub Actions → 株価更新 → 解析 → Web 公開
+```
+
+確認: https://lalakuma.github.io/KabuRadar2/
+
+手動実行: GitHub **Actions** → **Daily screening (cloud)** → **Run workflow**
 
 ## ディレクトリ構成
 
 ```
 KabuRadar2/
-├── bat/                 # Windows 10/11 用ランチャー（*.bat）
-├── sh/                  # Linux / macOS 用（*.sh・[linux.md](docs/guide/linux.md)）
-├── Makefile             # Linux 向け make ターゲット（任意）
-├── config/
-│   └── config_lo.ini    # 実行設定
-├── data/
-│   └── kaburadar.db     # SQLite（Git LFS・[cloud.md](docs/guide/cloud.md)）
-├── docs/                # GitHub Pages + [プロジェクト文書](docs/guide/)
-├── output/              # 生成物（Git 除外）
-│   ├── results/         # 解析 CSV・集計 Excel
-│   ├── workspace/       # 作業用
-│   └── logs/            # ログ
-├── src/kaburadar/
-│   ├── settings/        # 設定・パス
-│   ├── data/            # DB アクセス
-│   ├── strategy/        # RSI バックテスト
-│   ├── pipeline/        # 解析・集計
-│   ├── market_data/     # 株価更新
-│   ├── publishing/      # GitHub Pages
-│   ├── cli/             # 実行エントリ
-│   └── scheduling/    # 時間帯起動
-└── tests/
+├── .github/workflows/   # CI + 本番 daily-screening
+├── config/config_lo.ini # 戦略・パス設定
+├── data/kaburadar.db    # SQLite（Git LFS）
+├── docs/                # GitHub Pages + data.json
+└── src/kaburadar/       # Python 本体
 ```
 
-旧 bat 名（`2-2.KabuStation_...` 等）は互換用ラッパーとして残しています。
+`bat/` / `sh/` は **開発・デバッグ用**（本番では使わない）。
 
-## Quick start
+## 初回セットアップ
 
-1. 仮想環境を作成し `pip install -r requirements.txt`
-2. `.env.example` を `.env` にコピー（任意）
-3. `data/kaburadar.db` を配置（[data/README.md](data/README.md) 参照）
-4. 実行例:
+1. リポジトリを clone（`git lfs pull`）
+2. Actions で **Daily screening (cloud)** を手動実行
+3. 成功したら Pages を確認
 
-**Windows**
+詳細: [docs/guide/cloud.md](docs/guide/cloud.md)
 
-```bat
-bat\screening.bat
-bat\publish.bat
-```
-
-**Linux / macOS**
-
-```bash
-bash sh/screening.sh
-bash sh/publish.sh
-# または: make screening && make publish
-```
-
-## GitHub Pages
-
-**Windows:** `bat\analyze_and_publish.bat`  
-**Linux:** `bash sh/analyze_and_publish.sh`
-
-解析済みのときだけ JSON 生成 + push:
-
-```bat
-bat\publish.bat --push
-```
-
-```bash
-bash sh/publish.sh --push
-```
-
-公開 URL: https://lalakuma.github.io/KabuRadar2/
-
-## 開発
+## 開発（ローカル）
 
 ```bat
 set PYTHONPATH=src
+pip install -r requirements.txt
 pytest
-python src\kaburadar\cli\analyze.py
 ```
+
+本番の `screening.bat` は **実行しない**（DB 競合防止）。
+
+## 公開 URL
+
+https://lalakuma.github.io/KabuRadar2/
