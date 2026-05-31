@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 from datetime import datetime, timezone
@@ -98,12 +99,17 @@ def build_payload() -> dict:
     }
 
 
+def _should_refresh_timestamp() -> bool:
+    """CI 実行時は集計が同じでも更新日時を書き換える。"""
+    return os.getenv("KABURADAR_REFRESH_TIMESTAMP", "").strip().lower() in ("1", "true", "yes")
+
+
 def publish() -> dict:
     payload = build_payload()
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     new_text = json.dumps(payload, ensure_ascii=False, indent=2)
 
-    if DATA_FILE.exists():
+    if DATA_FILE.exists() and not _should_refresh_timestamp():
         try:
             existing = json.loads(DATA_FILE.read_text(encoding="utf-8"))
             old_stable = json.dumps(payload_without_timestamp(existing), ensure_ascii=False, indent=2)

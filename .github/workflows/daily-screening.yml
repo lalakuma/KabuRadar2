@@ -51,6 +51,7 @@ jobs:
         env:
           PYTHONPATH: src
           TZ: Asia/Tokyo
+          KABURADAR_REFRESH_TIMESTAMP: "1"
         run: python src/kaburadar/cli/publish.py
 
       - name: Deploy GitHub Pages
