@@ -7,7 +7,7 @@
 ## 仕組み
 
 ```
-平日 16:00 JST (cron)
+平日 15:00 / 16:00 JST（各2回）
   → GitHub Actions (Ubuntu)
   → git lfs pull で data/kaburadar.db を取得
   → yfinance で株価更新 → SQLite に書込
@@ -41,7 +41,7 @@ DB はすでに Git LFS でリポジトリに含まれています。
 | 項目 | 値 |
 |------|-----|
 | ワークフロー | `.github/workflows/daily-screening.yml` |
-| 既定 | 平日 **16:00 JST**（`0 7 * * 1-5` UTC） |
+| 既定 | 平日 **15:00・16:00 JST**（`0 6` / `0 7` UTC、月〜金） |
 | 手動 | Actions → Run workflow |
 
 時刻変更は workflow 内の `cron` を編集して push してください。

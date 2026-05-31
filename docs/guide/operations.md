@@ -9,7 +9,7 @@
 | 頻度 | 操作 |
 |------|------|
 | **初回** | Actions で **Daily screening (cloud)** を Run workflow |
-| **平日** | 何もしない（16:00 JST に自動実行） |
+| **平日** | 何もしない（**15:00・16:00 JST** に自動実行） |
 | **確認** | https://lalakuma.github.io/KabuRadar2/ |
 | **設定変更** | `config/config_lo.ini` を編集 → commit & push |
 
