@@ -92,8 +92,13 @@ git lfs pull
 |------|------|
 | Actions 失敗 | ログ確認。yfinance エラー・解析 exit 1/2 |
 | DB なし | LFS が pull されているか |
-| サイト古い | 最新 workflow 成功後 1〜2 分待つ |
+| サイト古い | Actions 成功後も Pages 未デプロイだった → **修正済**（screening 末尾で gh-pages へデプロイ） |
 | ローカルと結果が違う | ローカル screening を止める |
+
+## GitHub Pages が更新されない理由
+
+Actions bot が `master` へ push しても、**別 workflow は自動起動しない** GitHub の仕様があります。  
+`daily-screening` の末尾で **gh-pages へ直接デプロイ**するよう修正済みです。
 
 ## 関連
 

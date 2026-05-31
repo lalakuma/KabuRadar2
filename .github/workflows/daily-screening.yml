@@ -50,7 +50,16 @@ jobs:
       - name: Build GitHub Pages JSON
         env:
           PYTHONPATH: src
+          TZ: Asia/Tokyo
         run: python src/kaburadar/cli/publish.py
+
+      - name: Deploy GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
 
       - name: LINE notify (optional)
         if: success()
