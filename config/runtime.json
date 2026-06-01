@@ -1,0 +1,16 @@
+{
+  "special_buy": {
+    "enabled": true,
+    "min_new_buy_count": 7,
+    "etf_default": "1306",
+    "etf_codes": ["1321", "1306"],
+    "exit_rsi": 70
+  },
+  "notify": {
+    "today_buy": true,
+    "today_sellback": true,
+    "special_buy_on": true,
+    "special_exit": true,
+    "summary_top": false
+  }
+}
