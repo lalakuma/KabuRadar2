@@ -44,6 +44,16 @@ copy .env.example .env
 
 ### LINE 通知の設定（任意）
 
+**KabuRadar v1 から移植する場合**（`software/src/line.py` と同じ設定）:
+
+```bash
+python scripts/sync_line_from_kaburadar.py --env
+```
+
+クラウド用に GitHub Secrets へも入れる: 同コマンドに `--gh-secrets` を付ける（[cloud.md](cloud.md) 参照）。
+
+手動で新規作成する場合:
+
 1. [LINE Developers](https://developers.line.biz/) で Messaging API チャネルを作成
 2. チャネルアクセストークンを `LINE_CHANNEL_ACCESS_TOKEN` に設定
 3. 自分のユーザー ID を `LINE_USER_IDS` に設定（カンマ区切りで複数可）

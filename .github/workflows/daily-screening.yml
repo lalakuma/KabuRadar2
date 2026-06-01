@@ -2,11 +2,31 @@ name: Daily screening (cloud)
 
 on:
   schedule:
+    # 平日 12:30 JST (UTC+9) = 03:30 UTC
+    - cron: "30 3 * * 1-5"
     # 平日 15:00 JST (UTC+9) = 06:00 UTC
     - cron: "0 6 * * 1-5"
     # 平日 16:00 JST (UTC+9) = 07:00 UTC
     - cron: "0 7 * * 1-5"
   workflow_dispatch:
+    inputs:
+      job:
+        description: "実行範囲"
+        required: true
+        default: full
+        type: choice
+        options:
+          - full
+          - analyze
+          - publish
+      config_profile:
+        description: "設定 (lo/hi)"
+        required: true
+        default: lo
+        type: choice
+        options:
+          - lo
+          - hi
 
 permissions:
   contents: write
@@ -37,24 +57,51 @@ jobs:
       - name: Verify database
         run: test -f data/kaburadar.db
 
+      - name: Select screening config
+        run: |
+          JOB="${{ github.event.inputs.job }}"
+          if [ -z "$JOB" ]; then JOB="full"; fi
+          echo "KABURADAR_JOB=$JOB" >> "$GITHUB_ENV"
+          PROFILE="${{ github.event.inputs.config_profile }}"
+          if [ -z "$PROFILE" ]; then
+            case "${{ github.event.schedule }}" in
+              "30 3 * * 1-5") PROFILE="hi" ;;
+              *) PROFILE="lo" ;;
+            esac
+          fi
+          if [ "$PROFILE" = "hi" ]; then
+            echo "KABURADAR_CONFIG=config/config_hi.ini" >> "$GITHUB_ENV"
+            echo "Using config_hi.ini (RSI4反転=1)"
+          else
+            echo "KABURADAR_CONFIG=config/config_lo.ini" >> "$GITHUB_ENV"
+            echo "Using config_lo.ini (RSI4反転=0)"
+          fi
+
       - name: Update prices (1 day)
+        if: env.KABURADAR_JOB == 'full'
         env:
           PYTHONPATH: src
         run: python src/kaburadar/cli/update_prices.py --menu 1
 
       - name: Analyze all symbols
+        if: env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'analyze'
         env:
           PYTHONPATH: src
+          KABURADAR_CONFIG: ${{ env.KABURADAR_CONFIG }}
         run: python src/kaburadar/cli/analyze.py
 
       - name: Build GitHub Pages JSON
+        if: env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'publish'
         env:
           PYTHONPATH: src
           TZ: Asia/Tokyo
           KABURADAR_REFRESH_TIMESTAMP: "1"
+          KABURADAR_CONFIG: ${{ env.KABURADAR_CONFIG }}
+          KABURADAR_PAGES_URL: https://lalakuma.github.io/KabuRadar2
         run: python src/kaburadar/cli/publish.py
 
       - name: Deploy GitHub Pages
+        if: env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'publish'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -63,14 +110,24 @@ jobs:
           force_orphan: true
 
       - name: LINE notify (optional)
-        if: success()
+        if: success() && (env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'publish')
         env:
           PYTHONPATH: src
+          TZ: Asia/Tokyo
+          KABURADAR_CONFIG: ${{ env.KABURADAR_CONFIG }}
+          KABURADAR_PAGES_URL: https://lalakuma.github.io/KabuRadar2
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_IDS: ${{ secrets.LINE_USER_IDS }}
         run: |
           if [ -n "$LINE_CHANNEL_ACCESS_TOKEN" ] && [ -n "$LINE_USER_IDS" ]; then
-            python -c "from kaburadar.notifications.line import notify_analysis_summary; notify_analysis_summary()"
+            python -c "
+            import json
+            from pathlib import Path
+            from kaburadar.notifications.line import notify_from_payload
+            p = Path('docs/data.json')
+            payload = json.loads(p.read_text(encoding='utf-8'))
+            notify_from_payload(payload)
+            "
           else
             echo "LINE secrets not set, skipping."
           fi
@@ -81,7 +138,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/kaburadar.db docs/data.json
+          git add data/kaburadar.db data/special_state.json docs/data.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

@@ -1,3 +1,6 @@
+# 秘密情報（LINE 等）
+.env
+
 # Pythonのキャッシュ
 __pycache__/
 *.py[cod]
@@ -9,6 +12,7 @@ __pycache__/
 data/*
 !data/README.md
 !data/kaburadar.db
+!data/special_state.json
 
 # 旧パス
 DB/

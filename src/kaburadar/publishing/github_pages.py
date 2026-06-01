@@ -11,10 +11,15 @@ from pathlib import Path
 
 import pandas as pd
 
+from kaburadar.publishing.ci_meta import build_run_meta
 from kaburadar.settings.encoding import read_csv
 from kaburadar.settings.git_publish import resolve_publish_branch
 from kaburadar.settings.loader import read_path_config
+from kaburadar.settings import screening as conf
 from kaburadar.settings.paths import DOCS_DIR, PROJECT_ROOT
+from kaburadar.settings.runtime import actions_run_url, load_runtime_config, runtime_edit_url
+from kaburadar.signals.special import apply_special_buy
+from kaburadar.signals.today import collect_today_signals
 
 RESULTS_DIR = read_path_config("SHUUKEI", "PATH_HONBAN")
 DATA_FILE = DOCS_DIR / "data.json"
@@ -64,8 +69,8 @@ def _load_symbols(summary_csv: Path) -> list[dict]:
 
 
 def payload_without_timestamp(payload: dict) -> dict:
-    """比較用: generated_at を除いたペイロード。"""
-    return {k: v for k, v in payload.items() if k != "generated_at"}
+    """比較用: generated_at / run / controls を除いたペイロード。"""
+    return {k: v for k, v in payload.items() if k not in ("generated_at", "run", "controls")}
 
 
 def build_payload() -> dict:
@@ -77,14 +82,22 @@ def build_payload() -> dict:
         raise FileNotFoundError(f"集計 CSV (Y*_PF*.csv) が見つかりません: {RESULTS_DIR}")
 
     symbols = _load_symbols(summary_csv)
+    name_map = {s["code"]: s["name"] for s in symbols}
+    runtime = load_runtime_config()
+    today = collect_today_signals(RESULTS_DIR, name_map)
+    special, _state, special_lines = apply_special_buy(
+        today.get("trade_date"),
+        int(today.get("new_buy_count", 0)),
+        runtime,
+    )
     meta = _parse_summary_filename(summary_csv)
     wins = sum(1 for s in symbols if "W1" in s["winlose"] or "W2" in s["winlose"])
     losses = sum(1 for s in symbols if "L1" in s["winlose"])
     neutral = sum(1 for s in symbols if s["winlose"] == "W0L0")
 
-    return {
+    payload: dict = {
         "generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-        "mode": "LO",
+        "mode": conf.config_stance(),
         "summary": {
             "pf": meta.get("pf"),
             "wins": meta.get("wins", wins),
@@ -96,7 +109,19 @@ def build_payload() -> dict:
             "source_file": summary_csv.name,
         },
         "symbols": symbols,
+        "today": today,
+        "special": special,
+        "runtime": runtime.raw,
+        "controls": {
+            "actions_run_url": actions_run_url(),
+            "runtime_edit_url": runtime_edit_url(),
+        },
+        "line_events": special_lines,
     }
+    run_meta = build_run_meta()
+    if run_meta:
+        payload["run"] = run_meta
+    return payload
 
 
 def _should_refresh_timestamp() -> bool:

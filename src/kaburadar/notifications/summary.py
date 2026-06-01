@@ -2,12 +2,30 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pandas as pd
 
 from kaburadar.settings.encoding import read_csv
 from kaburadar.settings.loader import read_path_config
+
+
+def _parse_summary_filename(path: Path) -> dict:
+    name = path.stem
+    match = re.search(
+        r"Y\d+_PF([\d.]+)_W(\d+)L(\d+)_rate([\d.]+)_all(\d+)",
+        name,
+    )
+    if not match:
+        return {}
+    return {
+        "pf": float(match.group(1)),
+        "wins": int(match.group(2)),
+        "losses": int(match.group(3)),
+        "win_rate": float(match.group(4)),
+        "total_income": int(match.group(5)),
+    }
 
 
 def _find_summary_csv(directory: Path) -> Path | None:
@@ -39,10 +57,18 @@ def format_top_symbols(limit: int = 10, results_dir: Path | None = None) -> list
 
 
 def format_summary_header(results_dir: Path | None = None) -> str:
-    """集計ファイル名から PF・勝率の一行ヘッダーを返す。"""
+    """集計から PF・勝率・損益の一行ヘッダーを返す。"""
     if results_dir is None:
         results_dir = read_path_config("SHUUKEI", "PATH_HONBAN")
     summary_csv = _find_summary_csv(results_dir)
     if summary_csv is None:
         return ""
-    return summary_csv.stem.replace("_", " ")
+    meta = _parse_summary_filename(summary_csv)
+    if not meta:
+        return summary_csv.stem.replace("_", " ")
+    income = meta["total_income"]
+    sign = "+" if income >= 0 else ""
+    return (
+        f"PF {meta['pf']:.3f} · 勝率 {meta['win_rate']:.1f}% "
+        f"({meta['wins']}勝{meta['losses']}敗) · 損益 {sign}{income:,d}"
+    )

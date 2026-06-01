@@ -75,7 +75,7 @@ KabuRadar2/
 
 ### 5.1 平日
 
-**何もしなくて OK。** 平日 **15:00・16:00 JST** に Actions が自動実行します。
+**何もしなくて OK。** 平日 **12:30・15:00・16:00 JST** に Actions が自動実行します。
 
 結果: https://lalakuma.github.io/KabuRadar2/
 

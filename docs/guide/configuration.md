@@ -1,8 +1,22 @@
 # 設定リファレンス
 
-設定ファイル: [`config/config_lo.ini`](../../config/config_lo.ini)
+## 設定ファイル
+
+| ファイル | 用途 | `SCR_JDG_RSI4REV` |
+|----------|------|-------------------|
+| [`config/config_lo.ini`](../../config/config_lo.ini) | 通常（15:00 / 16:00 Actions） | `0` |
+| [`config/config_hi.ini`](../../config/config_hi.ini) | 高確率型（12:30 Actions） | `1` |
 
 読み込み: `kaburadar.settings`（`config.py` は後方互換）。環境変数 `${...}` の展開あり。
+
+クラウドでは Actions が `KABURADAR_CONFIG` で切り替えます。ローカルでは:
+
+```bash
+set KABURADAR_CONFIG=config\config_hi.ini
+python src/kaburadar/cli/analyze.py
+# または
+python src/kaburadar/cli/analyze.py --config config/config_hi.ini
+```
 
 ## [SCREENING] スクリーニング・バックテスト
 
@@ -33,6 +47,23 @@
 |------|--------|------|
 | `PATH_DB` | `data\kaburadar.db` | SQLite ファイル（プロジェクトルート相対） |
 
+## `config/runtime.json`（運用設定）
+
+Web 表示・LINE 通知・特別買い（広がり）のしきい値。戦略パラメータは ini、運用トグルはこちら。
+
+| キー | 既定 | 説明 |
+|------|------|------|
+| `special_buy.enabled` | `true` | 特別買いロジック |
+| `special_buy.min_new_buy_count` | `7` | 当日「新買」がこの件数以上で特別買い |
+| `special_buy.etf_default` | `1306` | 通知する ETF |
+| `special_buy.exit_rsi` | `70` | 特別買い後の利確 RSI |
+| `notify.today_buy` | `true` | LINE: 今日の買い |
+| `notify.today_sellback` | `true` | LINE: 今日の返売り |
+| `notify.special_buy_on` | `true` | LINE: 特別買い ON |
+| `notify.special_exit` | `true` | LINE: 特別買い 売り |
+
+編集: GitHub の [runtime.json を編集](https://github.com/lalakuma/KabuRadar2/edit/master/config/runtime.json) またはローカルで commit & push。
+
 ## 環境変数（.env）
 
 `.env.example` 参照。
@@ -41,12 +72,13 @@
 |------|------|
 | `LINE_CHANNEL_ACCESS_TOKEN` | LINE 通知（Messaging API） |
 | `LINE_USER_IDS` | 送信先ユーザー ID（カンマ区切り） |
+| `KABURADAR_CONFIG` | 使用する ini（例: `config/config_hi.ini`） |
 | `KABURADAR_GIT_BRANCH` | `publish --push` の push 先（未設定時は git が自動検出） |
 | `KABUS_API_PASSWD` 等 | 将来の API 連携用（ini の `${...}` からも参照可） |
 
 ## 設定のコピー
 
-解析実行時、`config_lo.ini` のスナップショットが `output/results/` に保存されます（`copy_config_snapshot`）。
+解析実行時、使用中 ini のスナップショットが `output/results/` に保存されます（`copy_config_snapshot`）。
 
 ## CSV 文字コード
 
