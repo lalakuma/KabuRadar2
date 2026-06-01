@@ -2,6 +2,39 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-06 当日シグナル・特別買い・Web タブ（フェーズ A）
+
+- `config/runtime.json` … 広がり閾値・ETF・LINE トグル
+- `signals/` … 今日の新買/返売り、特別買いステート（`data/special_state.json`）
+- `data.json` に `today` / `special` / `runtime` / `controls`
+- Web: タブ（今日・特別買い・損益・設定・実行リンク）
+- LINE: 買い/返売り/特別買い通知
+- Actions: `workflow_dispatch` で full / analyze / publish、lo / hi
+
+## 2026-06 LINE 設定の v1 からの移植
+
+- `scripts/sync_line_from_kaburadar.py` … v1 `line.py` → `.env` / GitHub Secrets
+- `.env` を `.gitignore` に追加
+- `notifications/line.py` がプロジェクトルートの `.env` を読むよう修正
+
+## 2026-06 Web 実行表示・LINE 強化
+
+- `data.json` にクラウド実行メタ（`run.pages_url` / `run.workflow_url`）を追加
+- Web: 更新元（自動/手動）表示、実行ログへのリンク
+- LINE: PF・勝率・Web URL・Actions ログ URL を含むサマリー
+- `cloud.md` に Pages / LINE の初回セットアップ手順を追記
+
+## 2026-05 12:30 は config_hi（RSI4反転）
+
+- `config/config_hi.ini` 復活（`SCR_JDG_RSI4REV = 1`）
+- 平日 **12:30 JST** → `config_hi.ini`、**15:00 / 16:00** → `config_lo.ini`
+- 環境変数 `KABURADAR_CONFIG` で切替（`analyze.py --config` も可）
+- Web 表示にモード（HI / LO）を表示
+
+## 2026-05 スケジュール 1日3回
+
+- Daily screening: 平日 **12:30・15:00・16:00 JST**（03:30 / 06:00 / 07:00 UTC）
+
 ## 2026-05 スケジュール 1日2回
 
 - Daily screening: 平日 **15:00・16:00 JST**（06:00 / 07:00 UTC）
