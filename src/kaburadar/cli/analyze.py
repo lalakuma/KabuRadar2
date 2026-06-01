@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -13,7 +14,12 @@ from kaburadar.settings.paths import PROJECT_ROOT
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="全銘柄バックテスト解析 (config_lo.ini)")
+    parser = argparse.ArgumentParser(description="全銘柄バックテスト解析")
+    parser.add_argument(
+        "--config",
+        metavar="PATH",
+        help="設定 ini（例: config/config_hi.ini）。未指定時は config_lo.ini",
+    )
     parser.add_argument(
         "--publish",
         action="store_true",
@@ -25,6 +31,9 @@ def main() -> int:
         help="成功時に LINE へ集計サマリーを送信（.env 設定時）",
     )
     args = parser.parse_args()
+
+    if args.config:
+        os.environ["KABURADAR_CONFIG"] = args.config
 
     rc = run()
     if rc != 0:

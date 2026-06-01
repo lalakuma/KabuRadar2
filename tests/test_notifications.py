@@ -27,19 +27,21 @@ def test_format_top_symbols(tmp_path) -> None:
 
 
 def test_is_configured_false(monkeypatch) -> None:
-    monkeypatch.delenv("LINE_CHANNEL_ACCESS_TOKEN", raising=False)
-    monkeypatch.delenv("LINE_USER_IDS", raising=False)
+    monkeypatch.setattr(line, "_get_env", lambda: ("", []))
     assert line.is_configured() is False
 
 
 def test_notify_optional_skips_without_config(monkeypatch) -> None:
-    monkeypatch.delenv("LINE_CHANNEL_ACCESS_TOKEN", raising=False)
+    monkeypatch.setattr(line, "_get_env", lambda: ("", []))
     assert line.notify_optional(["test"], "LO") is False
 
 
-def test_notify_analysis_summary_no_csv(monkeypatch) -> None:
-    monkeypatch.setattr(
-        "kaburadar.notifications.summary.format_top_symbols",
-        lambda **_kwargs: [],
-    )
-    assert line.notify_analysis_summary() is False
+def test_notify_from_payload_empty_today(monkeypatch) -> None:
+    monkeypatch.setattr(line, "notify_optional", lambda *_a, **_k: True)
+    payload = {
+        "mode": "LO",
+        "today": {"trade_date": "2026-06-01", "new_buy": [], "sellback": []},
+        "runtime": {"notify": {"today_buy": True, "today_sellback": True}},
+        "line_events": [],
+    }
+    assert line.notify_from_payload(payload) is True

@@ -14,7 +14,7 @@ from kaburadar.pipeline import aggregate as shuukei
 from kaburadar.settings import screening as conf
 from kaburadar.settings.loader import copy_config_snapshot
 from kaburadar.settings.encoding import CSV_ENCODING
-from kaburadar.settings.paths import CONFIG_LO, LOG_DIR
+from kaburadar.settings.paths import LOG_DIR
 from kaburadar.strategy import engine as bktst
 from kaburadar.strategy.models import KabInf
 
@@ -95,12 +95,15 @@ def _write_csv(dt: KabInf, kekka_path: str, code: str, coderec) -> None:
     dt.outdf.to_csv(out_path, encoding=CSV_ENCODING)
 
 
-def _prepare_output_dir(kekka_path: str) -> None:
+STANCE = "LO"  # run() 内で上書き
+
+
+def _prepare_output_dir(kekka_path: str, stance: str) -> None:
     path = Path(kekka_path)
     path.mkdir(parents=True, exist_ok=True)
     for csv_file in path.glob("*.csv"):
         csv_file.unlink()
-    summary = path / f"集計_{STANCE}.xlsx"
+    summary = path / f"集計_{stance}.xlsx"
     if summary.exists():
         summary.unlink()
 
@@ -122,7 +125,9 @@ def _find_summary_csv(results_dir: Path) -> Path | None:
 
 def run() -> int:
     logger = _setup_logger()
-    logger.info("解析を開始します (config_lo.ini / 短期RSI)。")
+    config_path = conf.resolve_config_path()
+    stance = conf.config_stance(config_path)
+    logger.info("解析を開始します (%s / 短期RSI)。", config_path.name)
 
     stats = AnalyzeStats()
     kekka_path = ""
@@ -135,9 +140,9 @@ def run() -> int:
         cls_dt = _build_kab_inf(scrsec, past_period)
         kekka_path = conf.get_config(conf.CONF_SEC_SHUUKEI, conf.CONF_KEY_PATH_HONBAN)
 
-        _prepare_output_dir(kekka_path)
+        _prepare_output_dir(kekka_path, stance)
         cls_dt.write_prm_tocsv(kekka_path)
-        copy_config_snapshot(Path(kekka_path), config_path=CONFIG_LO)
+        copy_config_snapshot(Path(kekka_path), config_path=config_path)
 
         df_indicator = pd.DataFrame()
         df_set = db.read_rec_all(conn, cursor, "tbl_code_set")
@@ -162,7 +167,7 @@ def run() -> int:
                 stats.written += 1
 
         fullpath_shuukei = shuukei.shuukei_toCsv(kekka_path)
-        _shuukei, _filepath, final_rieki = shuukei.shuukei_makeExl(kekka_path, STANCE)
+        _shuukei, _filepath, final_rieki = shuukei.shuukei_makeExl(kekka_path, stance)
 
         if fullpath_shuukei:
             newfilename = fullpath_shuukei.replace("PF", f"Y{final_rieki}_PF")

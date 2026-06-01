@@ -8,7 +8,7 @@ import shutil
 from pathlib import Path
 
 from .loader import read_config, resolve_path_value
-from .paths import CONFIG_LO
+from .paths import CONFIG_DIR, CONFIG_HI, CONFIG_LO, PROJECT_ROOT
 
 CONF_SEC_SCR = "SCREENING"
 CONF_SEC_SHUUKEI = "SHUUKEI"
@@ -49,14 +49,37 @@ def _as_legacy_dir(path: Path) -> str:
     return text
 
 
+def resolve_config_path() -> Path:
+    """有効な設定 ini。KABURADAR_CONFIG または config_lo.ini。"""
+    raw = os.getenv("KABURADAR_CONFIG", "").strip()
+    if raw:
+        candidate = Path(raw)
+        if not candidate.is_absolute():
+            candidate = (PROJECT_ROOT / candidate).resolve()
+        if candidate.is_file():
+            return candidate
+    if CONFIG_LO.exists():
+        return CONFIG_LO
+    raise FileNotFoundError(f"config ini not found in: {CONFIG_DIR}")
+
+
+def config_stance(config_path: Path | None = None) -> str:
+    """config_hi.ini → HI、それ以外 → LO。"""
+    path = config_path or resolve_config_path()
+    if path.name.endswith("_hi.ini"):
+        return "HI"
+    return "LO"
+
+
 def get_confFilePath() -> str:
-    return str(CONFIG_LO)
+    return str(resolve_config_path())
 
 
 def get_config(section: str, key: str) -> str:
-    if not CONFIG_LO.exists():
-        raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), str(CONFIG_LO))
-    raw = read_config(section, key, config_path=CONFIG_LO)
+    config_path = resolve_config_path()
+    if not config_path.exists():
+        raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), str(config_path))
+    raw = read_config(section, key, config_path=config_path)
     if key in _PATH_KEYS:
         resolved = resolve_path_value(raw)
         if key == CONF_KEY_PATH_DB:
@@ -66,8 +89,9 @@ def get_config(section: str, key: str) -> str:
 
 
 def copy_confFile(destpath: str) -> None:
-    if not CONFIG_LO.exists():
-        raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), str(CONFIG_LO))
+    config_path = resolve_config_path()
+    if not config_path.exists():
+        raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), str(config_path))
     dest = Path(destpath)
     dest.mkdir(parents=True, exist_ok=True)
-    shutil.copy(CONFIG_LO, dest / CONFIG_LO.name)
+    shutil.copy(config_path, dest / config_path.name)

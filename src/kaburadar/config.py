@@ -9,6 +9,7 @@ from kaburadar.settings.loader import (
 )
 from kaburadar.settings.paths import (
     CONFIG_DIR,
+    CONFIG_HI,
     CONFIG_LO,
     DATA_DIR,
     DOCS_DIR,
@@ -19,6 +20,7 @@ from kaburadar.settings.paths import (
 
 __all__ = [
     "CONFIG_DIR",
+    "CONFIG_HI",
     "CONFIG_LO",
     "DATA_DIR",
     "DOCS_DIR",
