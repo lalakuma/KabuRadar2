@@ -111,6 +111,7 @@ jobs:
 
       - name: LINE notify (optional)
         if: success() && (env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'publish')
+        continue-on-error: true
         env:
           PYTHONPATH: src
           TZ: Asia/Tokyo
@@ -120,14 +121,7 @@ jobs:
           LINE_USER_IDS: ${{ secrets.LINE_USER_IDS }}
         run: |
           if [ -n "$LINE_CHANNEL_ACCESS_TOKEN" ] && [ -n "$LINE_USER_IDS" ]; then
-            python -c "
-            import json
-            from pathlib import Path
-            from kaburadar.notifications.line import notify_from_payload
-            p = Path('docs/data.json')
-            payload = json.loads(p.read_text(encoding='utf-8'))
-            notify_from_payload(payload)
-            "
+            python src/kaburadar/cli/notify_line.py
           else
             echo "LINE secrets not set, skipping."
           fi
