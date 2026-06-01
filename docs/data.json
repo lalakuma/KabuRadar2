@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T21:31:31+09:00",
+  "generated_at": "2026-06-02T07:23:50+09:00",
   "mode": "LO",
   "summary": {
     "pf": 2.993,
@@ -958,5 +958,122 @@
       "plus_gain": 0,
       "minus_gain": 19990
     }
-  ]
+  ],
+  "today": {
+    "trade_date": "2026-06-01",
+    "new_buy": [
+      {
+        "code": "1605",
+        "name": "ＩＮＰＥＸ",
+        "mark": "新買",
+        "close": 3416
+      },
+      {
+        "code": "7011",
+        "name": "三菱重工業",
+        "mark": "新買",
+        "close": 3636
+      },
+      {
+        "code": "7164",
+        "name": "全国保証",
+        "mark": "新買",
+        "close": 2836
+      },
+      {
+        "code": "7167",
+        "name": "めぶきフィナンシャルグループ",
+        "mark": "新買",
+        "close": 1300
+      },
+      {
+        "code": "8098",
+        "name": "稲畑産業",
+        "mark": "新買",
+        "close": 3785
+      },
+      {
+        "code": "8570",
+        "name": "イオンフィナンシャルサービス",
+        "mark": "新買",
+        "close": 1450
+      },
+      {
+        "code": "9508",
+        "name": "九州電力",
+        "mark": "新買",
+        "close": 1583
+      }
+    ],
+    "sellback": [
+      {
+        "code": "3659",
+        "name": "ネクソン",
+        "mark": "返売",
+        "close": 2307
+      },
+      {
+        "code": "3765",
+        "name": "ガンホー・オンライン・エンターテイメント",
+        "mark": "返売",
+        "close": 2305
+      },
+      {
+        "code": "4694",
+        "name": "ビー・エム・エル",
+        "mark": "返売",
+        "close": 3560
+      }
+    ],
+    "new_buy_count": 7
+  },
+  "special": {
+    "enabled": true,
+    "state": "special_long",
+    "entered_on": "2026-06-01",
+    "etf": "1306",
+    "min_new_buy_count": 7,
+    "new_buy_count": 7,
+    "exit_rsi": 70.0,
+    "etf_rsi": {
+      "1321": 83.94,
+      "1306": 64.57
+    },
+    "active_rsi": 64.57,
+    "signal": "buy"
+  },
+  "runtime": {
+    "special_buy": {
+      "enabled": true,
+      "min_new_buy_count": 7,
+      "etf_default": "1306",
+      "etf_codes": [
+        "1321",
+        "1306"
+      ],
+      "exit_rsi": 70
+    },
+    "notify": {
+      "today_buy": true,
+      "today_sellback": true,
+      "special_buy_on": true,
+      "special_exit": true,
+      "summary_top": false
+    }
+  },
+  "controls": {
+    "actions_run_url": "https://github.com/lalakuma/KabuRadar2/actions/workflows/daily-screening.yml",
+    "runtime_edit_url": "https://github.com/lalakuma/KabuRadar2/edit/master/config/runtime.json"
+  },
+  "line_events": [
+    "【特別買い】新買 7件 >= 7件",
+    "ETF 1306 を買いサイン"
+  ],
+  "run": {
+    "source": "github-actions",
+    "event": "workflow_dispatch",
+    "repository": "lalakuma/KabuRadar2",
+    "pages_url": "https://lalakuma.github.io/KabuRadar2",
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/26785584511"
+  }
 }
