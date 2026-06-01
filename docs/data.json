@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-31T14:46:48+09:00",
+  "generated_at": "2026-06-01T20:08:15+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 3.311,
-    "wins": 58,
-    "losses": 15,
-    "win_rate": 79.45,
-    "total_income": 347900,
-    "symbol_count": 83,
-    "neutral_count": 14,
-    "source_file": "Y0_PF3.311_W58L15_rate79.45_all347900.csv"
+    "pf": 2.993,
+    "wins": 57,
+    "losses": 16,
+    "win_rate": 78.08,
+    "total_income": 319100,
+    "symbol_count": 86,
+    "neutral_count": 17,
+    "source_file": "Y0_PF2.993_W57L16_rate78.08_all319100.csv"
   },
   "symbols": [
     {
@@ -21,17 +21,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 10490,
-      "minus_gain": 0
-    },
-    {
-      "code": "7832",
-      "name": "バンダイナムコホールディングス",
-      "industry": "nan",
-      "incomes": 34200,
-      "pf": 86.8,
-      "winlose": "W2L0",
-      "win_per": 100,
-      "plus_gain": 8680,
       "minus_gain": 0
     },
     {
@@ -57,6 +46,17 @@
       "minus_gain": 0
     },
     {
+      "code": "3765",
+      "name": "ガンホー・オンライン・エンターテイメント",
+      "industry": "nan",
+      "incomes": 21700,
+      "pf": 91.2,
+      "winlose": "W2L0",
+      "win_per": 100,
+      "plus_gain": 9120,
+      "minus_gain": 0
+    },
+    {
       "code": "4088",
       "name": "エア・ウォーター",
       "industry": "nan",
@@ -71,11 +71,11 @@
       "code": "7148",
       "name": "ＦＰＧ",
       "industry": "nan",
-      "incomes": 19300,
-      "pf": 118.3,
+      "incomes": 20200,
+      "pf": 123.7,
       "winlose": "W2L0",
       "win_per": 100,
-      "plus_gain": 11830,
+      "plus_gain": 12370,
       "minus_gain": 0
     },
     {
@@ -134,6 +134,17 @@
       "minus_gain": 340
     },
     {
+      "code": "7832",
+      "name": "バンダイナムコホールディングス",
+      "industry": "nan",
+      "incomes": 13500,
+      "pf": 35.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3540,
+      "minus_gain": 0
+    },
+    {
       "code": "1419",
       "name": "タマホーム",
       "industry": "nan",
@@ -164,6 +175,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 4920,
+      "minus_gain": 0
+    },
+    {
+      "code": "3659",
+      "name": "ネクソン",
+      "industry": "nan",
+      "incomes": 11700,
+      "pf": 50.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5070,
       "minus_gain": 0
     },
     {
@@ -288,17 +310,6 @@
       "minus_gain": 0
     },
     {
-      "code": "3765",
-      "name": "ガンホー・オンライン・エンターテイメント",
-      "industry": "nan",
-      "incomes": 8200,
-      "pf": 32.6,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3260,
-      "minus_gain": 0
-    },
-    {
       "code": "5406",
       "name": "神戸製鋼所",
       "industry": "nan",
@@ -409,17 +420,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6417",
-      "name": "ＳＡＮＫＹＯ",
-      "industry": "nan",
-      "incomes": 5300,
-      "pf": 26.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2690,
-      "minus_gain": 0
-    },
-    {
       "code": "1719",
       "name": "安藤ハザマ",
       "industry": "nan",
@@ -475,6 +475,17 @@
       "minus_gain": 0
     },
     {
+      "code": "1306",
+      "name": "野村東証指数",
+      "industry": "ETF銘柄一覧",
+      "incomes": 3600,
+      "pf": 88.5,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 8850,
+      "minus_gain": 0
+    },
+    {
       "code": "5020",
       "name": "ＥＮＥＯＳホールディングス",
       "industry": "nan",
@@ -494,17 +505,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1230,
-      "minus_gain": 0
-    },
-    {
-      "code": "1306",
-      "name": "野村東証指数",
-      "industry": "ETF銘柄一覧",
-      "incomes": 3100,
-      "pf": 76.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 7620,
       "minus_gain": 0
     },
     {
@@ -552,14 +552,14 @@
       "minus_gain": 0
     },
     {
-      "code": "4689",
-      "name": "Ｚホールディングス",
+      "code": "7211",
+      "name": "三菱自動車",
       "industry": "nan",
-      "incomes": 2000,
-      "pf": 50.6,
+      "incomes": 1500,
+      "pf": 46.6,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 5060,
+      "plus_gain": 4660,
       "minus_gain": 0
     },
     {
@@ -571,17 +571,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3190,
-      "minus_gain": 0
-    },
-    {
-      "code": "7211",
-      "name": "三菱自動車",
-      "industry": "nan",
-      "incomes": 1400,
-      "pf": 43.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4350,
       "minus_gain": 0
     },
     {
@@ -651,8 +640,30 @@
       "minus_gain": 0
     },
     {
-      "code": "4694",
-      "name": "ビー・エム・エル",
+      "code": "6417",
+      "name": "ＳＡＮＫＹＯ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "7011",
+      "name": "三菱重工業",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "8802",
+      "name": "三菱地所",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -675,6 +686,17 @@
     {
       "code": "8584",
       "name": "ジャックス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "8570",
+      "name": "イオンフィナンシャルサービス",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -717,8 +739,8 @@
       "minus_gain": 0
     },
     {
-      "code": "3659",
-      "name": "ネクソン",
+      "code": "1605",
+      "name": "ＩＮＰＥＸ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -902,6 +924,17 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 8210
+    },
+    {
+      "code": "4694",
+      "name": "ビー・エム・エル",
+      "industry": "nan",
+      "incomes": -27500,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 7720
     },
     {
       "code": "5021",
