@@ -9,7 +9,7 @@
 | 頻度 | 操作 |
 |------|------|
 | **初回** | Actions で **Daily screening (cloud)** を Run workflow |
-| **平日** | 何もしない（**12:30・15:00・16:00 JST** に自動実行） |
+| **平日** | 何もしない（**12:30・15:00・16:00 JST 目標**で自動実行） |
 | **確認** | https://lalakuma.github.io/KabuRadar2/ |
 | **設定変更** | `config/config_lo.ini` を編集 → commit & push |
 
@@ -26,6 +26,13 @@
 ## 手動実行（急ぎのとき）
 
 GitHub → **Actions** → **Daily screening (cloud)** → **Run workflow**
+
+## 実行時刻の安定化（schedule guard）
+
+- `Daily screening (cloud)` は **本体処理のみ**（`workflow_dispatch` 起動）。
+- `Daily screening schedule guard` が平日 12:00-18:59 JST を 5 分間隔で監視。
+- 12:30 / 15:00 / 16:00 の各スロットで未実行を検知した場合、`daily-screening` を自動起動。
+- これにより GitHub `schedule` の遅延・取りこぼしが起きても、概ね 5〜10 分遅れで追随します。
 
 ## ローカルでやらないこと
 

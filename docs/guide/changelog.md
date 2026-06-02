@@ -2,6 +2,13 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-06 schedule 遅延対策（guard 追加）
+
+- `daily-screening.yml` から直接 `schedule` を外し、`workflow_dispatch` 専用に変更
+- 新規 `schedule-guard.yml` を追加（平日 5 分間隔で監視）
+- 12:30 / 15:00 / 16:00 JST の未実行スロットを検知したら `daily-screening` を自動起動
+- `README.md` / `docs/guide/operations.md` / `docs/guide/cloud.md` の運用手順を更新
+
 ## 2026-06 当日シグナル・特別買い・Web タブ（フェーズ A）
 
 - `config/runtime.json` … 広がり閾値・ETF・LINE トグル

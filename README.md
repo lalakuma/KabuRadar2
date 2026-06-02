@@ -7,8 +7,9 @@
 ## 本番の流れ（PC 不要）
 
 ```
-平日 12:30 / 15:00 / 16:00 JST
-  GitHub Actions → 株価更新 → 解析 → Web 公開
+平日 12:30 / 15:00 / 16:00 JST 目標
+  schedule-guard（5分間隔監視）→ daily-screening 起動
+  → 株価更新 → 解析 → Web 公開
 ```
 
 | 確認 | URL |
@@ -18,12 +19,13 @@
 | **LINE** | [cloud.md](docs/guide/cloud.md) の Secrets 設定後、自動通知 |
 
 手動実行: GitHub **Actions** → **Daily screening (cloud)** → **Run workflow**
+（自動監視は **Daily screening schedule guard**）
 
 ## ディレクトリ構成
 
 ```
 KabuRadar2/
-├── .github/workflows/   # CI + 本番 daily-screening
+├── .github/workflows/   # CI + 本番 daily-screening + schedule-guard
 ├── config/config_lo.ini # LO 戦略（SCR_JDG_RSI4REV=0）
 ├── config/config_hi.ini # HI 戦略（SCR_JDG_RSI4REV=1・12:30用）
 ├── data/kaburadar.db    # SQLite（Git LFS）

@@ -58,14 +58,15 @@ DB はすでに Git LFS でリポジトリに含まれています。
 
 | 項目 | 値 |
 |------|-----|
-| ワークフロー | `.github/workflows/daily-screening.yml` |
-| 既定 | 平日 **12:30・15:00・16:00 JST**（`30 3` / `0 6` / `0 7` UTC、月〜金） |
+| 本体ワークフロー | `.github/workflows/daily-screening.yml`（`workflow_dispatch` 起動） |
+| 監視ワークフロー | `.github/workflows/schedule-guard.yml`（平日 5 分間隔） |
+| 既定 | 平日 **12:30・15:00・16:00 JST 目標**（未実行なら guard が自動起動） |
 | 12:30 | `config/config_hi.ini`（`SCR_JDG_RSI4REV = 1`・RSI4反転でシグナル） |
 | 15:00 / 16:00 | `config/config_lo.ini`（`SCR_JDG_RSI4REV = 0`） |
 | 手動 Run workflow | `config_lo.ini`（LO） |
 | 手動 | Actions → Run workflow |
 
-時刻変更は workflow 内の `cron` を編集して push してください。
+時刻変更は `schedule-guard.yml` の監視ロジック（スロット時刻）を編集して push してください。
 
 ## 設定変更
 

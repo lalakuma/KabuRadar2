@@ -1,0 +1,96 @@
+name: Daily screening schedule guard
+
+on:
+  schedule:
+    # 平日 12:00-18:59 JST を 5 分間隔で監視（UTC 03:00-09:59）
+    - cron: "*/5 3-9 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: schedule-guard
+  cancel-in-progress: false
+
+jobs:
+  dispatch-daily-screening:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch missing slot
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const slots = [
+              { name: "12:30", minuteOfDay: 12 * 60 + 30, profile: "hi" },
+              { name: "15:00", minuteOfDay: 15 * 60, profile: "lo" },
+              { name: "16:00", minuteOfDay: 16 * 60, profile: "lo" },
+            ];
+            const checkDelayMinutes = 5;
+            const maxCatchupMinutes = 90;
+
+            const nowUtcMs = Date.now();
+            const jstMs = nowUtcMs + 9 * 60 * 60 * 1000;
+            const nowJst = new Date(jstMs);
+            const todayJst = nowJst.toISOString().slice(0, 10);
+            const nowMinuteOfDay = nowJst.getUTCHours() * 60 + nowJst.getUTCMinutes();
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const workflowId = "daily-screening.yml";
+            const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+              owner,
+              repo,
+              workflow_id: workflowId,
+              branch: "master",
+              event: "workflow_dispatch",
+              per_page: 100,
+            });
+
+            const runMinutesToday = runs
+              .map((run) => {
+                const runJst = new Date(new Date(run.created_at).getTime() + 9 * 60 * 60 * 1000);
+                return {
+                  runId: run.id,
+                  date: runJst.toISOString().slice(0, 10),
+                  minuteOfDay: runJst.getUTCHours() * 60 + runJst.getUTCMinutes(),
+                };
+              })
+              .filter((x) => x.date === todayJst);
+
+            core.info(
+              `JST now=${nowJst.toISOString()} minuteOfDay=${nowMinuteOfDay} runsToday=${runMinutesToday.length}`,
+            );
+
+            for (const slot of slots) {
+              const openMinute = slot.minuteOfDay + checkDelayMinutes;
+              const closeMinute = slot.minuteOfDay + maxCatchupMinutes;
+
+              if (nowMinuteOfDay < openMinute || nowMinuteOfDay > closeMinute) {
+                continue;
+              }
+
+              const alreadyRun = runMinutesToday.some(
+                (r) => r.minuteOfDay >= slot.minuteOfDay - 5 && r.minuteOfDay <= closeMinute,
+              );
+              if (alreadyRun) {
+                core.info(`slot ${slot.name} already covered, skip.`);
+                continue;
+              }
+
+              core.notice(`Dispatching daily-screening for missing slot ${slot.name} (${slot.profile}).`);
+              await github.rest.actions.createWorkflowDispatch({
+                owner,
+                repo,
+                workflow_id: workflowId,
+                ref: "master",
+                inputs: {
+                  job: "full",
+                  config_profile: slot.profile,
+                },
+              });
+              return;
+            }
+
+            core.info("No missing slot detected.");
