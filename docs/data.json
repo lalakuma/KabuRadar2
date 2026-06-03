@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-02T20:14:12+09:00",
+  "generated_at": "2026-06-03T17:16:42+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 2.34,
-    "wins": 57,
+    "pf": 2.392,
+    "wins": 59,
     "losses": 18,
-    "win_rate": 76.0,
-    "total_income": 282000,
-    "symbol_count": 88,
+    "win_rate": 76.62,
+    "total_income": 291600,
+    "symbol_count": 90,
     "neutral_count": 17,
-    "source_file": "Y0_PF2.34_W57L18_rate76.00_all282000.csv"
+    "source_file": "Y0_PF2.392_W59L18_rate76.62_all291600.csv"
   },
   "symbols": [
     {
@@ -21,17 +21,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 10490,
-      "minus_gain": 0
-    },
-    {
-      "code": "7701",
-      "name": "島津製作所",
-      "industry": "nan",
-      "incomes": 25900,
-      "pf": 67.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 6740,
       "minus_gain": 0
     },
     {
@@ -123,6 +112,17 @@
       "minus_gain": 0
     },
     {
+      "code": "3549",
+      "name": "クスリのアオキホールディングス",
+      "industry": "nan",
+      "incomes": 14200,
+      "pf": 39.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3979,
+      "minus_gain": 0
+    },
+    {
       "code": "4503",
       "name": "アステラス製薬",
       "industry": "nan",
@@ -186,6 +186,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 5070,
+      "minus_gain": 0
+    },
+    {
+      "code": "8194",
+      "name": "ライフコーポレーション",
+      "industry": "nan",
+      "incomes": 11500,
+      "pf": 45.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4570,
       "minus_gain": 0
     },
     {
@@ -274,6 +285,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 7680,
+      "minus_gain": 0
+    },
+    {
+      "code": "7649",
+      "name": "スギホールディングス",
+      "industry": "nan",
+      "incomes": 9800,
+      "pf": 34.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3440,
       "minus_gain": 0
     },
     {
@@ -629,6 +651,28 @@
       "minus_gain": 0
     },
     {
+      "code": "4528",
+      "name": "小野薬品工業",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6670",
       "name": "ＭＣＪ",
       "industry": "nan",
@@ -728,17 +772,6 @@
       "minus_gain": 0
     },
     {
-      "code": "3549",
-      "name": "クスリのアオキホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "1605",
       "name": "ＩＮＰＥＸ",
       "industry": "nan",
@@ -772,19 +805,8 @@
       "minus_gain": 0
     },
     {
-      "code": "7649",
-      "name": "スギホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "8194",
-      "name": "ライフコーポレーション",
+      "code": "4587",
+      "name": "ペプチドリーム",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -982,33 +1004,39 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-02",
+    "trade_date": "2026-06-03",
     "new_buy": [
       {
-        "code": "8088",
-        "name": "岩谷産業",
+        "code": "4528",
+        "name": "小野薬品工業",
         "mark": "新買",
-        "close": 1895
+        "close": 2158
       },
       {
-        "code": "8425",
-        "name": "みずほリース",
+        "code": "4587",
+        "name": "ペプチドリーム",
         "mark": "新買",
-        "close": 1244
+        "close": 1029
       }
     ],
     "sellback": [
       {
-        "code": "4204",
-        "name": "積水化学工業",
+        "code": "3549",
+        "name": "クスリのアオキホールディングス",
         "mark": "返売",
-        "close": 2328
+        "close": 3566
       },
       {
-        "code": "9602",
-        "name": "東宝",
+        "code": "7649",
+        "name": "スギホールディングス",
         "mark": "返売",
-        "close": 1270
+        "close": 2850
+      },
+      {
+        "code": "8194",
+        "name": "ライフコーポレーション",
+        "mark": "返売",
+        "close": 2515
       }
     ],
     "new_buy_count": 2
@@ -1022,10 +1050,10 @@
     "new_buy_count": 2,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 83.94,
-      "1306": 64.57
+      "1321": 78.59,
+      "1306": 52.84
     },
-    "active_rsi": 64.57,
+    "active_rsi": 52.84,
     "signal": "holding"
   },
   "runtime": {
@@ -1054,9 +1082,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/26815940054"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/26872341424"
   }
 }
