@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T17:16:42+09:00",
+  "generated_at": "2026-06-04T16:25:52+09:00",
   "mode": "LO",
   "summary": {
     "pf": 2.392,
@@ -7,8 +7,8 @@
     "losses": 18,
     "win_rate": 76.62,
     "total_income": 291600,
-    "symbol_count": 90,
-    "neutral_count": 17,
+    "symbol_count": 91,
+    "neutral_count": 18,
     "source_file": "Y0_PF2.392_W59L18_rate76.62_all291600.csv"
   },
   "symbols": [
@@ -662,8 +662,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4516",
-      "name": "日本新薬",
+      "code": "6670",
+      "name": "ＭＣＪ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -673,8 +673,8 @@
       "minus_gain": 0
     },
     {
-      "code": "6670",
-      "name": "ＭＣＪ",
+      "code": "8593",
+      "name": "三菱ＨＣキャピタル",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -763,6 +763,17 @@
     {
       "code": "8830",
       "name": "住友不動産",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "4568",
+      "name": "第一三共",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -1004,57 +1015,38 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-03",
+    "trade_date": "2026-06-04",
     "new_buy": [
       {
-        "code": "4528",
-        "name": "小野薬品工業",
+        "code": "4568",
+        "name": "第一三共",
         "mark": "新買",
-        "close": 2158
+        "close": 2392
       },
       {
-        "code": "4587",
-        "name": "ペプチドリーム",
+        "code": "8593",
+        "name": "三菱ＨＣキャピタル",
         "mark": "新買",
-        "close": 1029
+        "close": 1258
       }
     ],
-    "sellback": [
-      {
-        "code": "3549",
-        "name": "クスリのアオキホールディングス",
-        "mark": "返売",
-        "close": 3566
-      },
-      {
-        "code": "7649",
-        "name": "スギホールディングス",
-        "mark": "返売",
-        "close": 2850
-      },
-      {
-        "code": "8194",
-        "name": "ライフコーポレーション",
-        "mark": "返売",
-        "close": 2515
-      }
-    ],
+    "sellback": [],
     "new_buy_count": 2
   },
   "special": {
     "enabled": true,
-    "state": "special_long",
-    "entered_on": "2026-06-01",
-    "etf": "1306",
+    "state": "idle",
+    "entered_on": null,
+    "etf": null,
     "min_new_buy_count": 7,
     "new_buy_count": 2,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 78.59,
-      "1306": 52.84
+      "1321": 87.99,
+      "1306": 77.96
     },
-    "active_rsi": 52.84,
-    "signal": "holding"
+    "active_rsi": 77.96,
+    "signal": "sell"
   },
   "runtime": {
     "special_buy": {
@@ -1079,12 +1071,15 @@
     "actions_run_url": "https://github.com/lalakuma/KabuRadar2/actions/workflows/daily-screening.yml",
     "runtime_edit_url": "https://github.com/lalakuma/KabuRadar2/edit/master/config/runtime.json"
   },
-  "line_events": [],
+  "line_events": [
+    "【特別買い 売り】1306 RSI=78.0 >= 70",
+    "利確シグナル"
+  ],
   "run": {
     "source": "github-actions",
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/26872341424"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/26937200610"
   }
 }
