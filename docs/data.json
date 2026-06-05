@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-04T16:25:52+09:00",
+  "generated_at": "2026-06-05T16:09:00+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 2.392,
-    "wins": 59,
+    "pf": 2.427,
+    "wins": 61,
     "losses": 18,
-    "win_rate": 76.62,
-    "total_income": 291600,
-    "symbol_count": 91,
-    "neutral_count": 18,
-    "source_file": "Y0_PF2.392_W59L18_rate76.62_all291600.csv"
+    "win_rate": 77.22,
+    "total_income": 331400,
+    "symbol_count": 93,
+    "neutral_count": 19,
+    "source_file": "Y0_PF2.427_W61L18_rate77.22_all331400.csv"
   },
   "symbols": [
     {
@@ -21,6 +21,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 10490,
+      "minus_gain": 0
+    },
+    {
+      "code": "7701",
+      "name": "島津製作所",
+      "industry": "nan",
+      "incomes": 25900,
+      "pf": 67.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 6740,
       "minus_gain": 0
     },
     {
@@ -57,17 +68,6 @@
       "minus_gain": 0
     },
     {
-      "code": "7148",
-      "name": "ＦＰＧ",
-      "industry": "nan",
-      "incomes": 20200,
-      "pf": 123.7,
-      "winlose": "W2L0",
-      "win_per": 100,
-      "plus_gain": 12370,
-      "minus_gain": 0
-    },
-    {
       "code": "7164",
       "name": "全国保証",
       "industry": "nan",
@@ -87,6 +87,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 7520,
+      "minus_gain": 0
+    },
+    {
+      "code": "7011",
+      "name": "三菱重工業",
+      "industry": "nan",
+      "incomes": 15400,
+      "pf": 40.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4060,
       "minus_gain": 0
     },
     {
@@ -153,6 +164,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3710,
+      "minus_gain": 0
+    },
+    {
+      "code": "7167",
+      "name": "めぶきフィナンシャルグループ",
+      "industry": "nan",
+      "incomes": 13200,
+      "pf": 98.9,
+      "winlose": "W2L0",
+      "win_per": 100,
+      "plus_gain": 9890,
       "minus_gain": 0
     },
     {
@@ -277,6 +299,28 @@
       "minus_gain": 0
     },
     {
+      "code": "7148",
+      "name": "ＦＰＧ",
+      "industry": "nan",
+      "incomes": 10300,
+      "pf": 64.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 6459,
+      "minus_gain": 0
+    },
+    {
+      "code": "9508",
+      "name": "九州電力",
+      "industry": "nan",
+      "incomes": 10200,
+      "pf": 60.5,
+      "winlose": "W2L0",
+      "win_per": 100,
+      "plus_gain": 6050,
+      "minus_gain": 0
+    },
+    {
       "code": "1332",
       "name": "ニッスイ",
       "industry": "nan",
@@ -351,17 +395,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 6590,
-      "minus_gain": 0
-    },
-    {
-      "code": "7167",
-      "name": "めぶきフィナンシャルグループ",
-      "industry": "nan",
-      "incomes": 7500,
-      "pf": 56.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5690,
       "minus_gain": 0
     },
     {
@@ -475,17 +508,6 @@
       "minus_gain": 0
     },
     {
-      "code": "9508",
-      "name": "九州電力",
-      "industry": "nan",
-      "incomes": 4200,
-      "pf": 24.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2400,
-      "minus_gain": 0
-    },
-    {
       "code": "4912",
       "name": "ライオン",
       "industry": "nan",
@@ -494,17 +516,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2480,
-      "minus_gain": 0
-    },
-    {
-      "code": "1306",
-      "name": "野村東証指数",
-      "industry": "ETF銘柄一覧",
-      "incomes": 3600,
-      "pf": 88.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 8850,
       "minus_gain": 0
     },
     {
@@ -574,14 +585,14 @@
       "minus_gain": 0
     },
     {
-      "code": "7211",
-      "name": "三菱自動車",
-      "industry": "nan",
-      "incomes": 1500,
-      "pf": 46.6,
+      "code": "1306",
+      "name": "野村東証指数",
+      "industry": "ETF銘柄一覧",
+      "incomes": 1800,
+      "pf": 44.2,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 4660,
+      "plus_gain": 4420,
       "minus_gain": 0
     },
     {
@@ -662,6 +673,28 @@
       "minus_gain": 0
     },
     {
+      "code": "5463",
+      "name": "丸一鋼管",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6670",
       "name": "ＭＣＪ",
       "industry": "nan",
@@ -686,17 +719,6 @@
     {
       "code": "6417",
       "name": "ＳＡＮＫＹＯ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "7011",
-      "name": "三菱重工業",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -1015,22 +1037,41 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-04",
+    "trade_date": "2026-06-05",
     "new_buy": [
       {
-        "code": "4568",
-        "name": "第一三共",
+        "code": "5463",
+        "name": "丸一鋼管",
         "mark": "新買",
-        "close": 2392
+        "close": 1650
       },
       {
-        "code": "8593",
-        "name": "三菱ＨＣキャピタル",
+        "code": "6544",
+        "name": "ジャパンエレベーターサービスホールディングス",
         "mark": "新買",
-        "close": 1258
+        "close": 1662
       }
     ],
-    "sellback": [],
+    "sellback": [
+      {
+        "code": "7011",
+        "name": "三菱重工業",
+        "mark": "返売",
+        "close": 3790
+      },
+      {
+        "code": "7167",
+        "name": "めぶきフィナンシャルグループ",
+        "mark": "返売",
+        "close": 1357
+      },
+      {
+        "code": "9508",
+        "name": "九州電力",
+        "mark": "返売",
+        "close": 1643
+      }
+    ],
     "new_buy_count": 2
   },
   "special": {
@@ -1042,11 +1083,11 @@
     "new_buy_count": 2,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 87.99,
-      "1306": 77.96
+      "1321": 65.77,
+      "1306": 53.34
     },
-    "active_rsi": 77.96,
-    "signal": "sell"
+    "active_rsi": 53.34,
+    "signal": null
   },
   "runtime": {
     "special_buy": {
@@ -1071,15 +1112,12 @@
     "actions_run_url": "https://github.com/lalakuma/KabuRadar2/actions/workflows/daily-screening.yml",
     "runtime_edit_url": "https://github.com/lalakuma/KabuRadar2/edit/master/config/runtime.json"
   },
-  "line_events": [
-    "【特別買い 売り】1306 RSI=78.0 >= 70",
-    "利確シグナル"
-  ],
+  "line_events": [],
   "run": {
     "source": "github-actions",
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/26937200610"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27000802737"
   }
 }
