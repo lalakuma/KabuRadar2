@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-08T16:31:49+09:00",
+  "generated_at": "2026-06-09T15:50:09+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 2.184,
+    "pf": 1.896,
     "wins": 62,
-    "losses": 20,
-    "win_rate": 75.61,
-    "total_income": 317700,
-    "symbol_count": 94,
-    "neutral_count": 17,
-    "source_file": "Y0_PF2.184_W62L20_rate75.61_all317700.csv"
+    "losses": 23,
+    "win_rate": 72.94,
+    "total_income": 260100,
+    "symbol_count": 95,
+    "neutral_count": 16,
+    "source_file": "Y0_PF1.896_W62L23_rate72.94_all260100.csv"
   },
   "symbols": [
     {
       "code": "9024",
       "name": "西武ホールディングス",
       "industry": "nan",
-      "incomes": 44000,
-      "pf": 104.9,
-      "winlose": "W1L0",
-      "win_per": 100,
+      "incomes": 28700,
+      "pf": 1.9,
+      "winlose": "W1L1",
+      "win_per": 50,
       "plus_gain": 10490,
-      "minus_gain": 0
+      "minus_gain": 5420
     },
     {
       "code": "7701",
@@ -761,17 +761,6 @@
       "minus_gain": 0
     },
     {
-      "code": "8584",
-      "name": "ジャックス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "8570",
       "name": "イオンフィナンシャルサービス",
       "industry": "nan",
@@ -794,6 +783,17 @@
       "minus_gain": 0
     },
     {
+      "code": "9090",
+      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "4568",
       "name": "第一三共",
       "industry": "nan",
@@ -807,17 +807,6 @@
     {
       "code": "1605",
       "name": "ＩＮＰＥＸ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "9022",
-      "name": "東海旅客鉄道",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -970,6 +959,17 @@
       "minus_gain": 4490
     },
     {
+      "code": "9022",
+      "name": "東海旅客鉄道",
+      "industry": "nan",
+      "incomes": -14800,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 4270
+    },
+    {
       "code": "9602",
       "name": "東宝",
       "industry": "nan",
@@ -1025,6 +1025,17 @@
       "minus_gain": 7720
     },
     {
+      "code": "8584",
+      "name": "ジャックス",
+      "industry": "nan",
+      "incomes": -27500,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 7909
+    },
+    {
       "code": "5021",
       "name": "コスモエネルギーホールディングス",
       "industry": "nan",
@@ -1048,33 +1059,33 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-08",
+    "trade_date": "2026-06-09",
     "new_buy": [
       {
-        "code": "4403",
-        "name": "日油",
+        "code": "9090",
+        "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
         "mark": "新買",
-        "close": 2593
+        "close": 747
       }
     ],
     "sellback": [
       {
-        "code": "1414",
-        "name": "ショーボンドホールディングス",
+        "code": "8584",
+        "name": "ジャックス",
         "mark": "返売",
-        "close": 1256
+        "close": 3475
       },
       {
-        "code": "3360",
-        "name": "シップヘルスケアホールディングス",
+        "code": "9022",
+        "name": "東海旅客鉄道",
         "mark": "返売",
-        "close": 2075
+        "close": 3463
       },
       {
-        "code": "8593",
-        "name": "三菱ＨＣキャピタル",
+        "code": "9024",
+        "name": "西武ホールディングス",
         "mark": "返売",
-        "close": 1298
+        "close": 2825
       }
     ],
     "new_buy_count": 1
@@ -1088,10 +1099,10 @@
     "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 50.98,
-      "1306": 53.34
+      "1321": 26.55,
+      "1306": 25.91
     },
-    "active_rsi": 53.34,
+    "active_rsi": 25.91,
     "signal": null
   },
   "runtime": {
@@ -1123,6 +1134,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27122521594"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27188963930"
   }
 }
