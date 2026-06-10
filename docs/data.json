@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-09T15:50:09+09:00",
+  "generated_at": "2026-06-10T16:09:43+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 1.896,
-    "wins": 62,
-    "losses": 23,
-    "win_rate": 72.94,
-    "total_income": 260100,
+    "pf": 1.85,
+    "wins": 65,
+    "losses": 24,
+    "win_rate": 73.03,
+    "total_income": 249600,
     "symbol_count": 95,
-    "neutral_count": 16,
-    "source_file": "Y0_PF1.896_W62L23_rate72.94_all260100.csv"
+    "neutral_count": 14,
+    "source_file": "Y0_PF1.85_W65L24_rate73.03_all249600.csv"
   },
   "symbols": [
     {
@@ -71,11 +71,11 @@
       "code": "7164",
       "name": "全国保証",
       "industry": "nan",
-      "incomes": 17000,
-      "pf": 54.5,
-      "winlose": "W1L0",
+      "incomes": 19900,
+      "pf": 64.6,
+      "winlose": "W2L0",
       "win_per": 100,
-      "plus_gain": 5450,
+      "plus_gain": 6459,
       "minus_gain": 0
     },
     {
@@ -398,17 +398,6 @@
       "minus_gain": 0
     },
     {
-      "code": "1878",
-      "name": "大東建託",
-      "industry": "nan",
-      "incomes": 7500,
-      "pf": 21.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2100,
-      "minus_gain": 0
-    },
-    {
       "code": "8136",
       "name": "サンリオ",
       "industry": "nan",
@@ -461,6 +450,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 4490,
+      "minus_gain": 0
+    },
+    {
+      "code": "8570",
+      "name": "イオンフィナンシャルサービス",
+      "industry": "nan",
+      "incomes": 5600,
+      "pf": 37.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3720,
       "minus_gain": 0
     },
     {
@@ -560,6 +560,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2620,
+      "minus_gain": 0
+    },
+    {
+      "code": "8425",
+      "name": "みずほリース",
+      "industry": "nan",
+      "incomes": 2900,
+      "pf": 22.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2280,
       "minus_gain": 0
     },
     {
@@ -717,28 +728,6 @@
       "minus_gain": 0
     },
     {
-      "code": "8425",
-      "name": "みずほリース",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "8802",
-      "name": "三菱地所",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "4403",
       "name": "日油",
       "industry": "nan",
@@ -752,17 +741,6 @@
     {
       "code": "7105",
       "name": "三菱ロジスネクスト",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "8570",
-      "name": "イオンフィナンシャルサービス",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -796,6 +774,17 @@
     {
       "code": "4568",
       "name": "第一三共",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "1662",
+      "name": "石油資源開発",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -959,6 +948,17 @@
       "minus_gain": 4490
     },
     {
+      "code": "1878",
+      "name": "大東建託",
+      "industry": "nan",
+      "incomes": -14400,
+      "pf": 0.3,
+      "winlose": "W1L1",
+      "win_per": 50,
+      "plus_gain": 2100,
+      "minus_gain": 7090
+    },
+    {
       "code": "9022",
       "name": "東海旅客鉄道",
       "industry": "nan",
@@ -1059,33 +1059,39 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-09",
+    "trade_date": "2026-06-10",
     "new_buy": [
       {
-        "code": "9090",
-        "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+        "code": "1662",
+        "name": "石油資源開発",
         "mark": "新買",
-        "close": 747
+        "close": 1639
       }
     ],
     "sellback": [
       {
-        "code": "8584",
-        "name": "ジャックス",
+        "code": "1878",
+        "name": "大東建託",
         "mark": "返売",
-        "close": 3475
+        "close": 3087
       },
       {
-        "code": "9022",
-        "name": "東海旅客鉄道",
+        "code": "7164",
+        "name": "全国保証",
         "mark": "返売",
-        "close": 3463
+        "close": 2865
       },
       {
-        "code": "9024",
-        "name": "西武ホールディングス",
+        "code": "8425",
+        "name": "みずほリース",
         "mark": "返売",
-        "close": 2825
+        "close": 1273
+      },
+      {
+        "code": "8570",
+        "name": "イオンフィナンシャルサービス",
+        "mark": "返売",
+        "close": 1506
       }
     ],
     "new_buy_count": 1
@@ -1099,10 +1105,10 @@
     "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 26.55,
-      "1306": 25.91
+      "1321": 44.69,
+      "1306": 43.35
     },
-    "active_rsi": 25.91,
+    "active_rsi": 43.35,
     "signal": null
   },
   "runtime": {
@@ -1134,6 +1140,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27188963930"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27259427482"
   }
 }
