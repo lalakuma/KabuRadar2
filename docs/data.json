@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-10T16:09:43+09:00",
+  "generated_at": "2026-06-11T16:32:26+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 1.85,
+    "pf": 1.851,
     "wins": 65,
     "losses": 24,
     "win_rate": 73.03,
-    "total_income": 249600,
-    "symbol_count": 95,
-    "neutral_count": 14,
-    "source_file": "Y0_PF1.85_W65L24_rate73.03_all249600.csv"
+    "total_income": 250500,
+    "symbol_count": 96,
+    "neutral_count": 15,
+    "source_file": "Y0_PF1.851_W65L24_rate73.03_all250500.csv"
   },
   "symbols": [
     {
@@ -123,6 +123,17 @@
       "minus_gain": 0
     },
     {
+      "code": "9843",
+      "name": "ニトリホールディングス",
+      "industry": "nan",
+      "incomes": 14600,
+      "pf": 58.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5840,
+      "minus_gain": 0
+    },
+    {
       "code": "3549",
       "name": "クスリのアオキホールディングス",
       "industry": "nan",
@@ -143,17 +154,6 @@
       "win_per": 50,
       "plus_gain": 6530,
       "minus_gain": 340
-    },
-    {
-      "code": "9843",
-      "name": "ニトリホールディングス",
-      "industry": "nan",
-      "incomes": 13600,
-      "pf": 54.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5440,
-      "minus_gain": 0
     },
     {
       "code": "7832",
@@ -610,11 +610,11 @@
       "code": "1306",
       "name": "野村東証指数",
       "industry": "ETF銘柄一覧",
-      "incomes": 2100,
-      "pf": 51.6,
+      "incomes": 2000,
+      "pf": 49.1,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 5160,
+      "plus_gain": 4910,
       "minus_gain": 0
     },
     {
@@ -708,6 +708,17 @@
     {
       "code": "6670",
       "name": "ＭＣＪ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "2327",
+      "name": "新日鉄住金ソリューションズ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -1059,41 +1070,16 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-10",
+    "trade_date": "2026-06-11",
     "new_buy": [
       {
-        "code": "1662",
-        "name": "石油資源開発",
+        "code": "2327",
+        "name": "新日鉄住金ソリューションズ",
         "mark": "新買",
-        "close": 1639
+        "close": 3232
       }
     ],
-    "sellback": [
-      {
-        "code": "1878",
-        "name": "大東建託",
-        "mark": "返売",
-        "close": 3087
-      },
-      {
-        "code": "7164",
-        "name": "全国保証",
-        "mark": "返売",
-        "close": 2865
-      },
-      {
-        "code": "8425",
-        "name": "みずほリース",
-        "mark": "返売",
-        "close": 1273
-      },
-      {
-        "code": "8570",
-        "name": "イオンフィナンシャルサービス",
-        "mark": "返売",
-        "close": 1506
-      }
-    ],
+    "sellback": [],
     "new_buy_count": 1
   },
   "special": {
@@ -1105,10 +1091,10 @@
     "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 44.69,
-      "1306": 43.35
+      "1321": 35.14,
+      "1306": 31.3
     },
-    "active_rsi": 43.35,
+    "active_rsi": 31.3,
     "signal": null
   },
   "runtime": {
@@ -1140,6 +1126,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27259427482"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27331058929"
   }
 }
