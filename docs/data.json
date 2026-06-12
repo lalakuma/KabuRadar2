@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-11T16:32:26+09:00",
+  "generated_at": "2026-06-12T16:23:49+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 1.851,
-    "wins": 65,
-    "losses": 24,
-    "win_rate": 73.03,
-    "total_income": 250500,
+    "pf": 1.701,
+    "wins": 66,
+    "losses": 25,
+    "win_rate": 72.53,
+    "total_income": 207100,
     "symbol_count": 96,
-    "neutral_count": 15,
-    "source_file": "Y0_PF1.851_W65L24_rate73.03_all250500.csv"
+    "neutral_count": 14,
+    "source_file": "Y0_PF1.701_W66L25_rate72.53_all207100.csv"
   },
   "symbols": [
     {
@@ -112,6 +112,17 @@
       "minus_gain": 0
     },
     {
+      "code": "8098",
+      "name": "稲畑産業",
+      "industry": "nan",
+      "incomes": 15000,
+      "pf": 38.3,
+      "winlose": "W2L0",
+      "win_per": 100,
+      "plus_gain": 3829,
+      "minus_gain": 0
+    },
+    {
       "code": "4523",
       "name": "エーザイ",
       "industry": "nan",
@@ -120,17 +131,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3120,
-      "minus_gain": 0
-    },
-    {
-      "code": "9843",
-      "name": "ニトリホールディングス",
-      "industry": "nan",
-      "incomes": 14600,
-      "pf": 58.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5840,
       "minus_gain": 0
     },
     {
@@ -266,17 +266,6 @@
       "minus_gain": 0
     },
     {
-      "code": "2782",
-      "name": "セリア",
-      "industry": "nan",
-      "incomes": 11000,
-      "pf": 30.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3090,
-      "minus_gain": 0
-    },
-    {
       "code": "8133",
       "name": "伊藤忠エネクス",
       "industry": "nan",
@@ -343,14 +332,14 @@
       "minus_gain": 0
     },
     {
-      "code": "8098",
-      "name": "稲畑産業",
+      "code": "4403",
+      "name": "日油",
       "industry": "nan",
-      "incomes": 9000,
-      "pf": 22.7,
+      "incomes": 9100,
+      "pf": 33.9,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 2270,
+      "plus_gain": 3390,
       "minus_gain": 0
     },
     {
@@ -563,17 +552,6 @@
       "minus_gain": 0
     },
     {
-      "code": "8425",
-      "name": "みずほリース",
-      "industry": "nan",
-      "incomes": 2900,
-      "pf": 22.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2280,
-      "minus_gain": 0
-    },
-    {
       "code": "5401",
       "name": "日本製鉄",
       "industry": "nan",
@@ -582,6 +560,17 @@
       "winlose": "W2L0",
       "win_per": 100,
       "plus_gain": 5110,
+      "minus_gain": 0
+    },
+    {
+      "code": "8425",
+      "name": "みずほリース",
+      "industry": "nan",
+      "incomes": 2900,
+      "pf": 22.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2280,
       "minus_gain": 0
     },
     {
@@ -607,17 +596,6 @@
       "minus_gain": 0
     },
     {
-      "code": "1306",
-      "name": "野村東証指数",
-      "industry": "ETF銘柄一覧",
-      "incomes": 2000,
-      "pf": 49.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4910,
-      "minus_gain": 0
-    },
-    {
       "code": "8572",
       "name": "アコム",
       "industry": "nan",
@@ -640,17 +618,6 @@
       "minus_gain": 0
     },
     {
-      "code": "5411",
-      "name": "ＪＦＥホールディングス",
-      "industry": "nan",
-      "incomes": 1100,
-      "pf": 6.3,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 630,
-      "minus_gain": 0
-    },
-    {
       "code": "2502",
       "name": "アサヒグループホールディングス",
       "industry": "nan",
@@ -662,8 +629,41 @@
       "minus_gain": 0
     },
     {
-      "code": "8088",
-      "name": "岩谷産業",
+      "code": "5411",
+      "name": "ＪＦＥホールディングス",
+      "industry": "nan",
+      "incomes": 1100,
+      "pf": 6.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 630,
+      "minus_gain": 0
+    },
+    {
+      "code": "1306",
+      "name": "野村東証指数",
+      "industry": "ETF銘柄一覧",
+      "incomes": 700,
+      "pf": 17.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1720,
+      "minus_gain": 0
+    },
+    {
+      "code": "6670",
+      "name": "ＭＣＪ",
+      "industry": "nan",
+      "incomes": 600,
+      "pf": 2.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 270,
+      "minus_gain": 0
+    },
+    {
+      "code": "4568",
+      "name": "第一三共",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -695,19 +695,8 @@
       "minus_gain": 0
     },
     {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6670",
-      "name": "ＭＣＪ",
+      "code": "4516",
+      "name": "日本新薬",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -728,8 +717,8 @@
       "minus_gain": 0
     },
     {
-      "code": "6417",
-      "name": "ＳＡＮＫＹＯ",
+      "code": "8088",
+      "name": "岩谷産業",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -739,8 +728,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4403",
-      "name": "日油",
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -761,8 +750,8 @@
       "minus_gain": 0
     },
     {
-      "code": "8830",
-      "name": "住友不動産",
+      "code": "4974",
+      "name": "タカラバイオ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -772,30 +761,8 @@
       "minus_gain": 0
     },
     {
-      "code": "9090",
-      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "4568",
-      "name": "第一三共",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "1662",
-      "name": "石油資源開発",
+      "code": "6417",
+      "name": "ＳＡＮＫＹＯ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -827,15 +794,26 @@
       "minus_gain": 0
     },
     {
-      "code": "1911",
-      "name": "住友林業",
+      "code": "1662",
+      "name": "石油資源開発",
       "industry": "nan",
-      "incomes": -700,
+      "incomes": 0,
       "pf": 0.0,
-      "winlose": "W0L1",
+      "winlose": "W0L0",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 540
+      "minus_gain": 0
+    },
+    {
+      "code": "9090",
+      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
     },
     {
       "code": "3088",
@@ -847,6 +825,17 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 290
+    },
+    {
+      "code": "1911",
+      "name": "住友林業",
+      "industry": "nan",
+      "incomes": -700,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 540
     },
     {
       "code": "2379",
@@ -1047,6 +1036,28 @@
       "minus_gain": 7909
     },
     {
+      "code": "3038",
+      "name": "神戸物産",
+      "industry": "nan",
+      "incomes": -37400,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 13380
+    },
+    {
+      "code": "8830",
+      "name": "住友不動産",
+      "industry": "nan",
+      "incomes": -41200,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 11540
+    },
+    {
       "code": "5021",
       "name": "コスモエネルギーホールディングス",
       "industry": "nan",
@@ -1056,30 +1067,44 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 12250
-    },
-    {
-      "code": "3038",
-      "name": "神戸物産",
-      "industry": "nan",
-      "incomes": -46400,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 16600
     }
   ],
   "today": {
-    "trade_date": "2026-06-11",
+    "trade_date": "2026-06-12",
     "new_buy": [
       {
-        "code": "2327",
-        "name": "新日鉄住金ソリューションズ",
+        "code": "4974",
+        "name": "タカラバイオ",
         "mark": "新買",
-        "close": 3232
+        "close": 0
       }
     ],
-    "sellback": [],
+    "sellback": [
+      {
+        "code": "4403",
+        "name": "日油",
+        "mark": "返売",
+        "close": 2684
+      },
+      {
+        "code": "6670",
+        "name": "ＭＣＪ",
+        "mark": "返売",
+        "close": 2186
+      },
+      {
+        "code": "8098",
+        "name": "稲畑産業",
+        "mark": "返売",
+        "close": 3845
+      },
+      {
+        "code": "8830",
+        "name": "住友不動産",
+        "mark": "返売",
+        "close": 3569
+      }
+    ],
     "new_buy_count": 1
   },
   "special": {
@@ -1091,10 +1116,10 @@
     "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 35.14,
-      "1306": 31.3
+      "1321": 34.62,
+      "1306": 28.37
     },
-    "active_rsi": 31.3,
+    "active_rsi": 28.37,
     "signal": null
   },
   "runtime": {
@@ -1126,6 +1151,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27331058929"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27401066722"
   }
 }
