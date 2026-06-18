@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-17T17:29:16+09:00",
+  "generated_at": "2026-06-18T17:08:33+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 1.715,
-    "wins": 69,
+    "pf": 1.808,
+    "wins": 72,
     "losses": 26,
-    "win_rate": 72.63,
-    "total_income": 202700,
+    "win_rate": 73.47,
+    "total_income": 234000,
     "symbol_count": 98,
-    "neutral_count": 13,
-    "source_file": "Y0_PF1.715_W69L26_rate72.63_all202700.csv"
+    "neutral_count": 10,
+    "source_file": "Y0_PF1.808_W72L26_rate73.47_all234000.csv"
   },
   "symbols": [
     {
@@ -200,6 +200,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4528",
+      "name": "小野薬品工業",
+      "industry": "nan",
+      "incomes": 11900,
+      "pf": 52.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5230,
+      "minus_gain": 0
+    },
+    {
       "code": "3659",
       "name": "ネクソン",
       "industry": "nan",
@@ -329,6 +340,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3440,
+      "minus_gain": 0
+    },
+    {
+      "code": "3391",
+      "name": "ツルハホールディングス",
+      "industry": "nan",
+      "incomes": 9200,
+      "pf": 43.5,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4350,
       "minus_gain": 0
     },
     {
@@ -618,6 +640,17 @@
       "minus_gain": 0
     },
     {
+      "code": "8088",
+      "name": "岩谷産業",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 9.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 940,
+      "minus_gain": 0
+    },
+    {
       "code": "8572",
       "name": "アコム",
       "industry": "nan",
@@ -637,17 +670,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1560,
-      "minus_gain": 0
-    },
-    {
-      "code": "1306",
-      "name": "野村東証指数",
-      "industry": "ETF銘柄一覧",
-      "incomes": 1300,
-      "pf": 31.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3190,
       "minus_gain": 0
     },
     {
@@ -673,6 +695,17 @@
       "minus_gain": 0
     },
     {
+      "code": "1306",
+      "name": "野村東証指数",
+      "industry": "ETF銘柄一覧",
+      "incomes": 900,
+      "pf": 22.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2210,
+      "minus_gain": 0
+    },
+    {
       "code": "6670",
       "name": "ＭＣＪ",
       "industry": "nan",
@@ -681,28 +714,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 270,
-      "minus_gain": 0
-    },
-    {
-      "code": "4528",
-      "name": "小野薬品工業",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "4516",
-      "name": "日本新薬",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
       "minus_gain": 0
     },
     {
@@ -719,17 +730,6 @@
     {
       "code": "4686",
       "name": "ジャストシステム",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "8088",
-      "name": "岩谷産業",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -805,8 +805,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4587",
-      "name": "ペプチドリーム",
+      "code": "6758",
+      "name": "ソニーグループ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -849,6 +849,17 @@
       "minus_gain": 540
     },
     {
+      "code": "4587",
+      "name": "ペプチドリーム",
+      "industry": "nan",
+      "incomes": -1000,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 980
+    },
+    {
       "code": "2379",
       "name": "ディップ",
       "industry": "nan",
@@ -869,17 +880,6 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 470
-    },
-    {
-      "code": "3391",
-      "name": "ツルハホールディングス",
-      "industry": "nan",
-      "incomes": -1700,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 800
     },
     {
       "code": "5019",
@@ -1061,12 +1061,12 @@
       "code": "3038",
       "name": "神戸物産",
       "industry": "nan",
-      "incomes": -37400,
+      "incomes": -29300,
       "pf": 0.0,
       "winlose": "W0L1",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 13380
+      "minus_gain": 10480
     },
     {
       "code": "8830",
@@ -1092,48 +1092,36 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-17",
+    "trade_date": "2026-06-18",
     "new_buy": [
       {
-        "code": "2317",
-        "name": "システナ",
+        "code": "6758",
+        "name": "ソニーグループ",
         "mark": "新買",
-        "close": 396
-      },
-      {
-        "code": "4686",
-        "name": "ジャストシステム",
-        "mark": "新買",
-        "close": 3765
+        "close": 3250
       }
     ],
     "sellback": [
       {
-        "code": "4523",
-        "name": "エーザイ",
+        "code": "4528",
+        "name": "小野薬品工業",
         "mark": "返売",
-        "close": 3829
+        "close": 2277
       },
       {
-        "code": "4568",
-        "name": "第一三共",
+        "code": "4587",
+        "name": "ペプチドリーム",
         "mark": "返売",
-        "close": 2595
+        "close": 1019
       },
       {
-        "code": "5463",
-        "name": "丸一鋼管",
+        "code": "8088",
+        "name": "岩谷産業",
         "mark": "返売",
-        "close": 1671
-      },
-      {
-        "code": "9090",
-        "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
-        "mark": "返売",
-        "close": 772
+        "close": 1913
       }
     ],
-    "new_buy_count": 2
+    "new_buy_count": 1
   },
   "special": {
     "enabled": true,
@@ -1141,13 +1129,13 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 2,
+    "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 59.7,
-      "1306": 51.92
+      "1321": 80.95,
+      "1306": 75.81
     },
-    "active_rsi": 51.92,
+    "active_rsi": 75.81,
     "signal": null
   },
   "runtime": {
@@ -1179,6 +1167,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27675953831"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27745648303"
   }
 }
