@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-18T17:08:33+09:00",
+  "generated_at": "2026-06-19T17:32:45+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 1.808,
-    "wins": 72,
+    "pf": 1.852,
+    "wins": 71,
     "losses": 26,
-    "win_rate": 73.47,
-    "total_income": 234000,
+    "win_rate": 73.2,
+    "total_income": 234600,
     "symbol_count": 98,
-    "neutral_count": 10,
-    "source_file": "Y0_PF1.808_W72L26_rate73.47_all234000.csv"
+    "neutral_count": 11,
+    "source_file": "Y0_PF1.852_W71L26_rate73.20_all234600.csv"
   },
   "symbols": [
     {
@@ -164,17 +164,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3540,
-      "minus_gain": 0
-    },
-    {
-      "code": "1419",
-      "name": "タマホーム",
-      "industry": "nan",
-      "incomes": 13500,
-      "pf": 37.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3710,
       "minus_gain": 0
     },
     {
@@ -343,17 +332,6 @@
       "minus_gain": 0
     },
     {
-      "code": "3391",
-      "name": "ツルハホールディングス",
-      "industry": "nan",
-      "incomes": 9200,
-      "pf": 43.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4350,
-      "minus_gain": 0
-    },
-    {
       "code": "4403",
       "name": "日油",
       "industry": "nan",
@@ -516,6 +494,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2080,
+      "minus_gain": 0
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 4600,
+      "pf": 26.9,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2690,
       "minus_gain": 0
     },
     {
@@ -698,11 +687,11 @@
       "code": "1306",
       "name": "野村東証指数",
       "industry": "ETF銘柄一覧",
-      "incomes": 900,
-      "pf": 22.1,
+      "incomes": 800,
+      "pf": 19.7,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 2210,
+      "plus_gain": 1970,
       "minus_gain": 0
     },
     {
@@ -714,6 +703,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 270,
+      "minus_gain": 0
+    },
+    {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
       "minus_gain": 0
     },
     {
@@ -730,17 +730,6 @@
     {
       "code": "4686",
       "name": "ジャストシステム",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -785,6 +774,17 @@
     {
       "code": "6417",
       "name": "ＳＡＮＫＹＯ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "1419",
+      "name": "タマホーム",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -937,6 +937,17 @@
       "minus_gain": 5950
     },
     {
+      "code": "3038",
+      "name": "神戸物産",
+      "industry": "nan",
+      "incomes": -10500,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 3760
+    },
+    {
       "code": "2168",
       "name": "パソナグループ",
       "industry": "nan",
@@ -1058,17 +1069,6 @@
       "minus_gain": 7909
     },
     {
-      "code": "3038",
-      "name": "神戸物産",
-      "industry": "nan",
-      "incomes": -29300,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 10480
-    },
-    {
       "code": "8830",
       "name": "住友不動産",
       "industry": "nan",
@@ -1092,36 +1092,17 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-18",
-    "new_buy": [
-      {
-        "code": "6758",
-        "name": "ソニーグループ",
-        "mark": "新買",
-        "close": 3250
-      }
-    ],
+    "trade_date": "2026-06-19",
+    "new_buy": [],
     "sellback": [
       {
-        "code": "4528",
-        "name": "小野薬品工業",
+        "code": "6544",
+        "name": "ジャパンエレベーターサービスホールディングス",
         "mark": "返売",
-        "close": 2277
-      },
-      {
-        "code": "4587",
-        "name": "ペプチドリーム",
-        "mark": "返売",
-        "close": 1019
-      },
-      {
-        "code": "8088",
-        "name": "岩谷産業",
-        "mark": "返売",
-        "close": 1913
+        "close": 1708
       }
     ],
-    "new_buy_count": 1
+    "new_buy_count": 0
   },
   "special": {
     "enabled": true,
@@ -1129,13 +1110,13 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 80.95,
-      "1306": 75.81
+      "1321": 84.18,
+      "1306": 81.93
     },
-    "active_rsi": 75.81,
+    "active_rsi": 81.93,
     "signal": null
   },
   "runtime": {
@@ -1167,6 +1148,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27745648303"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27814733662"
   }
 }
