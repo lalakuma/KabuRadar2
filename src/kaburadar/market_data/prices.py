@@ -28,6 +28,7 @@ MENU_SPECS = {
     "3": FetchSpec("30日", "day", 30),
     "4": FetchSpec("100日", "day", 100),
     "5": FetchSpec("5年", "year", 5),
+    "6": FetchSpec("5日", "day", 5),
 }
 
 
@@ -88,10 +89,10 @@ def _pick_spec_with_menu() -> FetchSpec:
         print(f"  {key}. {spec.label}")
 
     while True:
-        choice = input("番号を入力してください [1-5]: ").strip()
+        choice = input("番号を入力してください [1-6]: ").strip()
         if choice in MENU_SPECS:
             return MENU_SPECS[choice]
-        print("入力エラー: 1〜5 の番号を指定してください。")
+        print("入力エラー: 1〜6 の番号を指定してください。")
 
 
 def _pick_spec_from_args(choice: str | None) -> FetchSpec:
@@ -146,7 +147,7 @@ def main() -> int:
     parser.add_argument(
         "--menu",
         choices=list(MENU_SPECS.keys()),
-        help="期間を番号指定で直接実行 (1=1日,2=10日,3=30日,4=100日,5=5年)",
+        help="期間を番号指定で直接実行 (1=1日,2=10日,3=30日,4=100日,5=5年,6=5日)",
     )
     args = parser.parse_args()
     spec = _pick_spec_from_args(args.menu)

@@ -10,7 +10,7 @@
 平日 12:30 / 15:00 / 16:00 JST（1日3回・設定切替あり）
   → GitHub Actions (Ubuntu)
   → git lfs pull で data/kaburadar.db を取得
-  → yfinance で株価更新 → SQLite に書込
+  → yfinance で過去5日分を取得 → SQLite に書込
   → 全銘柄バックテスト → 集計
   → docs/data.json 生成
   → DB + JSON を commit & push

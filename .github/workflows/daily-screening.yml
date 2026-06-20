@@ -77,11 +77,11 @@ jobs:
             echo "Using config_lo.ini (RSI4反転=0)"
           fi
 
-      - name: Update prices (1 day)
+      - name: Update prices (5 days)
         if: env.KABURADAR_JOB == 'full'
         env:
           PYTHONPATH: src
-        run: python src/kaburadar/cli/update_prices.py --menu 1
+        run: python src/kaburadar/cli/update_prices.py --menu 6
 
       - name: Analyze all symbols
         if: env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'analyze'

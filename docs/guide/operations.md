@@ -16,7 +16,7 @@
 ## 自動処理の内容（Actions）
 
 ```
-株価更新 (yfinance)
+株価更新 (yfinance・過去5日)
   → 全銘柄バックテスト
   → docs/data.json 生成
   → data/kaburadar.db + JSON を commit & push

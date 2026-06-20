@@ -154,6 +154,7 @@ bat\screening_notify.bat
 | 3 | 30 日 |
 | 4 | 100 日 |
 | 5 | 5 年 |
+| 6 | 5 日（Actions 本番で使用） |
 
 CLI から番号指定する例:
 

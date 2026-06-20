@@ -2,6 +2,11 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-06 株価更新を過去5日分に変更
+
+- `update_prices.py --menu 6` … 過去5日（yfinance `period=5d`）
+- Actions `daily-screening` の株価更新を `--menu 1` から `--menu 6` に変更
+
 ## 2026-06 schedule 遅延対策（guard 強化）
 
 - `daily-screening.yml` の `schedule`（12:30 / 15:00 / 16:00 JST）を復活
