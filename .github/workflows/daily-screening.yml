@@ -1,6 +1,13 @@
 name: Daily screening (cloud)
 
 on:
+  schedule:
+    # 平日 12:30 JST (UTC+9) = 03:30 UTC
+    - cron: "30 3 * * 1-5"
+    # 平日 15:00 JST (UTC+9) = 06:00 UTC
+    - cron: "0 6 * * 1-5"
+    # 平日 16:00 JST (UTC+9) = 07:00 UTC
+    - cron: "0 7 * * 1-5"
   workflow_dispatch:
     inputs:
       job:
@@ -56,7 +63,12 @@ jobs:
           if [ -z "$JOB" ]; then JOB="full"; fi
           echo "KABURADAR_JOB=$JOB" >> "$GITHUB_ENV"
           PROFILE="${{ github.event.inputs.config_profile }}"
-          if [ -z "$PROFILE" ]; then PROFILE="lo"; fi
+          if [ -z "$PROFILE" ]; then
+            case "${{ github.event.schedule }}" in
+              "30 3 * * 1-5") PROFILE="hi" ;;
+              *) PROFILE="lo" ;;
+            esac
+          fi
           if [ "$PROFILE" = "hi" ]; then
             echo "KABURADAR_CONFIG=config/config_hi.ini" >> "$GITHUB_ENV"
             echo "Using config_hi.ini (RSI4反転=1)"

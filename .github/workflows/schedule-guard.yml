@@ -2,7 +2,13 @@ name: Daily screening schedule guard
 
 on:
   schedule:
-    # 平日 12:00-18:59 JST を 5 分間隔で監視（UTC 03:00-09:59）
+    # 各スロット直後 + 遅延追随用（JST）
+    - cron: "35 3 * * 1-5"   # 12:35
+    - cron: "5 6 * * 1-5"    # 15:05
+    - cron: "5 7 * * 1-5"    # 16:05
+    - cron: "35 8 * * 1-5"   # 17:35
+    - cron: "5 9 * * 1-5"    # 18:05
+    # 上記以外の取りこぼし追随（UTC 03:00-09:59 = JST 12:00-18:59）
     - cron: "*/5 3-9 * * 1-5"
   workflow_dispatch:
 
@@ -23,12 +29,12 @@ jobs:
         with:
           script: |
             const slots = [
-              { name: "12:30", minuteOfDay: 12 * 60 + 30, profile: "hi" },
-              { name: "15:00", minuteOfDay: 15 * 60, profile: "lo" },
-              { name: "16:00", minuteOfDay: 16 * 60, profile: "lo" },
+              { name: "12:30", profile: "hi", minuteOfDay: 12 * 60 + 30, coverStart: 12 * 60 + 25, coverEnd: 14 * 60 + 54 },
+              { name: "15:00", profile: "lo", minuteOfDay: 15 * 60, coverStart: 14 * 60 + 55, coverEnd: 15 * 60 + 54 },
+              { name: "16:00", profile: "lo", minuteOfDay: 16 * 60, coverStart: 15 * 60 + 55, coverEnd: 19 * 60 },
             ];
             const checkDelayMinutes = 5;
-            const maxCatchupMinutes = 90;
+            const dispatchEndMinute = 19 * 60;
 
             const nowUtcMs = Date.now();
             const jstMs = nowUtcMs + 9 * 60 * 60 * 1000;
@@ -44,7 +50,6 @@ jobs:
               repo,
               workflow_id: workflowId,
               branch: "master",
-              event: "workflow_dispatch",
               per_page: 100,
             });
 
@@ -53,6 +58,7 @@ jobs:
                 const runJst = new Date(new Date(run.created_at).getTime() + 9 * 60 * 60 * 1000);
                 return {
                   runId: run.id,
+                  event: run.event,
                   date: runJst.toISOString().slice(0, 10),
                   minuteOfDay: runJst.getUTCHours() * 60 + runJst.getUTCMinutes(),
                 };
@@ -63,16 +69,19 @@ jobs:
               `JST now=${nowJst.toISOString()} minuteOfDay=${nowMinuteOfDay} runsToday=${runMinutesToday.length}`,
             );
 
+            if (nowMinuteOfDay > dispatchEndMinute) {
+              core.info("Outside dispatch window (after 19:00 JST).");
+              return;
+            }
+
             for (const slot of slots) {
               const openMinute = slot.minuteOfDay + checkDelayMinutes;
-              const closeMinute = slot.minuteOfDay + maxCatchupMinutes;
-
-              if (nowMinuteOfDay < openMinute || nowMinuteOfDay > closeMinute) {
+              if (nowMinuteOfDay < openMinute) {
                 continue;
               }
 
               const alreadyRun = runMinutesToday.some(
-                (r) => r.minuteOfDay >= slot.minuteOfDay - 5 && r.minuteOfDay <= closeMinute,
+                (r) => r.minuteOfDay >= slot.coverStart && r.minuteOfDay <= slot.coverEnd,
               );
               if (alreadyRun) {
                 core.info(`slot ${slot.name} already covered, skip.`);

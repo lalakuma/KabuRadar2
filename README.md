@@ -7,8 +7,8 @@
 ## 本番の流れ（PC 不要）
 
 ```
-平日 12:30 / 15:00 / 16:00 JST 目標
-  schedule-guard（5分間隔監視）→ daily-screening 起動
+平日 12:30 / 15:00 / 16:00 JST
+  daily-screening（schedule）+ schedule-guard（未実行補完）
   → 株価更新 → 解析 → Web 公開
 ```
 

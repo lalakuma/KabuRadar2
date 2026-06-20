@@ -58,9 +58,9 @@ DB はすでに Git LFS でリポジトリに含まれています。
 
 | 項目 | 値 |
 |------|-----|
-| 本体ワークフロー | `.github/workflows/daily-screening.yml`（`workflow_dispatch` 起動） |
-| 監視ワークフロー | `.github/workflows/schedule-guard.yml`（平日 5 分間隔） |
-| 既定 | 平日 **12:30・15:00・16:00 JST 目標**（未実行なら guard が自動起動） |
+| 本体ワークフロー | `.github/workflows/daily-screening.yml`（`schedule` + 手動） |
+| 監視ワークフロー | `.github/workflows/schedule-guard.yml`（スロット直後 + 5 分間隔） |
+| 既定 | 平日 **12:30・15:00・16:00 JST**（遅延時は guard が 19:00 まで補完） |
 | 12:30 | `config/config_hi.ini`（`SCR_JDG_RSI4REV = 1`・RSI4反転でシグナル） |
 | 15:00 / 16:00 | `config/config_lo.ini`（`SCR_JDG_RSI4REV = 0`） |
 | 手動 Run workflow | `config_lo.ini`（LO） |

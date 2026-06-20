@@ -27,12 +27,12 @@
 
 GitHub → **Actions** → **Daily screening (cloud)** → **Run workflow**
 
-## 実行時刻の安定化（schedule guard）
+## 実行時刻の安定化（二重起動）
 
-- `Daily screening (cloud)` は **本体処理のみ**（`workflow_dispatch` 起動）。
-- `Daily screening schedule guard` が平日 12:00-18:59 JST を 5 分間隔で監視。
-- 12:30 / 15:00 / 16:00 の各スロットで未実行を検知した場合、`daily-screening` を自動起動。
-- これにより GitHub `schedule` の遅延・取りこぼしが起きても、概ね 5〜10 分遅れで追随します。
+- **本体** `Daily screening (cloud)` … 平日 12:30 / 15:00 / 16:00 JST に `schedule` で直接起動。
+- **監視** `Daily screening schedule guard` … 各スロット直後（12:35 / 15:05 / 16:05 ほか）と 5 分間隔で未実行をチェック。
+- guard は **19:00 JST まで**、当日未実行の最古スロットを 1 件ずつ `workflow_dispatch` で補完。
+- GitHub `schedule` が数時間遅れても、12:30（場中）の HI 実行が取りこぼされにくくなります。
 
 ## ローカルでやらないこと
 
