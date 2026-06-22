@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-20T18:03:02+09:00",
+  "generated_at": "2026-06-22T17:58:29+09:00",
   "mode": "HI",
   "summary": {
-    "pf": 1.727,
-    "wins": 55,
-    "losses": 21,
-    "win_rate": 72.37,
-    "total_income": 173000,
+    "pf": 2.232,
+    "wins": 56,
+    "losses": 19,
+    "win_rate": 74.67,
+    "total_income": 220000,
     "symbol_count": 77,
     "neutral_count": 6,
-    "source_file": "Y0_PF1.727_W55L21_rate72.37_all173000.csv"
+    "source_file": "Y0_PF2.232_W56L19_rate74.67_all220000.csv"
   },
   "symbols": [
     {
@@ -98,6 +98,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 7290,
+      "minus_gain": 0
+    },
+    {
+      "code": "8802",
+      "name": "三菱地所",
+      "industry": "nan",
+      "incomes": 14900,
+      "pf": 35.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3579,
       "minus_gain": 0
     },
     {
@@ -475,6 +486,17 @@
       "minus_gain": 0
     },
     {
+      "code": "6849",
+      "name": "日本光電",
+      "industry": "nan",
+      "incomes": 2900,
+      "pf": 20.9,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2090,
+      "minus_gain": 0
+    },
+    {
       "code": "8593",
       "name": "三菱ＨＣキャピタル",
       "industry": "nan",
@@ -494,6 +516,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 630,
+      "minus_gain": 0
+    },
+    {
+      "code": "2168",
+      "name": "パソナグループ",
+      "industry": "nan",
+      "incomes": 2000,
+      "pf": 12.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1210,
       "minus_gain": 0
     },
     {
@@ -552,17 +585,6 @@
       "minus_gain": 0
     },
     {
-      "code": "1306",
-      "name": "野村東証指数",
-      "industry": "ETF銘柄一覧",
-      "incomes": 300,
-      "pf": 7.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 740,
-      "minus_gain": 0
-    },
-    {
       "code": "6670",
       "name": "ＭＣＪ",
       "industry": "nan",
@@ -576,17 +598,6 @@
     {
       "code": "4516",
       "name": "日本新薬",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6849",
-      "name": "日本光電",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -620,6 +631,17 @@
     {
       "code": "1419",
       "name": "タマホーム",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6758",
+      "name": "ソニーグループ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -695,17 +717,6 @@
       "minus_gain": 1290
     },
     {
-      "code": "1878",
-      "name": "大東建託",
-      "industry": "nan",
-      "incomes": -6700,
-      "pf": 0.4,
-      "winlose": "W1L1",
-      "win_per": 50,
-      "plus_gain": 1510,
-      "minus_gain": 3920
-    },
-    {
       "code": "9119",
       "name": "飯野海運",
       "industry": "nan",
@@ -750,6 +761,17 @@
       "minus_gain": 5810
     },
     {
+      "code": "1878",
+      "name": "大東建託",
+      "industry": "nan",
+      "incomes": -12100,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 3920
+    },
+    {
       "code": "2897",
       "name": "日清食品ホールディングス",
       "industry": "nan",
@@ -759,17 +781,6 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 4780
-    },
-    {
-      "code": "2168",
-      "name": "パソナグループ",
-      "industry": "nan",
-      "incomes": -13300,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 8030
     },
     {
       "code": "3360",
@@ -792,17 +803,6 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 5610
-    },
-    {
-      "code": "9602",
-      "name": "東宝",
-      "industry": "nan",
-      "incomes": -19600,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 15430
     },
     {
       "code": "4661",
@@ -861,17 +861,24 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-18",
-    "new_buy": [],
-    "sellback": [
+    "trade_date": "2026-06-22",
+    "new_buy": [
       {
-        "code": "4587",
-        "name": "ペプチドリーム",
-        "mark": "返売",
-        "close": 1019
+        "code": "6758",
+        "name": "ソニーグループ",
+        "mark": "新買",
+        "close": 3183
       }
     ],
-    "new_buy_count": 0
+    "sellback": [
+      {
+        "code": "6849",
+        "name": "日本光電",
+        "mark": "返売",
+        "close": 1387
+      }
+    ],
+    "new_buy_count": 1
   },
   "special": {
     "enabled": true,
@@ -879,7 +886,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 0,
+    "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 87.08,
@@ -917,6 +924,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27866346513"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/27941126054"
   }
 }
