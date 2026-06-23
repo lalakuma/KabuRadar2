@@ -7,7 +7,7 @@
 ## 本番の流れ（PC 不要）
 
 ```
-平日 12:30 / 15:00 / 16:00 JST
+平日 9:00 / 15:00 / 16:00 JST（9:00 HI は schedule 遅延検証中）
   daily-screening（schedule）+ schedule-guard（未実行補完）
   → 株価更新 → 解析 → Web 公開
 ```

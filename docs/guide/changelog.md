@@ -2,6 +2,13 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-06 9:00 schedule 遅延検証（一時）
+
+- HI 枠を 12:30 → **9:00 JST**（`0 0 * * 1-5` UTC）に変更
+- `daily-screening` に `schedule verification` ログを追加
+- guard の HI 補完を **17:00 まで待機**（`event: schedule` の実測を優先）
+- 検証後は Actions の Started 時刻を確認し、12:30 に戻すか判断
+
 ## 2026-06 株価更新を過去5日分に変更
 
 - `update_prices.py --menu 6` … 過去5日（yfinance `period=5d`）

@@ -7,7 +7,7 @@
 ## 仕組み
 
 ```
-平日 12:30 / 15:00 / 16:00 JST（1日3回・設定切替あり）
+平日 9:00 / 15:00 / 16:00 JST（1日3回・9:00 HI は schedule 遅延検証中）
   → GitHub Actions (Ubuntu)
   → git lfs pull で data/kaburadar.db を取得
   → yfinance で過去5日分を取得 → SQLite に書込
@@ -60,8 +60,8 @@ DB はすでに Git LFS でリポジトリに含まれています。
 |------|-----|
 | 本体ワークフロー | `.github/workflows/daily-screening.yml`（`schedule` + 手動） |
 | 監視ワークフロー | `.github/workflows/schedule-guard.yml`（スロット直後 + 5 分間隔） |
-| 既定 | 平日 **12:30・15:00・16:00 JST**（遅延時は guard が 19:00 まで補完） |
-| 12:30 | `config/config_hi.ini`（`SCR_JDG_RSI4REV = 1`・RSI4反転でシグナル） |
+| 既定 | 平日 **9:00・15:00・16:00 JST**（9:00 は検証用・遅延時は guard が 19:00 まで補完） |
+| 9:00（検証中） | `config/config_hi.ini`（旧12:30枠・`SCR_JDG_RSI4REV = 1`） |
 | 15:00 / 16:00 | `config/config_lo.ini`（`SCR_JDG_RSI4REV = 0`） |
 | 手動 Run workflow | `config_lo.ini`（LO） |
 | 手動 | Actions → Run workflow |

@@ -9,7 +9,7 @@
 | 頻度 | 操作 |
 |------|------|
 | **初回** | Actions で **Daily screening (cloud)** を Run workflow |
-| **平日** | 何もしない（**12:30・15:00・16:00 JST 目標**で自動実行） |
+| **平日** | 何もしない（**9:00・15:00・16:00 JST 目標**で自動実行）※9:00 は schedule 遅延検証中 |
 | **確認** | https://lalakuma.github.io/KabuRadar2/ |
 | **設定変更** | `config/config_lo.ini` を編集 → commit & push |
 
@@ -29,10 +29,10 @@ GitHub → **Actions** → **Daily screening (cloud)** → **Run workflow**
 
 ## 実行時刻の安定化（二重起動）
 
-- **本体** `Daily screening (cloud)` … 平日 12:30 / 15:00 / 16:00 JST に `schedule` で直接起動。
-- **監視** `Daily screening schedule guard` … 各スロット直後（12:35 / 15:05 / 16:05 ほか）と 5 分間隔で未実行をチェック。
-- guard は **19:00 JST まで**、当日未実行の最古スロットを 1 件ずつ `workflow_dispatch` で補完。
-- GitHub `schedule` が数時間遅れても、12:30（場中）の HI 実行が取りこぼされにくくなります。
+- **本体** `Daily screening (cloud)` … 平日 9:00（HI・検証中）/ 15:00 / 16:00 JST に `schedule` で直接起動。
+- **監視** `Daily screening schedule guard` … 各スロット直後と 5 分間隔で未実行をチェック。
+- **9:00 HI 検証中（一時）** … guard は 17:00 まで HI 補完を待機し、`event: schedule` の実際の起動時刻を測る。
+- 検証後は Actions の run で **Started（JST）** とログ `schedule verification` を確認し、12:30 に戻すか判断する。
 
 ## ローカルでやらないこと
 
