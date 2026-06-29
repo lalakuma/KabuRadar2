@@ -4,8 +4,8 @@
 
 | ファイル | 用途 | `SCR_JDG_RSI4REV` |
 |----------|------|-------------------|
-| [`config/config_lo.ini`](../../config/config_lo.ini) | 通常（15:00 / 16:00 Actions） | `0` |
-| [`config/config_hi.ini`](../../config/config_hi.ini) | 高確率型（12:30 Actions） | `1` |
+| [`config/config_lo.ini`](../../config/config_lo.ini) | 本番（12:30 場中 / 16:00 引け後 Actions） | `0` |
+| [`config/config_hi.ini`](../../config/config_hi.ini) | 高確率型（手動実行用） | `1` |
 
 読み込み: `kaburadar.settings`（`config.py` は後方互換）。環境変数 `${...}` の展開あり。
 

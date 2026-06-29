@@ -7,7 +7,7 @@
 ## 本番の流れ（PC 不要）
 
 ```
-平日 9:00 / 15:00 / 16:00 JST（9:00 HI は schedule 遅延検証中）
+平日 12:30 / 16:00 JST（LO・場中1回 / 引け後1回）
   daily-screening（schedule）+ schedule-guard（未実行補完）
   → 株価更新 → 解析 → Web 公開
 ```
@@ -27,7 +27,7 @@
 KabuRadar2/
 ├── .github/workflows/   # CI + 本番 daily-screening + schedule-guard
 ├── config/config_lo.ini # LO 戦略（SCR_JDG_RSI4REV=0）
-├── config/config_hi.ini # HI 戦略（SCR_JDG_RSI4REV=1・12:30用）
+├── config/config_hi.ini # HI 戦略（SCR_JDG_RSI4REV=1・手動実行用）
 ├── data/kaburadar.db    # SQLite（Git LFS）
 ├── docs/                # GitHub Pages + data.json
 └── src/kaburadar/       # Python 本体

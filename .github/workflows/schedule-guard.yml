@@ -3,13 +3,12 @@ name: Daily screening schedule guard
 on:
   schedule:
     # 各スロット直後 + 遅延追随用（JST）
-    - cron: "5 0 * * 1-5"    # 9:05（検証中: HI枠は schedule 遅延実測のため guard は当日17:00まで待機）
-    - cron: "5 6 * * 1-5"    # 15:05
-    - cron: "5 7 * * 1-5"    # 16:05
+    - cron: "35 3 * * 1-5"   # 12:35（場中 LO）
+    - cron: "5 7 * * 1-5"    # 16:05（引け後 LO）
     - cron: "35 8 * * 1-5"   # 17:35
     - cron: "5 9 * * 1-5"    # 18:05
-    # 上記以外の取りこぼし追随（UTC 00:00-09:59 = JST 9:00-18:59）
-    - cron: "*/5 0-9 * * 1-5"
+    # 上記以外の取りこぼし追随（UTC 03:00-09:59 = JST 12:00-18:59）
+    - cron: "*/5 3-9 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -29,12 +28,10 @@ jobs:
         with:
           script: |
             const slots = [
-              // guardDelayMinutes=480: 9:00 schedule の遅延実測中は 17:00 まで補完しない
-              { name: "9:00", profile: "hi", minuteOfDay: 9 * 60, coverStart: 8 * 60 + 55, coverEnd: 14 * 60 + 54, guardDelayMinutes: 480 },
-              { name: "15:00", profile: "lo", minuteOfDay: 15 * 60, coverStart: 14 * 60 + 55, coverEnd: 15 * 60 + 54, guardDelayMinutes: 5 },
-              { name: "16:00", profile: "lo", minuteOfDay: 16 * 60, coverStart: 15 * 60 + 55, coverEnd: 19 * 60, guardDelayMinutes: 5 },
+              { name: "12:30", profile: "lo", minuteOfDay: 12 * 60 + 30, coverStart: 12 * 60 + 25, coverEnd: 15 * 60 + 54 },
+              { name: "16:00", profile: "lo", minuteOfDay: 16 * 60, coverStart: 15 * 60 + 55, coverEnd: 19 * 60 },
             ];
-            const defaultGuardDelayMinutes = 5;
+            const checkDelayMinutes = 5;
             const dispatchEndMinute = 19 * 60;
 
             const nowUtcMs = Date.now();
@@ -76,8 +73,7 @@ jobs:
             }
 
             for (const slot of slots) {
-              const guardDelay = slot.guardDelayMinutes ?? defaultGuardDelayMinutes;
-              const openMinute = slot.minuteOfDay + guardDelay;
+              const openMinute = slot.minuteOfDay + checkDelayMinutes;
               if (nowMinuteOfDay < openMinute) {
                 continue;
               }
