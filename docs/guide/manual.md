@@ -75,7 +75,7 @@ KabuRadar2/
 
 ### 5.1 平日
 
-**何もしなくて OK。** 平日 **12:30（場中）・16:00（引け後）JST** に Actions が LO で自動実行します。
+**何もしなくて OK。** 平日 **10:00（場中）・16:00（引け後）JST** に Actions が LO で自動実行します。
 
 結果: https://lalakuma.github.io/KabuRadar2/
 

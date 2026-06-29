@@ -7,7 +7,7 @@
 ## 本番の流れ（PC 不要）
 
 ```
-平日 12:30 / 16:00 JST（LO・場中1回 / 引け後1回）
+平日 10:00 / 16:00 JST（LO・場中1回 / 引け後1回）
   daily-screening（schedule）+ schedule-guard（未実行補完）
   → 株価更新 → 解析 → Web 公開
 ```
