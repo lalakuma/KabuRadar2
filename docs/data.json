@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-29T21:01:10+09:00",
+  "generated_at": "2026-06-30T14:01:36+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 3.468,
-    "wins": 69,
+    "pf": 3.57,
+    "wins": 71,
     "losses": 21,
-    "win_rate": 76.67,
-    "total_income": 441900,
+    "win_rate": 77.17,
+    "total_income": 451300,
     "symbol_count": 93,
-    "neutral_count": 8,
-    "source_file": "Y0_PF3.468_W69L21_rate76.67_all441900.csv"
+    "neutral_count": 7,
+    "source_file": "Y0_PF3.57_W71L21_rate77.17_all451300.csv"
   },
   "symbols": [
     {
@@ -376,6 +376,17 @@
       "minus_gain": 0
     },
     {
+      "code": "2168",
+      "name": "パソナグループ",
+      "industry": "nan",
+      "incomes": 8100,
+      "pf": 12.4,
+      "winlose": "W1L1",
+      "win_per": 50,
+      "plus_gain": 6000,
+      "minus_gain": 480
+    },
+    {
       "code": "8136",
       "name": "サンリオ",
       "industry": "nan",
@@ -706,6 +717,17 @@
       "minus_gain": 0
     },
     {
+      "code": "9434",
+      "name": "ソフトバンク",
+      "industry": "nan",
+      "incomes": 500,
+      "pf": 24.0,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2400,
+      "minus_gain": 0
+    },
+    {
       "code": "9418",
       "name": "ＵＳＥＮ-ＮＥＸＴ　ＨＯＬＤＩＮＧＳ",
       "industry": "nan",
@@ -763,17 +785,6 @@
     {
       "code": "7105",
       "name": "三菱ロジスネクスト",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "9434",
-      "name": "ソフトバンク",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -847,17 +858,6 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 540
-    },
-    {
-      "code": "2168",
-      "name": "パソナグループ",
-      "industry": "nan",
-      "incomes": -800,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 480
     },
     {
       "code": "2379",
@@ -1037,42 +1037,23 @@
     }
   ],
   "today": {
-    "trade_date": "2026-06-29",
-    "new_buy": [
-      {
-        "code": "7276",
-        "name": "小糸製作所",
-        "mark": "新買",
-        "close": 2564
-      }
-    ],
+    "trade_date": "2026-06-30",
+    "new_buy": [],
     "sellback": [
       {
-        "code": "1419",
-        "name": "タマホーム",
+        "code": "2168",
+        "name": "パソナグループ",
         "mark": "返売",
-        "close": 2898
+        "close": 1483
       },
       {
-        "code": "2317",
-        "name": "システナ",
+        "code": "9434",
+        "name": "ソフトバンク",
         "mark": "返売",
-        "close": 398
-      },
-      {
-        "code": "6758",
-        "name": "ソニーグループ",
-        "mark": "返売",
-        "close": 3299
-      },
-      {
-        "code": "9843",
-        "name": "ニトリホールディングス",
-        "mark": "返売",
-        "close": 2482
+        "close": 208
       }
     ],
-    "new_buy_count": 1
+    "new_buy_count": 0
   },
   "special": {
     "enabled": true,
@@ -1080,13 +1061,13 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 42.94,
-      "1306": 40.33
+      "1321": 45.0,
+      "1306": 44.64
     },
-    "active_rsi": 40.33,
+    "active_rsi": 44.64,
     "signal": null
   },
   "runtime": {
@@ -1118,6 +1099,6 @@
     "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28370310731"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28421397424"
   }
 }
