@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-30T14:01:36+09:00",
+  "generated_at": "2026-06-30T17:40:33+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 3.57,
+    "pf": 3.582,
     "wins": 71,
     "losses": 21,
     "win_rate": 77.17,
-    "total_income": 451300,
+    "total_income": 452800,
     "symbol_count": 93,
     "neutral_count": 7,
-    "source_file": "Y0_PF3.57_W71L21_rate77.17_all451300.csv"
+    "source_file": "Y0_PF3.582_W71L21_rate77.17_all452800.csv"
   },
   "symbols": [
     {
@@ -332,6 +332,17 @@
       "minus_gain": 0
     },
     {
+      "code": "2168",
+      "name": "パソナグループ",
+      "industry": "nan",
+      "incomes": 9600,
+      "pf": 14.4,
+      "winlose": "W1L1",
+      "win_per": 50,
+      "plus_gain": 6940,
+      "minus_gain": 480
+    },
+    {
       "code": "4403",
       "name": "日油",
       "industry": "nan",
@@ -374,17 +385,6 @@
       "win_per": 100,
       "plus_gain": 3460,
       "minus_gain": 0
-    },
-    {
-      "code": "2168",
-      "name": "パソナグループ",
-      "industry": "nan",
-      "incomes": 8100,
-      "pf": 12.4,
-      "winlose": "W1L1",
-      "win_per": 50,
-      "plus_gain": 6000,
-      "minus_gain": 480
     },
     {
       "code": "8136",
@@ -1044,7 +1044,7 @@
         "code": "2168",
         "name": "パソナグループ",
         "mark": "返売",
-        "close": 1483
+        "close": 1498
       },
       {
         "code": "9434",
@@ -1096,9 +1096,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28421397424"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28431445305"
   }
 }
