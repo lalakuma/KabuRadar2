@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-03T13:40:13+09:00",
+  "generated_at": "2026-07-03T16:55:06+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 4.293,
+    "pf": 4.624,
     "wins": 57,
-    "losses": 14,
-    "win_rate": 80.28,
-    "total_income": 380000,
+    "losses": 12,
+    "win_rate": 82.61,
+    "total_income": 391300,
     "symbol_count": 71,
-    "neutral_count": 4,
-    "source_file": "Y0_PF4.293_W57L14_rate80.28_all380000.csv"
+    "neutral_count": 6,
+    "source_file": "Y0_PF4.624_W57L12_rate82.61_all391300.csv"
   },
   "symbols": [
     {
@@ -640,6 +640,28 @@
       "minus_gain": 0
     },
     {
+      "code": "9302",
+      "name": "三井倉庫ホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "1662",
+      "name": "石油資源開発",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "3549",
       "name": "クスリのアオキホールディングス",
       "industry": "nan",
@@ -684,17 +706,6 @@
       "minus_gain": 1280
     },
     {
-      "code": "1662",
-      "name": "石油資源開発",
-      "industry": "nan",
-      "incomes": -1900,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 1170
-    },
-    {
       "code": "8584",
       "name": "ジャックス",
       "industry": "nan",
@@ -715,17 +726,6 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 2770
-    },
-    {
-      "code": "9302",
-      "name": "三井倉庫ホールディングス",
-      "industry": "nan",
-      "incomes": -9400,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 2610
     },
     {
       "code": "9022",
@@ -795,20 +795,14 @@
     }
   ],
   "today": {
-    "trade_date": "2026-07-03",
+    "trade_date": "2026-07-02",
     "new_buy": [],
     "sellback": [
       {
-        "code": "1662",
-        "name": "石油資源開発",
+        "code": "4686",
+        "name": "ジャストシステム",
         "mark": "返売",
-        "close": 1620
-      },
-      {
-        "code": "9302",
-        "name": "三井倉庫ホールディングス",
-        "mark": "返売",
-        "close": 3598
+        "close": 3775
       }
     ],
     "new_buy_count": 0
@@ -854,9 +848,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28638743299"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28646604268"
   }
 }
