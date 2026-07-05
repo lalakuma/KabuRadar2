@@ -7,7 +7,7 @@
 ## 仕組み
 
 ```
-平日 10:00 / 16:00 JST（LO・場中1回 / 引け後1回）
+平日 9:00 HI / 10:00 LO / 16:00 LO JST（場中2回 + 引け後1回）
   → GitHub Actions (Ubuntu)
   → git lfs pull で data/kaburadar.db を取得
   → yfinance で過去5日分を取得 → SQLite に書込
@@ -60,10 +60,10 @@ DB はすでに Git LFS でリポジトリに含まれています。
 |------|-----|
 | 本体ワークフロー | `.github/workflows/daily-screening.yml`（`schedule` + 手動） |
 | 監視ワークフロー | `.github/workflows/schedule-guard.yml`（スロット直後 + 5 分間隔） |
-| 既定 | 平日 **10:00・16:00 JST**（いずれも `config_lo.ini`） |
-| 10:00 | 場中（前場〜後場狙い・`SCR_JDG_RSI4REV = 0`） |
-| 16:00 | 引け後（`SCR_JDG_RSI4REV = 0`） |
-| 手動 Run workflow | `config_profile` で lo / hi を選択 |
+| 既定 | 平日 **9:00 HI / 10:00 LO / 16:00 LO JST**（1日3回） |
+| 9:00 | 場中・HI（`config_hi.ini`・`SCR_JDG_RSI4REV = 1`） |
+| 10:00 | 場中・LO（`config_lo.ini`・午後場狙い） |
+| 16:00 | 引け後・LO（`config_lo.ini`） |
 | 手動 | Actions → Run workflow |
 
 時刻変更は `schedule-guard.yml` の監視ロジック（スロット時刻）を編集して push してください。

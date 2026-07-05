@@ -2,9 +2,11 @@ name: Daily screening (cloud)
 
 on:
   schedule:
-    # 平日 10:00 JST (UTC+9) = 01:00 UTC（LO・場中・schedule遅延対策で前倒し）
+    # 平日 9:00 JST = 00:00 UTC（HI・場中・前場狙い）
+    - cron: "0 0 * * 1-5"
+    # 平日 10:00 JST = 01:00 UTC（LO・場中・午後場狙い）
     - cron: "0 1 * * 1-5"
-    # 平日 16:00 JST (UTC+9) = 07:00 UTC（LO・引け後）
+    # 平日 16:00 JST = 07:00 UTC（LO・引け後）
     - cron: "0 7 * * 1-5"
   workflow_dispatch:
     inputs:
@@ -71,7 +73,12 @@ jobs:
           if [ -z "$JOB" ]; then JOB="full"; fi
           echo "KABURADAR_JOB=$JOB" >> "$GITHUB_ENV"
           PROFILE="${{ github.event.inputs.config_profile }}"
-          if [ -z "$PROFILE" ]; then PROFILE="lo"; fi
+          if [ -z "$PROFILE" ]; then
+            case "${{ github.event.schedule }}" in
+              "0 0 * * 1-5") PROFILE="hi" ;;
+              *) PROFILE="lo" ;;
+            esac
+          fi
           if [ "$PROFILE" = "hi" ]; then
             echo "KABURADAR_CONFIG=config/config_hi.ini" >> "$GITHUB_ENV"
             echo "Using config_hi.ini (RSI4反転=1)"
