@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-06T12:46:03+09:00",
+  "generated_at": "2026-07-06T13:02:29+09:00",
   "mode": "HI",
   "summary": {
-    "pf": 3.037,
-    "wins": 41,
+    "pf": 2.98,
+    "wins": 40,
     "losses": 11,
-    "win_rate": 78.85,
-    "total_income": 173000,
+    "win_rate": 78.43,
+    "total_income": 166700,
     "symbol_count": 53,
-    "neutral_count": 2,
-    "source_file": "Y0_PF3.037_W41L11_rate78.85_all173000.csv"
+    "neutral_count": 3,
+    "source_file": "Y0_PF2.98_W40L11_rate78.43_all166700.csv"
   },
   "symbols": [
     {
@@ -60,11 +60,11 @@
       "code": "9302",
       "name": "三井倉庫ホールディングス",
       "industry": "nan",
-      "incomes": 14600,
-      "pf": 40.1,
+      "incomes": 15300,
+      "pf": 42.0,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 4010,
+      "plus_gain": 4200,
       "minus_gain": 0
     },
     {
@@ -208,17 +208,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 5630,
-      "minus_gain": 0
-    },
-    {
-      "code": "7276",
-      "name": "小糸製作所",
-      "industry": "nan",
-      "incomes": 7000,
-      "pf": 26.6,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2660,
       "minus_gain": 0
     },
     {
@@ -453,6 +442,17 @@
       "minus_gain": 0
     },
     {
+      "code": "7276",
+      "name": "小糸製作所",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "7846",
       "name": "パイロットコーポレーション",
       "industry": "nan",
@@ -607,16 +607,10 @@
         "close": 1657
       },
       {
-        "code": "7276",
-        "name": "小糸製作所",
-        "mark": "返売",
-        "close": 2633
-      },
-      {
         "code": "9302",
         "name": "三井倉庫ホールディングス",
         "mark": "返売",
-        "close": 3637
+        "close": 3644
       },
       {
         "code": "9715",
@@ -668,9 +662,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28766268480"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28766812232"
   }
 }
