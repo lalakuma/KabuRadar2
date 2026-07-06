@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-06T13:02:29+09:00",
+  "generated_at": "2026-07-06T13:08:02+09:00",
   "mode": "HI",
   "summary": {
     "pf": 2.98,
     "wins": 40,
     "losses": 11,
     "win_rate": 78.43,
-    "total_income": 166700,
+    "total_income": 166200,
     "symbol_count": 53,
     "neutral_count": 3,
-    "source_file": "Y0_PF2.98_W40L11_rate78.43_all166700.csv"
+    "source_file": "Y0_PF2.98_W40L11_rate78.43_all166200.csv"
   },
   "symbols": [
     {
@@ -60,11 +60,11 @@
       "code": "9302",
       "name": "三井倉庫ホールディングス",
       "industry": "nan",
-      "incomes": 15300,
-      "pf": 42.0,
+      "incomes": 15200,
+      "pf": 41.7,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 4200,
+      "plus_gain": 4170,
       "minus_gain": 0
     },
     {
@@ -354,17 +354,6 @@
       "minus_gain": 0
     },
     {
-      "code": "9715",
-      "name": "トランスコスモス",
-      "industry": "nan",
-      "incomes": 2000,
-      "pf": 5.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 550,
-      "minus_gain": 0
-    },
-    {
       "code": "2168",
       "name": "パソナグループ",
       "industry": "nan",
@@ -395,6 +384,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 690,
+      "minus_gain": 0
+    },
+    {
+      "code": "9715",
+      "name": "トランスコスモス",
+      "industry": "nan",
+      "incomes": 1500,
+      "pf": 4.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 409,
       "minus_gain": 0
     },
     {
@@ -489,12 +489,12 @@
       "code": "1662",
       "name": "石油資源開発",
       "industry": "nan",
-      "incomes": -1100,
+      "incomes": -1000,
       "pf": 0.0,
       "winlose": "W0L1",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 660
+      "minus_gain": 600
     },
     {
       "code": "4587",
@@ -604,19 +604,19 @@
         "code": "1662",
         "name": "石油資源開発",
         "mark": "返売",
-        "close": 1657
+        "close": 1658
       },
       {
         "code": "9302",
         "name": "三井倉庫ホールディングス",
         "mark": "返売",
-        "close": 3644
+        "close": 3643
       },
       {
         "code": "9715",
         "name": "トランスコスモス",
         "mark": "返売",
-        "close": 3645
+        "close": 3640
       }
     ],
     "new_buy_count": 0
@@ -665,6 +665,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28766812232"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28766972336"
   }
 }
