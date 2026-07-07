@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-07T14:03:47+09:00",
+  "generated_at": "2026-07-07T16:35:09+09:00",
   "mode": "HI",
   "summary": {
-    "pf": 3.083,
+    "pf": 3.08,
     "wins": 42,
     "losses": 10,
     "win_rate": 80.77,
-    "total_income": 173200,
+    "total_income": 172700,
     "symbol_count": 53,
     "neutral_count": 2,
-    "source_file": "Y0_PF3.083_W42L10_rate80.77_all173200.csv"
+    "source_file": "Y0_PF3.08_W42L10_rate80.77_all172700.csv"
   },
   "symbols": [
     {
@@ -332,17 +332,6 @@
       "minus_gain": 0
     },
     {
-      "code": "9715",
-      "name": "トランスコスモス",
-      "industry": "nan",
-      "incomes": 3000,
-      "pf": 8.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 819,
-      "minus_gain": 0
-    },
-    {
       "code": "6849",
       "name": "日本光電",
       "industry": "nan",
@@ -362,6 +351,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2000,
+      "minus_gain": 0
+    },
+    {
+      "code": "9715",
+      "name": "トランスコスモス",
+      "industry": "nan",
+      "incomes": 2500,
+      "pf": 6.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 680,
       "minus_gain": 0
     },
     {
@@ -604,7 +604,7 @@
         "code": "9715",
         "name": "トランスコスモス",
         "mark": "返売",
-        "close": 3655
+        "close": 3650
       }
     ],
     "new_buy_count": 0
@@ -653,6 +653,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28842749693"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28849471745"
   }
 }
