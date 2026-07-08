@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08T12:25:16+09:00",
+  "generated_at": "2026-07-08T13:14:45+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 4.488,
+    "pf": 4.468,
     "wins": 55,
     "losses": 13,
     "win_rate": 80.88,
-    "total_income": 373900,
-    "symbol_count": 68,
-    "neutral_count": 2,
-    "source_file": "Y0_PF4.488_W55L13_rate80.88_all373900.csv"
+    "total_income": 373200,
+    "symbol_count": 67,
+    "neutral_count": 1,
+    "source_file": "Y0_PF4.468_W55L13_rate80.88_all373200.csv"
   },
   "symbols": [
     {
@@ -607,17 +607,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4042",
-      "name": "東ソー",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "3549",
       "name": "クスリのアオキホールディングス",
       "industry": "nan",
@@ -662,17 +651,6 @@
       "minus_gain": 1280
     },
     {
-      "code": "1605",
-      "name": "ＩＮＰＥＸ",
-      "industry": "nan",
-      "incomes": -1500,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 440
-    },
-    {
       "code": "8584",
       "name": "ジャックス",
       "industry": "nan",
@@ -682,6 +660,17 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 580
+    },
+    {
+      "code": "1605",
+      "name": "ＩＮＰＥＸ",
+      "industry": "nan",
+      "incomes": -2200,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 650
     },
     {
       "code": "6417",
@@ -763,23 +752,16 @@
   ],
   "today": {
     "trade_date": "2026-07-08",
-    "new_buy": [
-      {
-        "code": "4042",
-        "name": "東ソー",
-        "mark": "新買",
-        "close": 2737
-      }
-    ],
+    "new_buy": [],
     "sellback": [
       {
         "code": "1605",
         "name": "ＩＮＰＥＸ",
         "mark": "返売",
-        "close": 3401
+        "close": 3394
       }
     ],
-    "new_buy_count": 1
+    "new_buy_count": 0
   },
   "special": {
     "enabled": true,
@@ -787,7 +769,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 29.14,
@@ -822,9 +804,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28915085443"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/28916867490"
   }
 }
