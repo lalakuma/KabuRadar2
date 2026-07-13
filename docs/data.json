@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T13:29:08+09:00",
+  "generated_at": "2026-07-13T19:02:24+09:00",
   "mode": "LO",
   "summary": {
     "pf": 4.365,
@@ -691,19 +691,19 @@
         "code": "3186",
         "name": "ネクステージ",
         "mark": "新買",
-        "close": 3365
+        "close": 3385
       },
       {
         "code": "4088",
         "name": "エア・ウォーター",
         "mark": "新買",
-        "close": 2510
+        "close": 2522
       },
       {
         "code": "5301",
         "name": "東海カーボン",
         "mark": "新買",
-        "close": 1622
+        "close": 1610
       }
     ],
     "sellback": [],
@@ -750,9 +750,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29223959205"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29241119779"
   }
 }
