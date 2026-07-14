@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T12:56:16+09:00",
+  "generated_at": "2026-07-14T16:26:34+09:00",
   "mode": "LO",
   "summary": {
     "pf": 4.365,
@@ -7,8 +7,8 @@
     "losses": 11,
     "win_rate": 80.0,
     "total_income": 261900,
-    "symbol_count": 62,
-    "neutral_count": 7,
+    "symbol_count": 61,
+    "neutral_count": 6,
     "source_file": "Y0_PF4.365_W44L11_rate80.00_all261900.csv"
   },
   "symbols": [
@@ -530,17 +530,6 @@
       "minus_gain": 0
     },
     {
-      "code": "5393",
-      "name": "ニチアス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "2264",
       "name": "森永乳業",
       "industry": "nan",
@@ -696,17 +685,29 @@
     }
   ],
   "today": {
-    "trade_date": "2026-07-14",
+    "trade_date": "2026-07-13",
     "new_buy": [
       {
-        "code": "5393",
-        "name": "ニチアス",
+        "code": "3186",
+        "name": "ネクステージ",
         "mark": "新買",
-        "close": 3449
+        "close": 3385
+      },
+      {
+        "code": "4088",
+        "name": "エア・ウォーター",
+        "mark": "新買",
+        "close": 2522
+      },
+      {
+        "code": "5301",
+        "name": "東海カーボン",
+        "mark": "新買",
+        "close": 1610
       }
     ],
     "sellback": [],
-    "new_buy_count": 1
+    "new_buy_count": 3
   },
   "special": {
     "enabled": true,
@@ -714,7 +715,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 3,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 30.37,
@@ -749,9 +750,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29304582607"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29314380673"
   }
 }
