@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-15T11:52:51+09:00",
+  "generated_at": "2026-07-15T12:59:12+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 4.416,
+    "pf": 4.421,
     "wins": 45,
     "losses": 11,
     "win_rate": 80.36,
-    "total_income": 267200,
-    "symbol_count": 63,
-    "neutral_count": 7,
-    "source_file": "Y0_PF4.416_W45L11_rate80.36_all267200.csv"
+    "total_income": 267800,
+    "symbol_count": 62,
+    "neutral_count": 6,
+    "source_file": "Y0_PF4.421_W45L11_rate80.36_all267800.csv"
   },
   "symbols": [
     {
@@ -288,6 +288,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4042",
+      "name": "東ソー",
+      "industry": "nan",
+      "incomes": 5900,
+      "pf": 21.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2120,
+      "minus_gain": 0
+    },
+    {
       "code": "7167",
       "name": "めぶきフィナンシャルグループ",
       "industry": "nan",
@@ -318,17 +329,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 4790,
-      "minus_gain": 0
-    },
-    {
-      "code": "4042",
-      "name": "東ソー",
-      "industry": "nan",
-      "incomes": 5300,
-      "pf": 19.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1910,
       "minus_gain": 0
     },
     {
@@ -552,17 +552,6 @@
       "minus_gain": 0
     },
     {
-      "code": "5393",
-      "name": "ニチアス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "2264",
       "name": "森永乳業",
       "industry": "nan",
@@ -713,13 +702,7 @@
         "code": "2871",
         "name": "ニチレイ",
         "mark": "新買",
-        "close": 2006
-      },
-      {
-        "code": "5393",
-        "name": "ニチアス",
-        "mark": "新買",
-        "close": 3473
+        "close": 2005
       }
     ],
     "sellback": [
@@ -727,10 +710,10 @@
         "code": "4042",
         "name": "東ソー",
         "mark": "返売",
-        "close": 2771
+        "close": 2777
       }
     ],
-    "new_buy_count": 2
+    "new_buy_count": 1
   },
   "special": {
     "enabled": true,
@@ -738,7 +721,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 2,
+    "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 39.58,
@@ -773,9 +756,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29384973638"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29387669447"
   }
 }
