@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-16T13:00:16+09:00",
+  "generated_at": "2026-07-16T16:51:07+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 4.291,
+    "pf": 4.274,
     "wins": 43,
     "losses": 10,
     "win_rate": 81.13,
-    "total_income": 246200,
+    "total_income": 244900,
     "symbol_count": 58,
     "neutral_count": 5,
-    "source_file": "Y0_PF4.291_W43L10_rate81.13_all246200.csv"
+    "source_file": "Y0_PF4.274_W43L10_rate81.13_all244900.csv"
   },
   "symbols": [
     {
@@ -35,17 +35,6 @@
       "minus_gain": 0
     },
     {
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "industry": "nan",
-      "incomes": 17600,
-      "pf": 96.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9670,
-      "minus_gain": 0
-    },
-    {
       "code": "4686",
       "name": "ジャストシステム",
       "industry": "nan",
@@ -54,6 +43,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 4640,
+      "minus_gain": 0
+    },
+    {
+      "code": "7846",
+      "name": "パイロットコーポレーション",
+      "industry": "nan",
+      "incomes": 16300,
+      "pf": 90.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 9020,
       "minus_gain": 0
     },
     {
@@ -659,7 +659,7 @@
         "code": "7846",
         "name": "パイロットコーポレーション",
         "mark": "返売",
-        "close": 1820
+        "close": 1807
       }
     ],
     "new_buy_count": 0
@@ -705,9 +705,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29470180912"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29481179997"
   }
 }
