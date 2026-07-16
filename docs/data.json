@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T16:51:07+09:00",
+  "generated_at": "2026-07-16T18:14:37+09:00",
   "mode": "LO",
   "summary": {
     "pf": 4.274,
@@ -365,17 +365,6 @@
       "minus_gain": 0
     },
     {
-      "code": "9715",
-      "name": "トランスコスモス",
-      "industry": "nan",
-      "incomes": 3000,
-      "pf": 8.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 819,
-      "minus_gain": 0
-    },
-    {
       "code": "1662",
       "name": "石油資源開発",
       "industry": "nan",
@@ -387,14 +376,14 @@
       "minus_gain": 0
     },
     {
-      "code": "7164",
-      "name": "全国保証",
+      "code": "9715",
+      "name": "トランスコスモス",
       "industry": "nan",
-      "incomes": 2900,
-      "pf": 10.1,
+      "incomes": 3000,
+      "pf": 8.2,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 1010,
+      "plus_gain": 819,
       "minus_gain": 0
     },
     {
@@ -420,6 +409,17 @@
       "minus_gain": 0
     },
     {
+      "code": "7164",
+      "name": "全国保証",
+      "industry": "nan",
+      "incomes": 2900,
+      "pf": 10.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1010,
+      "minus_gain": 0
+    },
+    {
       "code": "2327",
       "name": "新日鉄住金ソリューションズ",
       "industry": "nan",
@@ -431,17 +431,6 @@
       "minus_gain": 0
     },
     {
-      "code": "8088",
-      "name": "岩谷産業",
-      "industry": "nan",
-      "incomes": 1800,
-      "pf": 9.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 940,
-      "minus_gain": 0
-    },
-    {
       "code": "6544",
       "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
@@ -450,6 +439,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1070,
+      "minus_gain": 0
+    },
+    {
+      "code": "8088",
+      "name": "岩谷産業",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 9.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 940,
       "minus_gain": 0
     },
     {
@@ -486,8 +486,8 @@
       "minus_gain": 0
     },
     {
-      "code": "2871",
-      "name": "ニチレイ",
+      "code": "4088",
+      "name": "エア・ウォーター",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -497,8 +497,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4088",
-      "name": "エア・ウォーター",
+      "code": "2871",
+      "name": "ニチレイ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -519,8 +519,8 @@
       "minus_gain": 0
     },
     {
-      "code": "2264",
-      "name": "森永乳業",
+      "code": "5301",
+      "name": "東海カーボン",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -530,8 +530,8 @@
       "minus_gain": 0
     },
     {
-      "code": "5301",
-      "name": "東海カーボン",
+      "code": "2264",
+      "name": "森永乳業",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -705,9 +705,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29481179997"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29486248059"
   }
 }
