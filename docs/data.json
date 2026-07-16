@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-16T12:17:17+09:00",
+  "generated_at": "2026-07-16T13:00:16+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 4.279,
+    "pf": 4.291,
     "wins": 43,
     "losses": 10,
     "win_rate": 81.13,
-    "total_income": 245300,
+    "total_income": 246200,
     "symbol_count": 58,
     "neutral_count": 5,
-    "source_file": "Y0_PF4.279_W43L10_rate81.13_all245300.csv"
+    "source_file": "Y0_PF4.291_W43L10_rate81.13_all246200.csv"
   },
   "symbols": [
     {
@@ -35,6 +35,17 @@
       "minus_gain": 0
     },
     {
+      "code": "7846",
+      "name": "パイロットコーポレーション",
+      "industry": "nan",
+      "incomes": 17600,
+      "pf": 96.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 9670,
+      "minus_gain": 0
+    },
+    {
       "code": "4686",
       "name": "ジャストシステム",
       "industry": "nan",
@@ -43,17 +54,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 4640,
-      "minus_gain": 0
-    },
-    {
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "industry": "nan",
-      "incomes": 16700,
-      "pf": 92.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9220,
       "minus_gain": 0
     },
     {
@@ -365,6 +365,17 @@
       "minus_gain": 0
     },
     {
+      "code": "9715",
+      "name": "トランスコスモス",
+      "industry": "nan",
+      "incomes": 3000,
+      "pf": 8.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 819,
+      "minus_gain": 0
+    },
+    {
       "code": "1662",
       "name": "石油資源開発",
       "industry": "nan",
@@ -376,14 +387,14 @@
       "minus_gain": 0
     },
     {
-      "code": "9715",
-      "name": "トランスコスモス",
+      "code": "7164",
+      "name": "全国保証",
       "industry": "nan",
-      "incomes": 3000,
-      "pf": 8.2,
+      "incomes": 2900,
+      "pf": 10.1,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 819,
+      "plus_gain": 1010,
       "minus_gain": 0
     },
     {
@@ -409,17 +420,6 @@
       "minus_gain": 0
     },
     {
-      "code": "7164",
-      "name": "全国保証",
-      "industry": "nan",
-      "incomes": 2900,
-      "pf": 10.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1010,
-      "minus_gain": 0
-    },
-    {
       "code": "2327",
       "name": "新日鉄住金ソリューションズ",
       "industry": "nan",
@@ -431,17 +431,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 1800,
-      "pf": 10.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1070,
-      "minus_gain": 0
-    },
-    {
       "code": "8088",
       "name": "岩谷産業",
       "industry": "nan",
@@ -450,6 +439,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 940,
+      "minus_gain": 0
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 10.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1070,
       "minus_gain": 0
     },
     {
@@ -486,8 +486,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4088",
-      "name": "エア・ウォーター",
+      "code": "2871",
+      "name": "ニチレイ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -497,8 +497,8 @@
       "minus_gain": 0
     },
     {
-      "code": "2871",
-      "name": "ニチレイ",
+      "code": "4088",
+      "name": "エア・ウォーター",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -519,8 +519,8 @@
       "minus_gain": 0
     },
     {
-      "code": "5301",
-      "name": "東海カーボン",
+      "code": "2264",
+      "name": "森永乳業",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -530,8 +530,8 @@
       "minus_gain": 0
     },
     {
-      "code": "2264",
-      "name": "森永乳業",
+      "code": "5301",
+      "name": "東海カーボン",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -659,7 +659,7 @@
         "code": "7846",
         "name": "パイロットコーポレーション",
         "mark": "返売",
-        "close": 1811
+        "close": 1820
       }
     ],
     "new_buy_count": 0
@@ -705,9 +705,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29468446964"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29470180912"
   }
 }
