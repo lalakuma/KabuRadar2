@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-17T12:20:35+09:00",
+  "generated_at": "2026-07-17T12:59:17+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 4.397,
+    "pf": 4.394,
     "wins": 43,
     "losses": 10,
     "win_rate": 81.13,
-    "total_income": 259500,
-    "symbol_count": 58,
-    "neutral_count": 5,
-    "source_file": "Y0_PF4.397_W43L10_rate81.13_all259500.csv"
+    "total_income": 259200,
+    "symbol_count": 60,
+    "neutral_count": 7,
+    "source_file": "Y0_PF4.394_W43L10_rate81.13_all259200.csv"
   },
   "symbols": [
     {
@@ -38,11 +38,11 @@
       "code": "2871",
       "name": "ニチレイ",
       "industry": "nan",
-      "incomes": 20100,
-      "pf": 93.9,
+      "incomes": 19800,
+      "pf": 92.6,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 9390,
+      "plus_gain": 9260,
       "minus_gain": 0
     },
     {
@@ -497,6 +497,28 @@
       "minus_gain": 0
     },
     {
+      "code": "5393",
+      "name": "ニチアス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6723",
+      "name": "ルネサスエレクトロニクス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "3186",
       "name": "ネクステージ",
       "industry": "nan",
@@ -655,10 +677,22 @@
     "trade_date": "2026-07-17",
     "new_buy": [
       {
+        "code": "5393",
+        "name": "ニチアス",
+        "mark": "新買",
+        "close": 3293
+      },
+      {
         "code": "6479",
         "name": "ミネベアミツミ",
         "mark": "新買",
-        "close": 3793
+        "close": 3784
+      },
+      {
+        "code": "6723",
+        "name": "ルネサスエレクトロニクス",
+        "mark": "新買",
+        "close": 3750
       }
     ],
     "sellback": [
@@ -666,10 +700,10 @@
         "code": "2871",
         "name": "ニチレイ",
         "mark": "返売",
-        "close": 2141
+        "close": 2138
       }
     ],
-    "new_buy_count": 1
+    "new_buy_count": 3
   },
   "special": {
     "enabled": true,
@@ -677,7 +711,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 3,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 34.36,
@@ -712,9 +746,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29551983169"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29553616160"
   }
 }
