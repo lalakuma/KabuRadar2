@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-21T12:23:20+09:00",
+  "generated_at": "2026-07-21T13:14:55+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 5.899,
-    "wins": 38,
+    "pf": 5.963,
+    "wins": 39,
     "losses": 8,
-    "win_rate": 82.61,
-    "total_income": 260000,
-    "symbol_count": 54,
+    "win_rate": 82.98,
+    "total_income": 266000,
+    "symbol_count": 55,
     "neutral_count": 8,
-    "source_file": "Y0_PF5.899_W38L8_rate82.61_all260000.csv"
+    "source_file": "Y0_PF5.963_W39L8_rate82.98_all266000.csv"
   },
   "symbols": [
     {
@@ -241,6 +241,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2550,
+      "minus_gain": 0
+    },
+    {
+      "code": "8098",
+      "name": "稲畑産業",
+      "industry": "nan",
+      "incomes": 6000,
+      "pf": 15.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1560,
       "minus_gain": 0
     },
     {
@@ -679,9 +690,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29798207991"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29800573760"
   }
 }
