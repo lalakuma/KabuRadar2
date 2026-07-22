@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-22T12:21:22+09:00",
+  "generated_at": "2026-07-22T13:15:55+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 6.052,
-    "wins": 39,
+    "pf": 5.899,
+    "wins": 38,
     "losses": 8,
-    "win_rate": 82.98,
-    "total_income": 266200,
+    "win_rate": 82.61,
+    "total_income": 260000,
     "symbol_count": 53,
-    "neutral_count": 6,
-    "source_file": "Y0_PF6.052_W39L8_rate82.98_all266200.csv"
+    "neutral_count": 7,
+    "source_file": "Y0_PF5.899_W38L8_rate82.61_all260000.csv"
   },
   "symbols": [
     {
@@ -241,17 +241,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2550,
-      "minus_gain": 0
-    },
-    {
-      "code": "5301",
-      "name": "東海カーボン",
-      "industry": "nan",
-      "incomes": 6200,
-      "pf": 37.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3710,
       "minus_gain": 0
     },
     {
@@ -497,6 +486,17 @@
       "minus_gain": 0
     },
     {
+      "code": "5301",
+      "name": "東海カーボン",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "2264",
       "name": "森永乳業",
       "industry": "nan",
@@ -603,17 +603,10 @@
         "code": "4587",
         "name": "ペプチドリーム",
         "mark": "新買",
-        "close": 963
+        "close": 956
       }
     ],
-    "sellback": [
-      {
-        "code": "5301",
-        "name": "東海カーボン",
-        "mark": "返売",
-        "close": 1672
-      }
-    ],
+    "sellback": [],
     "new_buy_count": 1
   },
   "special": {
@@ -657,9 +650,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29888060314"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29890492573"
   }
 }
