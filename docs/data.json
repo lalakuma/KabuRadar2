@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T12:22:13+09:00",
+  "generated_at": "2026-07-23T12:28:03+09:00",
   "mode": "LO",
   "summary": {
     "pf": 6.731,
@@ -387,17 +387,6 @@
       "minus_gain": 0
     },
     {
-      "code": "8088",
-      "name": "岩谷産業",
-      "industry": "nan",
-      "incomes": 1800,
-      "pf": 9.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 940,
-      "minus_gain": 0
-    },
-    {
       "code": "6544",
       "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
@@ -406,6 +395,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1070,
+      "minus_gain": 0
+    },
+    {
+      "code": "8088",
+      "name": "岩谷産業",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 9.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 940,
       "minus_gain": 0
     },
     {
@@ -442,63 +442,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4694",
-      "name": "ビー・エム・エル",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "5393",
       "name": "ニチアス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "3186",
-      "name": "ネクステージ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "2264",
-      "name": "森永乳業",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5301",
-      "name": "東海カーボン",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5471",
-      "name": "大同特殊鋼",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -519,8 +464,63 @@
       "minus_gain": 0
     },
     {
+      "code": "5471",
+      "name": "大同特殊鋼",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "5301",
+      "name": "東海カーボン",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6479",
       "name": "ミネベアミツミ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "2264",
+      "name": "森永乳業",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "4694",
+      "name": "ビー・エム・エル",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -682,6 +682,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29976703387"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29976896135"
   }
 }
