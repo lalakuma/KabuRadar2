@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-23T12:28:03+09:00",
+  "generated_at": "2026-07-23T13:15:26+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 6.731,
+    "pf": 6.724,
     "wins": 39,
     "losses": 8,
     "win_rate": 82.98,
-    "total_income": 274100,
-    "symbol_count": 55,
-    "neutral_count": 8,
-    "source_file": "Y0_PF6.731_W39L8_rate82.98_all274100.csv"
+    "total_income": 273700,
+    "symbol_count": 54,
+    "neutral_count": 7,
+    "source_file": "Y0_PF6.724_W39L8_rate82.98_all273700.csv"
   },
   "symbols": [
     {
@@ -247,11 +247,11 @@
       "code": "4088",
       "name": "エア・ウォーター",
       "industry": "nan",
-      "incomes": 6700,
-      "pf": 25.9,
+      "incomes": 6300,
+      "pf": 24.4,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 2590,
+      "plus_gain": 2440,
       "minus_gain": 0
     },
     {
@@ -387,17 +387,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 1800,
-      "pf": 10.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1070,
-      "minus_gain": 0
-    },
-    {
       "code": "8088",
       "name": "岩谷産業",
       "industry": "nan",
@@ -406,6 +395,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 940,
+      "minus_gain": 0
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 10.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1070,
       "minus_gain": 0
     },
     {
@@ -453,52 +453,8 @@
       "minus_gain": 0
     },
     {
-      "code": "2871",
-      "name": "ニチレイ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5471",
-      "name": "大同特殊鋼",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "3186",
       "name": "ネクステージ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5301",
-      "name": "東海カーボン",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6479",
-      "name": "ミネベアミツミ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -519,8 +475,41 @@
       "minus_gain": 0
     },
     {
-      "code": "4694",
-      "name": "ビー・エム・エル",
+      "code": "5301",
+      "name": "東海カーボン",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "5471",
+      "name": "大同特殊鋼",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "2871",
+      "name": "ニチレイ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6479",
+      "name": "ミネベアミツミ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -620,23 +609,16 @@
   ],
   "today": {
     "trade_date": "2026-07-23",
-    "new_buy": [
-      {
-        "code": "4694",
-        "name": "ビー・エム・エル",
-        "mark": "新買",
-        "close": 3515
-      }
-    ],
+    "new_buy": [],
     "sellback": [
       {
         "code": "4088",
         "name": "エア・ウォーター",
         "mark": "返売",
-        "close": 2589
+        "close": 2585
       }
     ],
-    "new_buy_count": 1
+    "new_buy_count": 0
   },
   "special": {
     "enabled": true,
@@ -644,7 +626,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 39.66,
@@ -679,9 +661,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29976896135"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29978896481"
   }
 }
