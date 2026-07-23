@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-23T13:15:26+09:00",
+  "generated_at": "2026-07-23T17:50:28+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 6.724,
+    "pf": 6.686,
     "wins": 39,
     "losses": 8,
     "win_rate": 82.98,
-    "total_income": 273700,
+    "total_income": 269400,
     "symbol_count": 54,
     "neutral_count": 7,
-    "source_file": "Y0_PF6.724_W39L8_rate82.98_all273700.csv"
+    "source_file": "Y0_PF6.686_W39L8_rate82.98_all269400.csv"
   },
   "symbols": [
     {
@@ -244,17 +244,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4088",
-      "name": "エア・ウォーター",
-      "industry": "nan",
-      "incomes": 6300,
-      "pf": 24.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2440,
-      "minus_gain": 0
-    },
-    {
       "code": "9508",
       "name": "九州電力",
       "industry": "nan",
@@ -387,14 +376,14 @@
       "minus_gain": 0
     },
     {
-      "code": "8088",
-      "name": "岩谷産業",
+      "code": "2264",
+      "name": "森永乳業",
       "industry": "nan",
-      "incomes": 1800,
-      "pf": 9.4,
+      "incomes": 2000,
+      "pf": 16.1,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 940,
+      "plus_gain": 1610,
       "minus_gain": 0
     },
     {
@@ -406,6 +395,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1070,
+      "minus_gain": 0
+    },
+    {
+      "code": "8088",
+      "name": "岩谷産業",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 9.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 940,
       "minus_gain": 0
     },
     {
@@ -442,6 +442,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4088",
+      "name": "エア・ウォーター",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "5393",
       "name": "ニチアス",
       "industry": "nan",
@@ -453,30 +464,8 @@
       "minus_gain": 0
     },
     {
-      "code": "3186",
-      "name": "ネクステージ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "2264",
-      "name": "森永乳業",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5301",
-      "name": "東海カーボン",
+      "code": "2871",
+      "name": "ニチレイ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -497,8 +486,19 @@
       "minus_gain": 0
     },
     {
-      "code": "2871",
-      "name": "ニチレイ",
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "5301",
+      "name": "東海カーボン",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -612,10 +612,10 @@
     "new_buy": [],
     "sellback": [
       {
-        "code": "4088",
-        "name": "エア・ウォーター",
+        "code": "2264",
+        "name": "森永乳業",
         "mark": "返売",
-        "close": 2585
+        "close": 1244
       }
     ],
     "new_buy_count": 0
@@ -661,9 +661,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29978896481"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/29992402346"
   }
 }
