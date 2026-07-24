@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-24T12:22:06+09:00",
+  "generated_at": "2026-07-24T13:14:06+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 7.29,
+    "pf": 7.618,
     "wins": 39,
     "losses": 8,
     "win_rate": 82.98,
-    "total_income": 272600,
+    "total_income": 285300,
     "symbol_count": 53,
     "neutral_count": 6,
-    "source_file": "Y0_PF7.29_W39L8_rate82.98_all272600.csv"
+    "source_file": "Y0_PF7.618_W39L8_rate82.98_all285300.csv"
   },
   "symbols": [
     {
@@ -35,6 +35,17 @@
       "minus_gain": 0
     },
     {
+      "code": "2871",
+      "name": "ニチレイ",
+      "industry": "nan",
+      "incomes": 20200,
+      "pf": 94.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 9430,
+      "minus_gain": 0
+    },
+    {
       "code": "4686",
       "name": "ジャストシステム",
       "industry": "nan",
@@ -46,17 +57,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4911",
-      "name": "資生堂",
-      "industry": "nan",
-      "incomes": 16300,
-      "pf": 58.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5800,
-      "minus_gain": 0
-    },
-    {
       "code": "7846",
       "name": "パイロットコーポレーション",
       "industry": "nan",
@@ -65,6 +65,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 9020,
+      "minus_gain": 0
+    },
+    {
+      "code": "4911",
+      "name": "資生堂",
+      "industry": "nan",
+      "incomes": 16300,
+      "pf": 58.0,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5800,
       "minus_gain": 0
     },
     {
@@ -208,17 +219,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2220,
-      "minus_gain": 0
-    },
-    {
-      "code": "4088",
-      "name": "エア・ウォーター",
-      "industry": "nan",
-      "incomes": 7500,
-      "pf": 28.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2890,
       "minus_gain": 0
     },
     {
@@ -387,17 +387,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 1800,
-      "pf": 10.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1070,
-      "minus_gain": 0
-    },
-    {
       "code": "8088",
       "name": "岩谷産業",
       "industry": "nan",
@@ -406,6 +395,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 940,
+      "minus_gain": 0
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 10.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1070,
       "minus_gain": 0
     },
     {
@@ -453,8 +453,19 @@
       "minus_gain": 0
     },
     {
-      "code": "2871",
-      "name": "ニチレイ",
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "5301",
+      "name": "東海カーボン",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -475,19 +486,8 @@
       "minus_gain": 0
     },
     {
-      "code": "3186",
-      "name": "ネクステージ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5301",
-      "name": "東海カーボン",
+      "code": "4088",
+      "name": "エア・ウォーター",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -601,10 +601,10 @@
     "new_buy": [],
     "sellback": [
       {
-        "code": "4088",
-        "name": "エア・ウォーター",
+        "code": "2871",
+        "name": "ニチレイ",
         "mark": "返売",
-        "close": 2597
+        "close": 2142
       }
     ],
     "new_buy_count": 0
@@ -650,9 +650,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30063878744"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30066075188"
   }
 }
