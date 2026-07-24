@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-24T13:14:06+09:00",
+  "generated_at": "2026-07-24T17:43:40+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 7.618,
-    "wins": 39,
+    "pf": 7.769,
+    "wins": 40,
     "losses": 8,
-    "win_rate": 82.98,
-    "total_income": 285300,
+    "win_rate": 83.33,
+    "total_income": 293000,
     "symbol_count": 53,
-    "neutral_count": 6,
-    "source_file": "Y0_PF7.618_W39L8_rate82.98_all285300.csv"
+    "neutral_count": 5,
+    "source_file": "Y0_PF7.769_W40L8_rate83.33_all293000.csv"
   },
   "symbols": [
     {
@@ -24,6 +24,17 @@
       "minus_gain": 0
     },
     {
+      "code": "2871",
+      "name": "ニチレイ",
+      "industry": "nan",
+      "incomes": 21000,
+      "pf": 97.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 9770,
+      "minus_gain": 0
+    },
+    {
       "code": "4568",
       "name": "第一三共",
       "industry": "nan",
@@ -32,17 +43,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 7820,
-      "minus_gain": 0
-    },
-    {
-      "code": "2871",
-      "name": "ニチレイ",
-      "industry": "nan",
-      "incomes": 20200,
-      "pf": 94.3,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9430,
       "minus_gain": 0
     },
     {
@@ -57,17 +57,6 @@
       "minus_gain": 0
     },
     {
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "industry": "nan",
-      "incomes": 16300,
-      "pf": 90.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9020,
-      "minus_gain": 0
-    },
-    {
       "code": "4911",
       "name": "資生堂",
       "industry": "nan",
@@ -76,6 +65,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 5800,
+      "minus_gain": 0
+    },
+    {
+      "code": "7846",
+      "name": "パイロットコーポレーション",
+      "industry": "nan",
+      "incomes": 16300,
+      "pf": 90.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 9020,
       "minus_gain": 0
     },
     {
@@ -244,6 +244,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4088",
+      "name": "エア・ウォーター",
+      "industry": "nan",
+      "incomes": 6900,
+      "pf": 26.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2660,
+      "minus_gain": 0
+    },
+    {
       "code": "9508",
       "name": "九州電力",
       "industry": "nan",
@@ -387,17 +398,6 @@
       "minus_gain": 0
     },
     {
-      "code": "8088",
-      "name": "岩谷産業",
-      "industry": "nan",
-      "incomes": 1800,
-      "pf": 9.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 940,
-      "minus_gain": 0
-    },
-    {
       "code": "6544",
       "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
@@ -406,6 +406,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1070,
+      "minus_gain": 0
+    },
+    {
+      "code": "8088",
+      "name": "岩谷産業",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 9.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 940,
       "minus_gain": 0
     },
     {
@@ -453,6 +464,17 @@
       "minus_gain": 0
     },
     {
+      "code": "5471",
+      "name": "大同特殊鋼",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "3186",
       "name": "ネクステージ",
       "industry": "nan",
@@ -466,28 +488,6 @@
     {
       "code": "5301",
       "name": "東海カーボン",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5471",
-      "name": "大同特殊鋼",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "4088",
-      "name": "エア・ウォーター",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -604,7 +604,13 @@
         "code": "2871",
         "name": "ニチレイ",
         "mark": "返売",
-        "close": 2142
+        "close": 2150
+      },
+      {
+        "code": "4088",
+        "name": "エア・ウォーター",
+        "mark": "返売",
+        "close": 2591
       }
     ],
     "new_buy_count": 0
@@ -650,9 +656,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30066075188"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30079791830"
   }
 }
