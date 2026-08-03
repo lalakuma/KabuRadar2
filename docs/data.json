@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-03T13:28:49+09:00",
+  "generated_at": "2026-08-03T19:44:02+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 55.461,
-    "wins": 32,
+    "pf": 53.582,
+    "wins": 31,
     "losses": 1,
-    "win_rate": 96.97,
-    "total_income": 318600,
+    "win_rate": 96.88,
+    "total_income": 301100,
     "symbol_count": 41,
-    "neutral_count": 8,
-    "source_file": "Y0_PF55.461_W32L1_rate96.97_all318600.csv"
+    "neutral_count": 9,
+    "source_file": "Y0_PF53.582_W31L1_rate96.88_all301100.csv"
   },
   "symbols": [
     {
@@ -68,17 +68,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4686",
-      "name": "ジャストシステム",
-      "industry": "nan",
-      "incomes": 17500,
-      "pf": 46.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4640,
-      "minus_gain": 0
-    },
-    {
       "code": "9024",
       "name": "西武ホールディングス",
       "industry": "nan",
@@ -90,17 +79,6 @@
       "minus_gain": 0
     },
     {
-      "code": "1878",
-      "name": "大東建託",
-      "industry": "nan",
-      "incomes": 16600,
-      "pf": 53.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5380,
-      "minus_gain": 0
-    },
-    {
       "code": "9022",
       "name": "東海旅客鉄道",
       "industry": "nan",
@@ -109,6 +87,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 4790,
+      "minus_gain": 0
+    },
+    {
+      "code": "1878",
+      "name": "大東建託",
+      "industry": "nan",
+      "incomes": 16600,
+      "pf": 53.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5380,
       "minus_gain": 0
     },
     {
@@ -277,17 +266,6 @@
       "minus_gain": 0
     },
     {
-      "code": "9715",
-      "name": "トランスコスモス",
-      "industry": "nan",
-      "incomes": 3000,
-      "pf": 8.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 819,
-      "minus_gain": 0
-    },
-    {
       "code": "1662",
       "name": "石油資源開発",
       "industry": "nan",
@@ -296,6 +274,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1800,
+      "minus_gain": 0
+    },
+    {
+      "code": "9715",
+      "name": "トランスコスモス",
+      "industry": "nan",
+      "incomes": 3000,
+      "pf": 8.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 819,
       "minus_gain": 0
     },
     {
@@ -365,6 +354,17 @@
       "minus_gain": 0
     },
     {
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "3436",
       "name": "ＳＵＭＣＯ",
       "industry": "nan",
@@ -376,41 +376,8 @@
       "minus_gain": 0
     },
     {
-      "code": "4516",
-      "name": "日本新薬",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "5471",
-      "name": "大同特殊鋼",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6479",
-      "name": "ミネベアミツミ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "3186",
-      "name": "ネクステージ",
+      "code": "1802",
+      "name": "大林組",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -442,8 +409,41 @@
       "minus_gain": 0
     },
     {
+      "code": "5471",
+      "name": "大同特殊鋼",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6670",
       "name": "ＭＣＪ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6479",
+      "name": "ミネベアミツミ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -468,14 +468,20 @@
     "trade_date": "2026-08-03",
     "new_buy": [
       {
+        "code": "1802",
+        "name": "大林組",
+        "mark": "新買",
+        "close": 3114
+      },
+      {
         "code": "7912",
         "name": "大日本印刷",
         "mark": "新買",
-        "close": 2919
+        "close": 2909
       }
     ],
     "sellback": [],
-    "new_buy_count": 1
+    "new_buy_count": 2
   },
   "special": {
     "enabled": true,
@@ -483,7 +489,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 2,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 55.65,
@@ -521,6 +527,6 @@
     "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30784400239"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30806551384"
   }
 }
