@@ -1,28 +1,17 @@
 {
-  "generated_at": "2026-08-04T12:16:05+09:00",
+  "generated_at": "2026-08-04T13:11:16+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 60.788,
-    "wins": 34,
+    "pf": 55.712,
+    "wins": 33,
     "losses": 1,
-    "win_rate": 97.14,
-    "total_income": 365500,
+    "win_rate": 97.06,
+    "total_income": 321000,
     "symbol_count": 43,
-    "neutral_count": 8,
-    "source_file": "Y0_PF60.788_W34L1_rate97.14_all365500.csv"
+    "neutral_count": 9,
+    "source_file": "Y0_PF55.712_W33L1_rate97.06_all321000.csv"
   },
   "symbols": [
-    {
-      "code": "3436",
-      "name": "ＳＵＭＣＯ",
-      "industry": "nan",
-      "incomes": 43400,
-      "pf": 121.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 12140,
-      "minus_gain": 0
-    },
     {
       "code": "5857",
       "name": "ＡＲＥホールディングス",
@@ -277,17 +266,6 @@
       "minus_gain": 0
     },
     {
-      "code": "3186",
-      "name": "ネクステージ",
-      "industry": "nan",
-      "incomes": 3500,
-      "pf": 10.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1019,
-      "minus_gain": 0
-    },
-    {
       "code": "5463",
       "name": "丸一鋼管",
       "industry": "nan",
@@ -329,6 +307,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2450,
+      "minus_gain": 0
+    },
+    {
+      "code": "6479",
+      "name": "ミネベアミツミ",
+      "industry": "nan",
+      "incomes": 2400,
+      "pf": 6.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 620,
       "minus_gain": 0
     },
     {
@@ -389,6 +378,28 @@
     {
       "code": "6632",
       "name": "ＪＶＣケンウッド",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "3436",
+      "name": "ＳＵＭＣＯ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -464,17 +475,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6479",
-      "name": "ミネベアミツミ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "9302",
       "name": "三井倉庫ホールディングス",
       "industry": "nan",
@@ -493,21 +493,15 @@
         "code": "6632",
         "name": "ＪＶＣケンウッド",
         "mark": "新買",
-        "close": 998
+        "close": 975
       }
     ],
     "sellback": [
       {
-        "code": "3186",
-        "name": "ネクステージ",
+        "code": "6479",
+        "name": "ミネベアミツミ",
         "mark": "返売",
-        "close": 3420
-      },
-      {
-        "code": "3436",
-        "name": "ＳＵＭＣＯ",
-        "mark": "返売",
-        "close": 3574
+        "close": 3845
       }
     ],
     "new_buy_count": 1
@@ -553,9 +547,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30874122926"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30876736626"
   }
 }
