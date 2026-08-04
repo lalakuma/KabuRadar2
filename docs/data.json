@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T13:11:16+09:00",
+  "generated_at": "2026-08-04T17:13:39+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 55.712,
-    "wins": 33,
+    "pf": 56.327,
+    "wins": 34,
     "losses": 1,
-    "win_rate": 97.06,
-    "total_income": 321000,
+    "win_rate": 97.14,
+    "total_income": 326200,
     "symbol_count": 43,
-    "neutral_count": 9,
-    "source_file": "Y0_PF55.712_W33L1_rate97.06_all321000.csv"
+    "neutral_count": 8,
+    "source_file": "Y0_PF56.327_W34L1_rate97.14_all326200.csv"
   },
   "symbols": [
     {
@@ -244,6 +244,17 @@
       "minus_gain": 0
     },
     {
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": 5000,
+      "pf": 14.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1460,
+      "minus_gain": 0
+    },
+    {
       "code": "8425",
       "name": "みずほリース",
       "industry": "nan",
@@ -299,6 +310,17 @@
       "minus_gain": 0
     },
     {
+      "code": "6479",
+      "name": "ミネベアミツミ",
+      "industry": "nan",
+      "incomes": 2600,
+      "pf": 6.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 680,
+      "minus_gain": 0
+    },
+    {
       "code": "4587",
       "name": "ペプチドリーム",
       "industry": "nan",
@@ -307,17 +329,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2450,
-      "minus_gain": 0
-    },
-    {
-      "code": "6479",
-      "name": "ミネベアミツミ",
-      "industry": "nan",
-      "incomes": 2400,
-      "pf": 6.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 620,
       "minus_gain": 0
     },
     {
@@ -378,17 +389,6 @@
     {
       "code": "6632",
       "name": "ＪＶＣケンウッド",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "3186",
-      "name": "ネクステージ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -493,15 +493,21 @@
         "code": "6632",
         "name": "ＪＶＣケンウッド",
         "mark": "新買",
-        "close": 975
+        "close": 930
       }
     ],
     "sellback": [
       {
+        "code": "3186",
+        "name": "ネクステージ",
+        "mark": "返売",
+        "close": 3435
+      },
+      {
         "code": "6479",
         "name": "ミネベアミツミ",
         "mark": "返売",
-        "close": 3845
+        "close": 3847
       }
     ],
     "new_buy_count": 1
@@ -547,9 +553,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30876736626"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/30890844428"
   }
 }
