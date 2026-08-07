@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T16:41:21+09:00",
+  "generated_at": "2026-08-07T17:14:47+09:00",
   "mode": "LO",
   "summary": {
     "pf": 55.502,
@@ -222,17 +222,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6849",
-      "name": "日本光電",
-      "industry": "nan",
-      "incomes": 5000,
-      "pf": 36.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3600,
-      "minus_gain": 0
-    },
-    {
       "code": "3186",
       "name": "ネクステージ",
       "industry": "nan",
@@ -244,14 +233,14 @@
       "minus_gain": 0
     },
     {
-      "code": "1662",
-      "name": "石油資源開発",
+      "code": "6849",
+      "name": "日本光電",
       "industry": "nan",
-      "incomes": 3000,
-      "pf": 18.0,
+      "incomes": 5000,
+      "pf": 36.0,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 1800,
+      "plus_gain": 3600,
       "minus_gain": 0
     },
     {
@@ -263,6 +252,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 819,
+      "minus_gain": 0
+    },
+    {
+      "code": "1662",
+      "name": "石油資源開発",
+      "industry": "nan",
+      "incomes": 3000,
+      "pf": 18.0,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1800,
       "minus_gain": 0
     },
     {
@@ -343,6 +343,28 @@
       "minus_gain": 0
     },
     {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6632",
       "name": "ＪＶＣケンウッド",
       "industry": "nan",
@@ -365,30 +387,8 @@
       "minus_gain": 0
     },
     {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "6670",
       "name": "ＭＣＪ",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "4516",
-      "name": "日本新薬",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -470,9 +470,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31158438953"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31160725670"
   }
 }
