@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-07T12:48:13+09:00",
+  "generated_at": "2026-08-07T16:41:21+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 57.477,
-    "wins": 33,
+    "pf": 55.502,
+    "wins": 31,
     "losses": 1,
-    "win_rate": 97.06,
-    "total_income": 328800,
+    "win_rate": 96.88,
+    "total_income": 312600,
     "symbol_count": 36,
-    "neutral_count": 3,
-    "source_file": "Y0_PF57.477_W33L1_rate97.06_all328800.csv"
+    "neutral_count": 5,
+    "source_file": "Y0_PF55.502_W31L1_rate96.88_all312600.csv"
   },
   "symbols": [
     {
@@ -98,17 +98,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 5000,
-      "minus_gain": 0
-    },
-    {
-      "code": "1802",
-      "name": "大林組",
-      "industry": "nan",
-      "incomes": 12000,
-      "pf": 37.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3710,
       "minus_gain": 0
     },
     {
@@ -255,17 +244,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4516",
-      "name": "日本新薬",
-      "industry": "nan",
-      "incomes": 4200,
-      "pf": 11.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1170,
-      "minus_gain": 0
-    },
-    {
       "code": "1662",
       "name": "石油資源開発",
       "industry": "nan",
@@ -376,6 +354,17 @@
       "minus_gain": 0
     },
     {
+      "code": "1802",
+      "name": "大林組",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6544",
       "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
@@ -398,6 +387,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "9302",
       "name": "三井倉庫ホールディングス",
       "industry": "nan",
@@ -410,23 +410,24 @@
     }
   ],
   "today": {
-    "trade_date": "2026-08-07",
-    "new_buy": [],
-    "sellback": [
+    "trade_date": "2026-08-06",
+    "new_buy": [
       {
-        "code": "1802",
-        "name": "大林組",
-        "mark": "返売",
-        "close": 3234
-      },
-      {
-        "code": "4516",
-        "name": "日本新薬",
-        "mark": "返売",
-        "close": 3592
+        "code": "9090",
+        "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+        "mark": "新買",
+        "close": 819
       }
     ],
-    "new_buy_count": 0
+    "sellback": [
+      {
+        "code": "7912",
+        "name": "大日本印刷",
+        "mark": "返売",
+        "close": 2998
+      }
+    ],
+    "new_buy_count": 1
   },
   "special": {
     "enabled": true,
@@ -434,7 +435,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 0,
+    "new_buy_count": 1,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 64.23,
@@ -469,9 +470,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31145310582"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31158438953"
   }
 }
