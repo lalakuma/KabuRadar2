@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-07T11:53:40+09:00",
+  "generated_at": "2026-08-07T12:48:13+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 57.433,
+    "pf": 57.477,
     "wins": 33,
     "losses": 1,
     "win_rate": 97.06,
-    "total_income": 328400,
+    "total_income": 328800,
     "symbol_count": 36,
     "neutral_count": 3,
-    "source_file": "Y0_PF57.433_W33L1_rate97.06_all328400.csv"
+    "source_file": "Y0_PF57.477_W33L1_rate97.06_all328800.csv"
   },
   "symbols": [
     {
@@ -258,11 +258,11 @@
       "code": "4516",
       "name": "日本新薬",
       "industry": "nan",
-      "incomes": 3800,
-      "pf": 10.6,
+      "incomes": 4200,
+      "pf": 11.7,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 1060,
+      "plus_gain": 1170,
       "minus_gain": 0
     },
     {
@@ -423,7 +423,7 @@
         "code": "4516",
         "name": "日本新薬",
         "mark": "返売",
-        "close": 3588
+        "close": 3592
       }
     ],
     "new_buy_count": 0
@@ -469,9 +469,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31142496871"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31145310582"
   }
 }
