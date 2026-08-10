@@ -1,367 +1,246 @@
 {
-  "generated_at": "2026-08-07T17:14:47+09:00",
-  "mode": "LO",
+  "generated_at": "2026-08-10T10:56:53+09:00",
+  "mode": "HI",
   "summary": {
-    "pf": 55.502,
-    "wins": 31,
-    "losses": 1,
-    "win_rate": 96.88,
-    "total_income": 312600,
-    "symbol_count": 36,
-    "neutral_count": 5,
-    "source_file": "Y0_PF55.502_W31L1_rate96.88_all312600.csv"
+    "pf": 21.15,
+    "wins": 21,
+    "losses": 5,
+    "win_rate": 80.77,
+    "total_income": 222400,
+    "symbol_count": 29,
+    "neutral_count": 3,
+    "source_file": "Y0_PF21.15_W21L5_rate80.77_all222400.csv"
   },
   "symbols": [
     {
-      "code": "3436",
-      "name": "ＳＵＭＣＯ",
+      "code": "4182",
+      "name": "三菱ガス化学",
       "industry": "nan",
-      "incomes": 61600,
-      "pf": 164.0,
+      "incomes": 57900,
+      "pf": 114.8,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 16400,
-      "minus_gain": 0
-    },
-    {
-      "code": "5857",
-      "name": "ＡＲＥホールディングス",
-      "industry": "nan",
-      "incomes": 28600,
-      "pf": 89.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 8900,
+      "plus_gain": 11480,
       "minus_gain": 0
     },
     {
       "code": "6055",
       "name": "ジャパンマテリアル",
       "industry": "nan",
-      "incomes": 28400,
-      "pf": 125.3,
+      "incomes": 24800,
+      "pf": 109.4,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 12530,
-      "minus_gain": 0
-    },
-    {
-      "code": "2871",
-      "name": "ニチレイ",
-      "industry": "nan",
-      "incomes": 21000,
-      "pf": 97.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9770,
-      "minus_gain": 0
-    },
-    {
-      "code": "9024",
-      "name": "西武ホールディングス",
-      "industry": "nan",
-      "incomes": 16800,
-      "pf": 59.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5950,
-      "minus_gain": 0
-    },
-    {
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "industry": "nan",
-      "incomes": 16300,
-      "pf": 90.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9020,
-      "minus_gain": 0
-    },
-    {
-      "code": "6758",
-      "name": "ソニーグループ",
-      "industry": "nan",
-      "incomes": 15900,
-      "pf": 48.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4820,
-      "minus_gain": 0
-    },
-    {
-      "code": "9843",
-      "name": "ニトリホールディングス",
-      "industry": "nan",
-      "incomes": 12400,
-      "pf": 50.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5000,
-      "minus_gain": 0
-    },
-    {
-      "code": "4587",
-      "name": "ペプチドリーム",
-      "industry": "nan",
-      "incomes": 11300,
-      "pf": 111.8,
-      "winlose": "W2L0",
-      "win_per": 100,
-      "plus_gain": 11180,
-      "minus_gain": 0
-    },
-    {
-      "code": "2168",
-      "name": "パソナグループ",
-      "industry": "nan",
-      "incomes": 10400,
-      "pf": 69.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 6940,
-      "minus_gain": 0
-    },
-    {
-      "code": "5393",
-      "name": "ニチアス",
-      "industry": "nan",
-      "incomes": 10300,
-      "pf": 30.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3070,
-      "minus_gain": 0
-    },
-    {
-      "code": "4403",
-      "name": "日油",
-      "industry": "nan",
-      "incomes": 9100,
-      "pf": 33.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3390,
-      "minus_gain": 0
-    },
-    {
-      "code": "7912",
-      "name": "大日本印刷",
-      "industry": "nan",
-      "incomes": 8900,
-      "pf": 29.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2970,
-      "minus_gain": 0
-    },
-    {
-      "code": "7276",
-      "name": "小糸製作所",
-      "industry": "nan",
-      "incomes": 8300,
-      "pf": 31.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3140,
-      "minus_gain": 0
-    },
-    {
-      "code": "5463",
-      "name": "丸一鋼管",
-      "industry": "nan",
-      "incomes": 8100,
-      "pf": 48.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4820,
-      "minus_gain": 0
-    },
-    {
-      "code": "7733",
-      "name": "オリンパス",
-      "industry": "nan",
-      "incomes": 7200,
-      "pf": 42.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4280,
-      "minus_gain": 0
-    },
-    {
-      "code": "4042",
-      "name": "東ソー",
-      "industry": "nan",
-      "incomes": 7100,
-      "pf": 25.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2550,
-      "minus_gain": 0
-    },
-    {
-      "code": "4088",
-      "name": "エア・ウォーター",
-      "industry": "nan",
-      "incomes": 6900,
-      "pf": 26.6,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2660,
-      "minus_gain": 0
-    },
-    {
-      "code": "5471",
-      "name": "大同特殊鋼",
-      "industry": "nan",
-      "incomes": 6000,
-      "pf": 25.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2550,
-      "minus_gain": 0
-    },
-    {
-      "code": "3186",
-      "name": "ネクステージ",
-      "industry": "nan",
-      "incomes": 5000,
-      "pf": 14.6,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1460,
-      "minus_gain": 0
-    },
-    {
-      "code": "6849",
-      "name": "日本光電",
-      "industry": "nan",
-      "incomes": 5000,
-      "pf": 36.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3600,
-      "minus_gain": 0
-    },
-    {
-      "code": "9715",
-      "name": "トランスコスモス",
-      "industry": "nan",
-      "incomes": 3000,
-      "pf": 8.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 819,
-      "minus_gain": 0
-    },
-    {
-      "code": "1662",
-      "name": "石油資源開発",
-      "industry": "nan",
-      "incomes": 3000,
-      "pf": 18.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1800,
-      "minus_gain": 0
-    },
-    {
-      "code": "6479",
-      "name": "ミネベアミツミ",
-      "industry": "nan",
-      "incomes": 2600,
-      "pf": 6.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 680,
-      "minus_gain": 0
-    },
-    {
-      "code": "9090",
-      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
-      "industry": "nan",
-      "incomes": 2200,
-      "pf": 28.6,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2860,
-      "minus_gain": 0
-    },
-    {
-      "code": "2327",
-      "name": "新日鉄住金ソリューションズ",
-      "industry": "nan",
-      "incomes": 2200,
-      "pf": 6.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 680,
-      "minus_gain": 0
-    },
-    {
-      "code": "2264",
-      "name": "森永乳業",
-      "industry": "nan",
-      "incomes": 2000,
-      "pf": 16.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1610,
-      "minus_gain": 0
-    },
-    {
-      "code": "5301",
-      "name": "東海カーボン",
-      "industry": "nan",
-      "incomes": 1200,
-      "pf": 7.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 740,
-      "minus_gain": 0
-    },
-    {
-      "code": "9434",
-      "name": "ソフトバンク",
-      "industry": "nan",
-      "incomes": 500,
-      "pf": 24.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2400,
-      "minus_gain": 0
-    },
-    {
-      "code": "2317",
-      "name": "システナ",
-      "industry": "nan",
-      "incomes": 200,
-      "pf": 5.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 500,
-      "minus_gain": 0
-    },
-    {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
+      "plus_gain": 10940,
       "minus_gain": 0
     },
     {
       "code": "4516",
       "name": "日本新薬",
       "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
+      "incomes": 21000,
+      "pf": 57.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5780,
+      "minus_gain": 0
+    },
+    {
+      "code": "4686",
+      "name": "ジャストシステム",
+      "industry": "nan",
+      "incomes": 16500,
+      "pf": 43.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4370,
+      "minus_gain": 0
+    },
+    {
+      "code": "7846",
+      "name": "パイロットコーポレーション",
+      "industry": "nan",
+      "incomes": 14400,
+      "pf": 79.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 7970,
+      "minus_gain": 0
+    },
+    {
+      "code": "2871",
+      "name": "ニチレイ",
+      "industry": "nan",
+      "incomes": 12400,
+      "pf": 57.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5770,
+      "minus_gain": 0
+    },
+    {
+      "code": "6758",
+      "name": "ソニーグループ",
+      "industry": "nan",
+      "incomes": 11600,
+      "pf": 35.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3520,
+      "minus_gain": 0
+    },
+    {
+      "code": "9302",
+      "name": "三井倉庫ホールディングス",
+      "industry": "nan",
+      "incomes": 11200,
+      "pf": 31.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3110,
+      "minus_gain": 0
+    },
+    {
+      "code": "9843",
+      "name": "ニトリホールディングス",
+      "industry": "nan",
+      "incomes": 10200,
+      "pf": 41.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4110,
+      "minus_gain": 0
+    },
+    {
+      "code": "5463",
+      "name": "丸一鋼管",
+      "industry": "nan",
+      "incomes": 9300,
+      "pf": 55.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 5530,
+      "minus_gain": 0
+    },
+    {
+      "code": "4403",
+      "name": "日油",
+      "industry": "nan",
+      "incomes": 9300,
+      "pf": 34.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3460,
+      "minus_gain": 0
+    },
+    {
+      "code": "7276",
+      "name": "小糸製作所",
+      "industry": "nan",
+      "incomes": 8400,
+      "pf": 31.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 3170,
+      "minus_gain": 0
+    },
+    {
+      "code": "5393",
+      "name": "ニチアス",
+      "industry": "nan",
+      "incomes": 8100,
+      "pf": 24.1,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2410,
+      "minus_gain": 0
+    },
+    {
+      "code": "4587",
+      "name": "ペプチドリーム",
+      "industry": "nan",
+      "incomes": 7800,
+      "pf": 76.5,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 7650,
+      "minus_gain": 0
+    },
+    {
+      "code": "6849",
+      "name": "日本光電",
+      "industry": "nan",
+      "incomes": 2900,
+      "pf": 20.9,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2090,
+      "minus_gain": 0
+    },
+    {
+      "code": "9715",
+      "name": "トランスコスモス",
+      "industry": "nan",
+      "incomes": 2500,
+      "pf": 6.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 680,
+      "minus_gain": 0
+    },
+    {
+      "code": "4088",
+      "name": "エア・ウォーター",
+      "industry": "nan",
+      "incomes": 2000,
+      "pf": 7.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 770,
+      "minus_gain": 0
+    },
+    {
+      "code": "9090",
+      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+      "industry": "nan",
+      "incomes": 1800,
+      "pf": 23.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2340,
+      "minus_gain": 0
+    },
+    {
+      "code": "2327",
+      "name": "新日鉄住金ソリューションズ",
+      "industry": "nan",
+      "incomes": 700,
+      "pf": 2.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 220,
+      "minus_gain": 0
+    },
+    {
+      "code": "9434",
+      "name": "ソフトバンク",
+      "industry": "nan",
+      "incomes": 400,
+      "pf": 19.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1920,
+      "minus_gain": 0
+    },
+    {
+      "code": "1662",
+      "name": "石油資源開発",
+      "industry": "nan",
+      "incomes": 100,
+      "pf": 0.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 60,
       "minus_gain": 0
     },
     {
@@ -387,8 +266,8 @@
       "minus_gain": 0
     },
     {
-      "code": "6670",
-      "name": "ＭＣＪ",
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -398,36 +277,73 @@
       "minus_gain": 0
     },
     {
-      "code": "9302",
-      "name": "三井倉庫ホールディングス",
+      "code": "5471",
+      "name": "大同特殊鋼",
       "industry": "nan",
-      "incomes": -8900,
+      "incomes": -900,
       "pf": 0.0,
       "winlose": "W0L1",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 2470
+      "minus_gain": 380
+    },
+    {
+      "code": "2264",
+      "name": "森永乳業",
+      "industry": "nan",
+      "incomes": -1100,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 880
+    },
+    {
+      "code": "5301",
+      "name": "東海カーボン",
+      "industry": "nan",
+      "incomes": -1400,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 860
+    },
+    {
+      "code": "3186",
+      "name": "ネクステージ",
+      "industry": "nan",
+      "incomes": -2000,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 580
+    },
+    {
+      "code": "6479",
+      "name": "ミネベアミツミ",
+      "industry": "nan",
+      "incomes": -5500,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 1430
     }
   ],
   "today": {
-    "trade_date": "2026-08-06",
-    "new_buy": [
-      {
-        "code": "9090",
-        "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
-        "mark": "新買",
-        "close": 819
-      }
-    ],
+    "trade_date": "2026-08-10",
+    "new_buy": [],
     "sellback": [
       {
-        "code": "7912",
-        "name": "大日本印刷",
+        "code": "4516",
+        "name": "日本新薬",
         "mark": "返売",
-        "close": 2998
+        "close": 3633
       }
     ],
-    "new_buy_count": 1
+    "new_buy_count": 0
   },
   "special": {
     "enabled": true,
@@ -435,13 +351,13 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 64.23,
-      "1306": 72.76
+      "1321": 63.69,
+      "1306": 75.52
     },
-    "active_rsi": 72.76,
+    "active_rsi": 75.52,
     "signal": null
   },
   "runtime": {
@@ -473,6 +389,6 @@
     "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31160725670"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31348307080"
   }
 }
