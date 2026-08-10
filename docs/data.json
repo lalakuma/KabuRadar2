@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-10T12:17:45+09:00",
+  "generated_at": "2026-08-10T13:09:15+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 56.696,
-    "wins": 30,
+    "pf": 58.595,
+    "wins": 31,
     "losses": 1,
-    "win_rate": 96.77,
-    "total_income": 354200,
-    "symbol_count": 35,
+    "win_rate": 96.88,
+    "total_income": 371900,
+    "symbol_count": 36,
     "neutral_count": 5,
-    "source_file": "Y0_PF56.696_W30L1_rate96.77_all354200.csv"
+    "source_file": "Y0_PF58.595_W31L1_rate96.88_all371900.csv"
   },
   "symbols": [
     {
@@ -65,6 +65,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 9770,
+      "minus_gain": 0
+    },
+    {
+      "code": "4686",
+      "name": "ジャストシステム",
+      "industry": "nan",
+      "incomes": 17500,
+      "pf": 46.4,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4640,
       "minus_gain": 0
     },
     {
@@ -200,6 +211,17 @@
       "minus_gain": 0
     },
     {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 6000,
+      "pf": 16.6,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1660,
+      "minus_gain": 0
+    },
+    {
       "code": "5471",
       "name": "大同特殊鋼",
       "industry": "nan",
@@ -208,17 +230,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2550,
-      "minus_gain": 0
-    },
-    {
-      "code": "4516",
-      "name": "日本新薬",
-      "industry": "nan",
-      "incomes": 5800,
-      "pf": 16.1,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1610,
       "minus_gain": 0
     },
     {
@@ -406,7 +417,7 @@
         "code": "4516",
         "name": "日本新薬",
         "mark": "返売",
-        "close": 3608
+        "close": 3610
       }
     ],
     "new_buy_count": 0
@@ -455,6 +466,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31352073191"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31354450657"
   }
 }
