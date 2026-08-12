@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T13:23:03+09:00",
+  "generated_at": "2026-08-12T16:18:39+09:00",
   "mode": "LO",
   "summary": {
     "pf": 51.611,
@@ -321,30 +321,8 @@
       "minus_gain": 0
     },
     {
-      "code": "9090",
-      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
       "code": "6632",
       "name": "ＪＶＣケンウッド",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "1802",
-      "name": "大林組",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -365,8 +343,30 @@
       "minus_gain": 0
     },
     {
+      "code": "9090",
+      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "6670",
       "name": "ＭＣＪ",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "1802",
+      "name": "大林組",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -444,6 +444,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31562916558"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31573231560"
   }
 }
