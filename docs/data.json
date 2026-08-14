@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-14T11:20:39+09:00",
+  "generated_at": "2026-08-14T11:25:45+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 59.036,
-    "wins": 31,
+    "pf": 56.238,
+    "wins": 30,
     "losses": 1,
-    "win_rate": 96.88,
-    "total_income": 327100,
+    "win_rate": 96.77,
+    "total_income": 303300,
     "symbol_count": 34,
     "neutral_count": 4,
-    "source_file": "Y0_PF59.036_W31L1_rate96.88_all327100.csv"
+    "source_file": "Y0_PF56.238_W30L1_rate96.77_all303300.csv"
   },
   "symbols": [
     {
@@ -79,17 +79,6 @@
       "minus_gain": 0
     },
     {
-      "code": "9302",
-      "name": "三井倉庫ホールディングス",
-      "industry": "nan",
-      "incomes": 15100,
-      "pf": 2.9,
-      "winlose": "W1L1",
-      "win_per": 50,
-      "plus_gain": 7080,
-      "minus_gain": 2470
-    },
-    {
       "code": "9843",
       "name": "ニトリホールディングス",
       "industry": "nan",
@@ -104,11 +93,11 @@
       "code": "6632",
       "name": "ＪＶＣケンウッド",
       "industry": "nan",
-      "incomes": 11800,
-      "pf": 112.6,
+      "incomes": 12000,
+      "pf": 114.3,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 11260,
+      "plus_gain": 11430,
       "minus_gain": 0
     },
     {
@@ -385,6 +374,17 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 0
+    },
+    {
+      "code": "9302",
+      "name": "三井倉庫ホールディングス",
+      "industry": "nan",
+      "incomes": -8900,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 2470
     }
   ],
   "today": {
@@ -395,13 +395,7 @@
         "code": "6632",
         "name": "ＪＶＣケンウッド",
         "mark": "返売",
-        "close": 1048
-      },
-      {
-        "code": "9302",
-        "name": "三井倉庫ホールディングス",
-        "mark": "返売",
-        "close": 3388
+        "close": 1050
       }
     ],
     "new_buy_count": 0
@@ -450,6 +444,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31763293882"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31763545222"
   }
 }
