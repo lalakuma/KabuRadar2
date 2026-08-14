@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T16:21:09+09:00",
+  "generated_at": "2026-08-14T17:17:00+09:00",
   "mode": "LO",
   "summary": {
     "pf": 58.838,
@@ -447,9 +447,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "workflow_dispatch",
+    "event": "schedule",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31779422606"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31783070327"
   }
 }
