@@ -54,6 +54,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Restore database cache
+        uses: actions/cache@v4
+        with:
+          path: data/kaburadar.db
+          key: kaburadar-db-v1
+
       - name: Verify database
         run: test -f data/kaburadar.db
 
@@ -131,18 +137,19 @@ jobs:
           LINE_USER_IDS: ${{ secrets.LINE_USER_IDS }}
         run: |
           if [ -n "$LINE_CHANNEL_ACCESS_TOKEN" ] && [ -n "$LINE_USER_IDS" ]; then
-            python src/kaburadar/cli/notify_line.py
+            python src/kaburadar/cli/notify_line.py || echo "LINE notify skipped (non-fatal)."
           else
             echo "LINE secrets not set, skipping."
           fi
 
       - name: Commit results
+        continue-on-error: true
         env:
           PYTHONPATH: src
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/kaburadar.db data/special_state.json docs/data.json
+          git add data/special_state.json docs/data.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

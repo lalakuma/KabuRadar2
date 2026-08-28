@@ -2,6 +2,13 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-08 LFS 上限・過剰実行の対策
+
+- DB を **Actions cache** で実行間引き継ぎ（`kaburadar-db-v1`）。master への LFS push を廃止
+- `Commit results` を `continue-on-error` に（JSON のみ commit）
+- guard の 10:00 LO カバー開始を 12:30 → **10:05** に前倒し（schedule 遅延で重複 dispatch されていた）
+- LINE 送信失敗をワークフロー失敗にしない
+
 ## 2026-07 1日3回（HI/LO 場中 + LO 引け後）
 
 - **9:00 JST** … HI 場中（`config_hi.ini`）

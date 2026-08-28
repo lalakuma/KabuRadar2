@@ -19,7 +19,8 @@
 株価更新 (yfinance・過去5日)
   → 全銘柄バックテスト
   → docs/data.json 生成
-  → data/kaburadar.db + JSON を commit & push
+  → docs/data.json 生成 → gh-pages デプロイ
+  → special_state.json / docs/data.json を master に commit（DB は Actions cache）
   → GitHub Pages 更新
 ```
 

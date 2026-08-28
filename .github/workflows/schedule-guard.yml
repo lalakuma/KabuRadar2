@@ -30,7 +30,8 @@ jobs:
           script: |
             const slots = [
               { name: "9:00", profile: "hi", minuteOfDay: 9 * 60, coverStart: 8 * 60 + 55, coverEnd: 12 * 60 + 29 },
-              { name: "10:00", profile: "lo", minuteOfDay: 10 * 60, coverStart: 12 * 60 + 30, coverEnd: 15 * 60 + 54 },
+              // schedule 遅延で 10〜12 時台に着くことがあるため cover を前倒し
+              { name: "10:00", profile: "lo", minuteOfDay: 10 * 60, coverStart: 10 * 60 + 5, coverEnd: 15 * 60 + 54 },
               { name: "16:00", profile: "lo", minuteOfDay: 16 * 60, coverStart: 15 * 60 + 55, coverEnd: 19 * 60 },
             ];
             const checkDelayMinutes = 5;

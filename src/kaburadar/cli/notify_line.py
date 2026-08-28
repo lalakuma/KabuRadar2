@@ -16,8 +16,8 @@ def main() -> int:
         print(f"LINE: {data_file} がありません。", file=sys.stderr)
         return 1
     payload = json.loads(data_file.read_text(encoding="utf-8"))
-    ok = notify_from_payload(payload)
-    return 0 if ok else 1
+    notify_from_payload(payload)
+    return 0
 
 
 if __name__ == "__main__":

@@ -9,12 +9,13 @@
 ```
 平日 9:00 HI / 10:00 LO / 16:00 LO JST（場中2回 + 引け後1回）
   → GitHub Actions (Ubuntu)
-  → git lfs pull で data/kaburadar.db を取得
+  → git lfs pull で data/kaburadar.db を取得（初回・キャッシュミス時）
+  → Actions cache で DB を実行間引き継ぎ（LFS push はしない）
   → yfinance で過去5日分を取得 → SQLite に書込
   → 全銘柄バックテスト → 集計
   → docs/data.json 生成
-  → DB + JSON を commit & push
-  → GitHub Pages 更新
+  → gh-pages へデプロイ（Web 更新）
+  → special_state.json / docs/data.json を master に commit（任意・失敗しても続行）
 ```
 
 **PC は不要**（設定ファイルを編集するときだけ git clone があれば足ります）。
@@ -116,10 +117,10 @@ Log: https://github.com/lalakuma/KabuRadar2/actions/runs/…
 | サービス | 公開 repo |
 |----------|-----------|
 | GitHub Actions | 平日 3 回/日 → 通常問題なし |
-| Git LFS | ストレージ 10 GiB / **帯域 10 GiB・月** |
+| Git LFS | 初回 checkout のみ（DB は **Actions cache** で永続化） |
 | GitHub Pages | 無料 |
 
-**LFS 帯域:** DB（約 128MB）を平日 3 回/日 pull すると月 ~8.4 GiB 相当。**無料 10 GiB/月** 内に収まる想定です。手動実行や clone が多い場合は [Billing → Git LFS](https://github.com/settings/billing) で使用量を確認してください。
+**LFS 帯域:** 以前は毎回 DB を LFS push しており、guard の過剰起動と合わせて **月 10 GiB 上限** に達することがあります。現在は DB を cache に保存し、master への LFS push は行いません。帯域は [Billing → Git LFS](https://github.com/settings/billing) で確認してください。
 
 ## ローカル clone する人へ
 
@@ -138,11 +139,12 @@ git lfs pull
 
 | 症状 | 対処 |
 |------|------|
-| Actions 失敗 | ログ確認。yfinance エラー・解析 exit 1/2 |
-| DB なし | LFS が pull されているか |
+| Actions 失敗（赤） | ログ確認。LFS 上限・LINE 429 は **解析・Web 更新は成功していることが多い**（gh-pages の `data.json` 更新日時を確認） |
+| LFS budget exceeded | 上記のとおり DB は cache 運用に変更済み。翌月に帯域がリセットされるか、[Billing](https://github.com/settings/billing) で Data pack を検討 |
+| DB なし | LFS が pull されているか（初回）。2 回目以降は cache |
 | サイト古い | Actions 成功後も Pages 未デプロイだった → **修正済**（screening 末尾で gh-pages へデプロイ） |
 | Pages が `errored` | Settings → Pages で branch **`gh-pages`** を指定。Actions を再実行 |
-| LINE が来ない | Secrets 名の綴り・友だち追加・平日か確認。Actions の LINE ステップログを見る |
+| LINE が来ない | Secrets 名の綴り・友だち追加・平日か確認。429（送信過多）のときは翌日まで待つか、guard による重複実行が収まるのを待つ |
 | ローカルと結果が違う | ローカル screening を止める |
 
 ## GitHub Pages が更新されない理由
