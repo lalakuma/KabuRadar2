@@ -36,6 +36,8 @@ def test_collect_daily_history_groups_by_date(tmp_path: Path) -> None:
     assert result["days"][0]["sellback"][0]["pnl"] == 5000
     assert result["days"][1]["date"] == "2026-06-01"
     assert result["days"][1]["new_buy_count"] == 1
+    assert len(result["buy_days"]) == 2
+    assert result["buy_days"][0]["date"] == "2026-06-02"
 
 
 def test_ignores_zero_close_signals(tmp_path: Path) -> None:
@@ -47,3 +49,4 @@ def test_ignores_zero_close_signals(tmp_path: Path) -> None:
     )
     result = collect_daily_history(tmp_path)
     assert result["days"][0]["new_buy_count"] == 0
+    assert result["buy_days"] == []

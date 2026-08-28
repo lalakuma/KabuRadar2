@@ -72,7 +72,7 @@ def collect_daily_history(
                 bucket["sellback"].append(_to_signal_item(code, mark, close, pnl, name_map))
 
     if not by_date:
-        return {"days": []}
+        return {"days": [], "buy_days": []}
 
     sorted_dates = sorted(by_date.keys(), reverse=True)[:max_days]
     days: list[dict] = []
@@ -90,4 +90,5 @@ def collect_daily_history(
                 "sellback": sellback,
             },
         )
-    return {"days": days}
+    buy_days = [d for d in days if d["new_buy_count"] > 0]
+    return {"days": days, "buy_days": buy_days}

@@ -42,15 +42,54 @@ function renderSignalRows(container, rows, emptyText) {
     .join("");
 }
 
+function renderBuyTimeline(daily) {
+  const timeline = document.getElementById("daily-buy-timeline");
+  const meta = document.getElementById("daily-buy-meta");
+  const buyDays = daily?.buy_days || (daily?.days || []).filter((d) => (d.new_buy_count ?? 0) > 0);
+  const totalDays = daily?.days?.length ?? 0;
+
+  if (!buyDays.length) {
+    meta.textContent = totalDays ? `直近 ${totalDays} 営業日 · 買いシグナルなし` : "データなし";
+    timeline.innerHTML = `<li class="signal-empty">この期間に買い（新買）シグナルはありません</li>`;
+    return;
+  }
+
+  const totalBuys = buyDays.reduce((n, d) => n + (d.new_buy_count ?? 0), 0);
+  meta.textContent = `直近 ${totalDays} 営業日 · 買いあり ${buyDays.length} 日 · 計 ${totalBuys} 件`;
+
+  timeline.innerHTML = buyDays
+    .map((day) => {
+      const stocks = (day.new_buy || [])
+        .map((row) => {
+          const close =
+            row.close != null ? `<span class="signal-close">¥${fmt.format(row.close)}</span>` : "";
+          return `<li class="signal-item">
+            <span class="code">${escapeHtml(row.code)}</span>
+            <span class="name">${escapeHtml(row.name)}</span>
+            ${close}
+          </li>`;
+        })
+        .join("");
+      return `<li class="daily-day-group">
+        <div class="daily-day-header">
+          <span class="daily-day-date">${escapeHtml(day.date)}</span>
+          <span class="badge-count">${day.new_buy_count ?? 0} 件</span>
+        </div>
+        <ul class="signal-list">${stocks}</ul>
+      </li>`;
+    })
+    .join("");
+}
+
 function renderDailyHistory(daily) {
+  renderBuyTimeline(daily);
+
   const select = document.getElementById("daily-date");
   const days = daily?.days || [];
   if (!days.length) {
     select.innerHTML = `<option value="">データなし</option>`;
     document.getElementById("daily-summary").innerHTML = "";
-    renderSignalRows(document.getElementById("daily-buy"), [], "該当なし");
     renderSignalRows(document.getElementById("daily-sellback"), [], "該当なし");
-    document.getElementById("daily-buy-count").textContent = "0";
     document.getElementById("daily-sellback-count").textContent = "0";
     return;
   }
@@ -70,9 +109,7 @@ function renderDailyHistory(daily) {
       <div class="summary-card"><p class="label">新買</p><p class="value">${day.new_buy_count ?? 0} 件</p></div>
       <div class="summary-card"><p class="label">返売り</p><p class="value">${day.sellback_count ?? 0} 件</p></div>
     `;
-    document.getElementById("daily-buy-count").textContent = String(day.new_buy_count ?? 0);
     document.getElementById("daily-sellback-count").textContent = String(day.sellback_count ?? 0);
-    renderSignalRows(document.getElementById("daily-buy"), day.new_buy, "この日の新買はありません");
     renderSignalRows(
       document.getElementById("daily-sellback"),
       day.sellback,

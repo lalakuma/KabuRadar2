@@ -36,20 +36,22 @@
       </div>
     </section>
 
-    <section id="panel-daily" class="panel" aria-label="日別結果" hidden>
-      <h2 class="panel-title">日別結果</h2>
-      <div class="toolbar daily-toolbar">
-        <select id="daily-date" aria-label="日付を選択"></select>
-      </div>
-      <div id="daily-summary" class="summary daily-summary"></div>
-      <div class="signal-block">
-        <h3>買い（新買） <span id="daily-buy-count" class="badge-count">0</span></h3>
-        <ul id="daily-buy" class="signal-list"></ul>
-      </div>
-      <div class="signal-block">
-        <h3>返売り <span id="daily-sellback-count" class="badge-count">0</span></h3>
-        <ul id="daily-sellback" class="signal-list"></ul>
-      </div>
+    <section id="panel-daily" class="panel" aria-label="日別買いシグナル" hidden>
+      <h2 class="panel-title">買いシグナル（日別）</h2>
+      <p id="daily-buy-meta" class="panel-meta"></p>
+      <ul id="daily-buy-timeline" class="daily-timeline"></ul>
+
+      <details class="daily-details">
+        <summary>返売り・日次損益を見る</summary>
+        <div class="toolbar daily-toolbar">
+          <select id="daily-date" aria-label="日付を選択"></select>
+        </div>
+        <div id="daily-summary" class="summary daily-summary"></div>
+        <div class="signal-block">
+          <h3>返売り <span id="daily-sellback-count" class="badge-count">0</span></h3>
+          <ul id="daily-sellback" class="signal-list"></ul>
+        </div>
+      </details>
     </section>
 
     <section id="panel-special" class="panel" aria-label="特別買い" hidden>
