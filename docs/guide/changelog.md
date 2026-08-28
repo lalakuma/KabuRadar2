@@ -2,6 +2,12 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-08 新買シグナル誤検出の修正
+
+- `collect_today_signals` を **各銘柄 CSV の最終行のみ** 判定に変更（過去の新買を当日と誤認しない）
+- 終値 `close <= 0` のシグナルを除外
+- Actions cache を `v2` に更新し、DB サイズ 100MB 未満はエラー（LFS ポインタ／欠損 cache を拒否）
+
 ## 2026-08 LFS 上限・過剰実行の対策
 
 - DB を **Actions cache** で実行間引き継ぎ（`kaburadar-db-v1`）。master への LFS push を廃止

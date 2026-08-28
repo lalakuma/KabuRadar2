@@ -22,40 +22,46 @@ def _row_trade_date(row: pd.Series, idx: object) -> pd.Timestamp | None:
     return None
 
 
-def _read_code_marks(path: Path) -> list[tuple[str, pd.Timestamp, str, float | None]]:
-    """(code, date, mark, close) のリスト。"""
+def _parse_close(row: pd.Series) -> float | None:
+    close_val = row.get("close")
+    if pd.isna(close_val):
+        return None
+    close = float(close_val)
+    if close <= 0:
+        return None
+    return close
+
+
+def _read_code_last_row(path: Path) -> tuple[str, pd.Timestamp | None, str, float | None] | None:
+    """各銘柄 CSV の最終行 (code, date, mark, close) を返す。"""
     df = read_csv(path)
     if df.empty or "mark" not in df.columns:
-        return []
+        return None
     match = _CODE_CSV.match(path.name)
     if not match:
-        return []
+        return None
     code = match.group(1)
-    rows: list[tuple[str, pd.Timestamp, str, float | None]] = []
-    for idx, row in df.iterrows():
-        mark = str(row.get("mark", "")).strip()
-        if mark not in (MARK_NEW_BUY, MARK_SELLBACK):
-            continue
-        dt = _row_trade_date(row, idx)
-        if dt is None:
-            continue
-        close_val = row.get("close")
-        close = float(close_val) if pd.notna(close_val) else None
-        rows.append((code, dt, mark, close))
-    return rows
+    last = df.iloc[-1]
+    mark = str(last.get("mark", "")).strip()
+    dt = _row_trade_date(last, df.index[-1])
+    close = _parse_close(last)
+    return code, dt, mark, close
 
 
 def collect_today_signals(
     results_dir: Path,
     name_map: dict[str, str] | None = None,
 ) -> dict:
-    """最新営業日の新買・返売りを返す。"""
+    """最新営業日の最終バーに 新買・返売 がある銘柄だけ返す。"""
     name_map = name_map or {}
-    all_rows: list[tuple[str, pd.Timestamp, str, float | None]] = []
+    last_rows: list[tuple[str, pd.Timestamp | None, str, float | None]] = []
     for path in sorted(results_dir.glob("code*.csv")):
-        all_rows.extend(_read_code_marks(path))
+        row = _read_code_last_row(path)
+        if row is not None:
+            last_rows.append(row)
 
-    if not all_rows:
+    trade_dates = [dt for _c, dt, _m, _cl in last_rows if dt is not None]
+    if not trade_dates:
         return {
             "trade_date": None,
             "new_buy": [],
@@ -63,7 +69,7 @@ def collect_today_signals(
             "new_buy_count": 0,
         }
 
-    trade_date = max(dt for _c, dt, _m, _cl in all_rows)
+    trade_date = max(trade_dates)
     trade_str = trade_date.strftime("%Y-%m-%d")
 
     def _to_item(code: str, mark: str, close: float | None) -> dict:
@@ -78,12 +84,12 @@ def collect_today_signals(
 
     new_buy: list[dict] = []
     sellback: list[dict] = []
-    for code, dt, mark, close in all_rows:
+    for code, dt, mark, close in last_rows:
         if dt != trade_date:
             continue
-        if mark == MARK_NEW_BUY:
+        if mark == MARK_NEW_BUY and close is not None:
             new_buy.append(_to_item(code, mark, close))
-        elif mark == MARK_SELLBACK:
+        elif mark == MARK_SELLBACK and close is not None:
             sellback.append(_to_item(code, mark, close))
 
     new_buy.sort(key=lambda x: x["code"])

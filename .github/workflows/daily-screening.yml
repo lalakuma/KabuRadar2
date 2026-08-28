@@ -58,10 +58,17 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/kaburadar.db
-          key: kaburadar-db-v1
+          key: kaburadar-db-v2
 
       - name: Verify database
-        run: test -f data/kaburadar.db
+        run: |
+          test -f data/kaburadar.db
+          size=$(stat -c%s data/kaburadar.db)
+          echo "kaburadar.db size=${size} bytes"
+          if [ "$size" -lt 100000000 ]; then
+            echo "::error::DB too small (${size} bytes). LFS pointer or corrupt cache."
+            exit 1
+          fi
 
       - name: Log schedule timing (verification)
         if: github.event_name == 'schedule'
