@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T07:37:58+09:00",
+  "generated_at": "2026-08-29T07:52:41+09:00",
   "mode": "LO",
   "summary": {
     "pf": 8.777,
@@ -4164,6 +4164,428 @@
         "new_buy": [],
         "sellback": []
       }
+    ],
+    "buy_days": [
+      {
+        "date": "2026-08-24",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "7649",
+            "name": "スギホールディングス",
+            "mark": "新買",
+            "close": 1370
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-06",
+        "pnl": 8900,
+        "new_buy_count": 1,
+        "sellback_count": 1,
+        "new_buy": [
+          {
+            "code": "9090",
+            "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+            "mark": "新買",
+            "close": 819
+          }
+        ],
+        "sellback": [
+          {
+            "code": "7912",
+            "name": "大日本印刷",
+            "mark": "返売",
+            "close": 2998,
+            "pnl": 8900
+          }
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "pnl": 50300,
+        "new_buy_count": 1,
+        "sellback_count": 5,
+        "new_buy": [
+          {
+            "code": "9302",
+            "name": "三井倉庫ホールディングス",
+            "mark": "新買",
+            "close": 3148
+          }
+        ],
+        "sellback": [
+          {
+            "code": "1969",
+            "name": "高砂熱学工業",
+            "mark": "返売",
+            "close": 4440,
+            "pnl": -20400
+          },
+          {
+            "code": "3436",
+            "name": "ＳＵＭＣＯ",
+            "mark": "返売",
+            "close": 3756,
+            "pnl": 61600
+          },
+          {
+            "code": "4587",
+            "name": "ペプチドリーム",
+            "mark": "返売",
+            "close": 973,
+            "pnl": 1900
+          },
+          {
+            "code": "5301",
+            "name": "東海カーボン",
+            "mark": "返売",
+            "close": 1622,
+            "pnl": 1200
+          },
+          {
+            "code": "5471",
+            "name": "大同特殊鋼",
+            "mark": "返売",
+            "close": 2353,
+            "pnl": 6000
+          }
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "pnl": 7600,
+        "new_buy_count": 1,
+        "sellback_count": 2,
+        "new_buy": [
+          {
+            "code": "6632",
+            "name": "ＪＶＣケンウッド",
+            "mark": "新買",
+            "close": 930
+          }
+        ],
+        "sellback": [
+          {
+            "code": "3186",
+            "name": "ネクステージ",
+            "mark": "返売",
+            "close": 3435,
+            "pnl": 5000
+          },
+          {
+            "code": "6479",
+            "name": "ミネベアミツミ",
+            "mark": "返売",
+            "close": 3847,
+            "pnl": 2600
+          }
+        ]
+      },
+      {
+        "date": "2026-08-03",
+        "pnl": -2800,
+        "new_buy_count": 2,
+        "sellback_count": 1,
+        "new_buy": [
+          {
+            "code": "1802",
+            "name": "大林組",
+            "mark": "新買",
+            "close": 3114
+          },
+          {
+            "code": "7912",
+            "name": "大日本印刷",
+            "mark": "新買",
+            "close": 2909
+          }
+        ],
+        "sellback": [
+          {
+            "code": "4626",
+            "name": "太陽ホールディングス",
+            "mark": "返売",
+            "close": 4760,
+            "pnl": -2800
+          }
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "pnl": 0,
+        "new_buy_count": 3,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4516",
+            "name": "日本新薬",
+            "mark": "新買",
+            "close": 3550
+          },
+          {
+            "code": "6055",
+            "name": "ジャパンマテリアル",
+            "mark": "新買",
+            "close": 1983
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック　ホールディングス",
+            "mark": "新買",
+            "close": 3507
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-28",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "3436",
+            "name": "ＳＵＭＣＯ",
+            "mark": "新買",
+            "close": 3140
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-22",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4587",
+            "name": "ペプチドリーム",
+            "mark": "新買",
+            "close": 954
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-17",
+        "pnl": 0,
+        "new_buy_count": 4,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "5393",
+            "name": "ニチアス",
+            "mark": "新買",
+            "close": 3256
+          },
+          {
+            "code": "5471",
+            "name": "大同特殊鋼",
+            "mark": "新買",
+            "close": 2293
+          },
+          {
+            "code": "6479",
+            "name": "ミネベアミツミ",
+            "mark": "新買",
+            "close": 3821
+          },
+          {
+            "code": "6544",
+            "name": "ジャパンエレベーターサービスホールディングス",
+            "mark": "新買",
+            "close": 1695
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-15",
+        "pnl": 7100,
+        "new_buy_count": 1,
+        "sellback_count": 1,
+        "new_buy": [
+          {
+            "code": "2871",
+            "name": "ニチレイ",
+            "mark": "新買",
+            "close": 1940
+          }
+        ],
+        "sellback": [
+          {
+            "code": "4042",
+            "name": "東ソー",
+            "mark": "返売",
+            "close": 2789,
+            "pnl": 7100
+          }
+        ]
+      },
+      {
+        "date": "2026-07-13",
+        "pnl": 0,
+        "new_buy_count": 5,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "1969",
+            "name": "高砂熱学工業",
+            "mark": "新買",
+            "close": 4644
+          },
+          {
+            "code": "3186",
+            "name": "ネクステージ",
+            "mark": "新買",
+            "close": 3385
+          },
+          {
+            "code": "4088",
+            "name": "エア・ウォーター",
+            "mark": "新買",
+            "close": 2522
+          },
+          {
+            "code": "4626",
+            "name": "太陽ホールディングス",
+            "mark": "新買",
+            "close": 4788
+          },
+          {
+            "code": "5301",
+            "name": "東海カーボン",
+            "mark": "新買",
+            "close": 1610
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-08",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4042",
+            "name": "東ソー",
+            "mark": "新買",
+            "close": 2718
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-29",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "7276",
+            "name": "小糸製作所",
+            "mark": "新買",
+            "close": 2564
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-26",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "2168",
+            "name": "パソナグループ",
+            "mark": "新買",
+            "close": 1394
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-25",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "8031",
+            "name": "三井物産",
+            "mark": "新買",
+            "close": 4446
+          },
+          {
+            "code": "9434",
+            "name": "ソフトバンク",
+            "mark": "新買",
+            "close": 203
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-24",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "9715",
+            "name": "トランスコスモス",
+            "mark": "新買",
+            "close": 3620
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-23",
+        "pnl": 0,
+        "new_buy_count": 5,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "1662",
+            "name": "石油資源開発",
+            "mark": "新買",
+            "close": 1614
+          },
+          {
+            "code": "2264",
+            "name": "森永乳業",
+            "mark": "新買",
+            "close": 1224
+          },
+          {
+            "code": "4686",
+            "name": "ジャストシステム",
+            "mark": "新買",
+            "close": 3600
+          },
+          {
+            "code": "7846",
+            "name": "パイロットコーポレーション",
+            "mark": "新買",
+            "close": 1644
+          },
+          {
+            "code": "9302",
+            "name": "三井倉庫ホールディングス",
+            "mark": "新買",
+            "close": 3692
+          }
+        ],
+        "sellback": []
+      }
     ]
   },
   "special": {
@@ -4210,6 +4632,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33217304996"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33218253010"
   }
 }
