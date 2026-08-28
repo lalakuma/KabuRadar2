@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-14T17:17:00+09:00",
+  "generated_at": "2026-08-28T20:53:22+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 58.838,
-    "wins": 31,
-    "losses": 1,
-    "win_rate": 96.88,
-    "total_income": 308800,
-    "symbol_count": 34,
-    "neutral_count": 3,
-    "source_file": "Y0_PF58.838_W31L1_rate96.88_all308800.csv"
+    "pf": 10.79,
+    "wins": 22,
+    "losses": 2,
+    "win_rate": 91.67,
+    "total_income": 208800,
+    "symbol_count": 26,
+    "neutral_count": 2,
+    "source_file": "Y0_PF10.79_W22L2_rate91.67_all208800.csv"
   },
   "symbols": [
     {
@@ -21,17 +21,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 16400,
-      "minus_gain": 0
-    },
-    {
-      "code": "5857",
-      "name": "ＡＲＥホールディングス",
-      "industry": "nan",
-      "incomes": 28600,
-      "pf": 89.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 8900,
       "minus_gain": 0
     },
     {
@@ -68,28 +57,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6758",
-      "name": "ソニーグループ",
-      "industry": "nan",
-      "incomes": 15900,
-      "pf": 48.2,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4820,
-      "minus_gain": 0
-    },
-    {
-      "code": "9843",
-      "name": "ニトリホールディングス",
-      "industry": "nan",
-      "incomes": 12400,
-      "pf": 50.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 5000,
-      "minus_gain": 0
-    },
-    {
       "code": "6632",
       "name": "ＪＶＣケンウッド",
       "industry": "nan",
@@ -101,17 +68,6 @@
       "minus_gain": 0
     },
     {
-      "code": "4587",
-      "name": "ペプチドリーム",
-      "industry": "nan",
-      "incomes": 11300,
-      "pf": 111.8,
-      "winlose": "W2L0",
-      "win_per": 100,
-      "plus_gain": 11180,
-      "minus_gain": 0
-    },
-    {
       "code": "2168",
       "name": "パソナグループ",
       "industry": "nan",
@@ -120,17 +76,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 6940,
-      "minus_gain": 0
-    },
-    {
-      "code": "5463",
-      "name": "丸一鋼管",
-      "industry": "nan",
-      "incomes": 10300,
-      "pf": 61.3,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 6130,
       "minus_gain": 0
     },
     {
@@ -164,17 +109,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 3140,
-      "minus_gain": 0
-    },
-    {
-      "code": "7733",
-      "name": "オリンパス",
-      "industry": "nan",
-      "incomes": 7200,
-      "pf": 42.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 4280,
       "minus_gain": 0
     },
     {
@@ -222,14 +156,14 @@
       "minus_gain": 0
     },
     {
-      "code": "6849",
-      "name": "日本光電",
+      "code": "1662",
+      "name": "石油資源開発",
       "industry": "nan",
-      "incomes": 5000,
-      "pf": 36.0,
+      "incomes": 5500,
+      "pf": 33.0,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 3600,
+      "plus_gain": 3300,
       "minus_gain": 0
     },
     {
@@ -255,17 +189,6 @@
       "minus_gain": 0
     },
     {
-      "code": "1662",
-      "name": "石油資源開発",
-      "industry": "nan",
-      "incomes": 3000,
-      "pf": 18.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 1800,
-      "minus_gain": 0
-    },
-    {
       "code": "9715",
       "name": "トランスコスモス",
       "industry": "nan",
@@ -288,17 +211,6 @@
       "minus_gain": 0
     },
     {
-      "code": "2327",
-      "name": "新日鉄住金ソリューションズ",
-      "industry": "nan",
-      "incomes": 2200,
-      "pf": 6.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 680,
-      "minus_gain": 0
-    },
-    {
       "code": "2264",
       "name": "森永乳業",
       "industry": "nan",
@@ -307,6 +219,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 1610,
+      "minus_gain": 0
+    },
+    {
+      "code": "4587",
+      "name": "ペプチドリーム",
+      "industry": "nan",
+      "incomes": 1900,
+      "pf": 19.5,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1950,
       "minus_gain": 0
     },
     {
@@ -332,41 +255,19 @@
       "minus_gain": 0
     },
     {
-      "code": "2317",
-      "name": "システナ",
+      "code": "7649",
+      "name": "スギホールディングス",
       "industry": "nan",
-      "incomes": 200,
-      "pf": 5.0,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 500,
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
       "minus_gain": 0
     },
     {
       "code": "1802",
       "name": "大林組",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6544",
-      "name": "ジャパンエレベーターサービスホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "6670",
-      "name": "ＭＣＪ",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -385,23 +286,28 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 2470
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": -11300,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 7140
     }
   ],
   "today": {
-    "trade_date": "2026-08-14",
+    "trade_date": "2026-08-25",
     "new_buy": [],
     "sellback": [
       {
-        "code": "6632",
-        "name": "ＪＶＣケンウッド",
+        "code": "6544",
+        "name": "ジャパンエレベーターサービスホールディングス",
         "mark": "返売",
-        "close": 1044
-      },
-      {
-        "code": "9090",
-        "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
-        "mark": "返売",
-        "close": 880
+        "close": 1582
       }
     ],
     "new_buy_count": 0
@@ -415,10 +321,10 @@
     "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 84.6,
-      "1306": 89.77
+      "1321": 43.91,
+      "1306": 55.05
     },
-    "active_rsi": 89.77,
+    "active_rsi": 55.05,
     "signal": null
   },
   "runtime": {
@@ -447,9 +353,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/31783070327"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33168651934"
   }
 }
