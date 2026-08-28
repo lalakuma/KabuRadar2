@@ -18,6 +18,7 @@ from kaburadar.settings.loader import read_path_config
 from kaburadar.settings import screening as conf
 from kaburadar.settings.paths import DOCS_DIR, PROJECT_ROOT
 from kaburadar.settings.runtime import actions_run_url, load_runtime_config, runtime_edit_url
+from kaburadar.signals.daily_history import collect_daily_history
 from kaburadar.signals.special import apply_special_buy
 from kaburadar.signals.today import collect_today_signals
 
@@ -85,6 +86,7 @@ def build_payload() -> dict:
     name_map = {s["code"]: s["name"] for s in symbols}
     runtime = load_runtime_config()
     today = collect_today_signals(RESULTS_DIR, name_map)
+    daily = collect_daily_history(RESULTS_DIR, name_map)
     special, _state, special_lines = apply_special_buy(
         today.get("trade_date"),
         int(today.get("new_buy_count", 0)),
@@ -110,6 +112,7 @@ def build_payload() -> dict:
         },
         "symbols": symbols,
         "today": today,
+        "daily": daily,
         "special": special,
         "runtime": runtime.raw,
         "controls": {

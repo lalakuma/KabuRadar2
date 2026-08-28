@@ -16,6 +16,7 @@
 
   <nav class="tabs" aria-label="表示切替">
     <button type="button" class="tab active" data-tab="today">今日</button>
+    <button type="button" class="tab" data-tab="daily">日別</button>
     <button type="button" class="tab" data-tab="special">特別買い</button>
     <button type="button" class="tab" data-tab="ranking">損益一覧</button>
     <button type="button" class="tab" data-tab="settings">設定・実行</button>
@@ -32,6 +33,22 @@
       <div class="signal-block">
         <h3>返売り <span id="sellback-count" class="badge-count">0</span></h3>
         <ul id="today-sellback" class="signal-list"></ul>
+      </div>
+    </section>
+
+    <section id="panel-daily" class="panel" aria-label="日別結果" hidden>
+      <h2 class="panel-title">日別結果</h2>
+      <div class="toolbar daily-toolbar">
+        <select id="daily-date" aria-label="日付を選択"></select>
+      </div>
+      <div id="daily-summary" class="summary daily-summary"></div>
+      <div class="signal-block">
+        <h3>買い（新買） <span id="daily-buy-count" class="badge-count">0</span></h3>
+        <ul id="daily-buy" class="signal-list"></ul>
+      </div>
+      <div class="signal-block">
+        <h3>返売り <span id="daily-sellback-count" class="badge-count">0</span></h3>
+        <ul id="daily-sellback" class="signal-list"></ul>
       </div>
     </section>
 

@@ -28,13 +28,60 @@ function renderSignalRows(container, rows, emptyText) {
     .map((row) => {
       const close =
         row.close != null ? `<span class="signal-close">¥${fmt.format(row.close)}</span>` : "";
+      const pnl =
+        row.pnl != null
+          ? `<span class="signal-pnl ${incomeClass(row.pnl)}">${formatIncome(row.pnl)}</span>`
+          : "";
       return `<li class="signal-item">
         <span class="code">${escapeHtml(row.code)}</span>
         <span class="name">${escapeHtml(row.name)}</span>
         ${close}
+        ${pnl}
       </li>`;
     })
     .join("");
+}
+
+function renderDailyHistory(daily) {
+  const select = document.getElementById("daily-date");
+  const days = daily?.days || [];
+  if (!days.length) {
+    select.innerHTML = `<option value="">データなし</option>`;
+    document.getElementById("daily-summary").innerHTML = "";
+    renderSignalRows(document.getElementById("daily-buy"), [], "該当なし");
+    renderSignalRows(document.getElementById("daily-sellback"), [], "該当なし");
+    document.getElementById("daily-buy-count").textContent = "0";
+    document.getElementById("daily-sellback-count").textContent = "0";
+    return;
+  }
+
+  select.innerHTML = days
+    .map((day) => {
+      const pnlLabel = day.pnl != null ? ` (${formatIncome(day.pnl)})` : "";
+      return `<option value="${escapeHtml(day.date)}">${escapeHtml(day.date)}${pnlLabel}</option>`;
+    })
+    .join("");
+
+  function showDay(date) {
+    const day = days.find((d) => d.date === date) || days[0];
+    const summaryEl = document.getElementById("daily-summary");
+    summaryEl.innerHTML = `
+      <div class="summary-card"><p class="label">日次損益</p><p class="value ${incomeClass(day.pnl ?? 0)}">${formatIncome(day.pnl ?? 0)}</p></div>
+      <div class="summary-card"><p class="label">新買</p><p class="value">${day.new_buy_count ?? 0} 件</p></div>
+      <div class="summary-card"><p class="label">返売り</p><p class="value">${day.sellback_count ?? 0} 件</p></div>
+    `;
+    document.getElementById("daily-buy-count").textContent = String(day.new_buy_count ?? 0);
+    document.getElementById("daily-sellback-count").textContent = String(day.sellback_count ?? 0);
+    renderSignalRows(document.getElementById("daily-buy"), day.new_buy, "この日の新買はありません");
+    renderSignalRows(
+      document.getElementById("daily-sellback"),
+      day.sellback,
+      "この日の返売りはありません",
+    );
+  }
+
+  select.onchange = () => showDay(select.value);
+  showDay(days[0].date);
 }
 
 function renderSpecial(special) {
@@ -228,6 +275,7 @@ async function init() {
   );
 
   renderSpecial(data.special);
+  renderDailyHistory(data.daily);
   renderRuntimeSettings(data.runtime);
   setupControls(data.controls);
 
