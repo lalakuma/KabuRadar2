@@ -1,28 +1,17 @@
 {
-  "generated_at": "2026-09-01T15:14:22+09:00",
+  "generated_at": "2026-09-01T18:35:28+09:00",
   "mode": "HI",
   "summary": {
-    "pf": 5.899,
-    "wins": 13,
+    "pf": 5.298,
+    "wins": 12,
     "losses": 6,
-    "win_rate": 68.42,
-    "total_income": 111800,
+    "win_rate": 66.67,
+    "total_income": 95100,
     "symbol_count": 19,
     "neutral_count": 1,
-    "source_file": "Y0_PF5.899_W13L6_rate68.42_all111800.csv"
+    "source_file": "Y0_PF5.298_W12L6_rate66.67_all95100.csv"
   },
   "symbols": [
-    {
-      "code": "9302",
-      "name": "三井倉庫ホールディングス",
-      "industry": "nan",
-      "incomes": 37800,
-      "pf": 107.9,
-      "winlose": "W2L0",
-      "win_per": 100,
-      "plus_gain": 10790,
-      "minus_gain": 0
-    },
     {
       "code": "6055",
       "name": "ジャパンマテリアル",
@@ -32,6 +21,17 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 10940,
+      "minus_gain": 0
+    },
+    {
+      "code": "9302",
+      "name": "三井倉庫ホールディングス",
+      "industry": "nan",
+      "incomes": 21900,
+      "pf": 60.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 6080,
       "minus_gain": 0
     },
     {
@@ -189,17 +189,6 @@
       "minus_gain": 580
     },
     {
-      "code": "1802",
-      "name": "大林組",
-      "industry": "nan",
-      "incomes": -4900,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 1590
-    },
-    {
       "code": "6479",
       "name": "ミネベアミツミ",
       "industry": "nan",
@@ -209,6 +198,17 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 1430
+    },
+    {
+      "code": "1802",
+      "name": "大林組",
+      "industry": "nan",
+      "incomes": -5700,
+      "pf": 0.0,
+      "winlose": "W0L1",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 1860
     },
     {
       "code": "6544",
@@ -230,13 +230,7 @@
         "code": "1802",
         "name": "大林組",
         "mark": "返売",
-        "close": 3073
-      },
-      {
-        "code": "9302",
-        "name": "三井倉庫ホールディングス",
-        "mark": "返売",
-        "close": 3373
+        "close": 3065
       }
     ],
     "new_buy_count": 0
@@ -245,24 +239,17 @@
     "days": [
       {
         "date": "2026-09-01",
-        "pnl": 11000,
+        "pnl": -5700,
         "new_buy_count": 0,
-        "sellback_count": 2,
+        "sellback_count": 1,
         "new_buy": [],
         "sellback": [
           {
             "code": "1802",
             "name": "大林組",
             "mark": "返売",
-            "close": 3073,
-            "pnl": -4900
-          },
-          {
-            "code": "9302",
-            "name": "三井倉庫ホールディングス",
-            "mark": "返売",
-            "close": 3373,
-            "pnl": 15900
+            "close": 3065,
+            "pnl": -5700
           }
         ]
       },
@@ -1365,6 +1352,6 @@
     "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33476573776"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33492761606"
   }
 }
