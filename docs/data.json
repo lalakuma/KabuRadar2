@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-01T13:07:51+09:00",
+  "generated_at": "2026-09-01T13:26:54+09:00",
   "mode": "HI",
   "summary": {
-    "pf": 5.812,
+    "pf": 5.9,
     "wins": 13,
     "losses": 6,
     "win_rate": 68.42,
-    "total_income": 110400,
+    "total_income": 111300,
     "symbol_count": 19,
     "neutral_count": 1,
-    "source_file": "Y0_PF5.812_W13L6_rate68.42_all110400.csv"
+    "source_file": "Y0_PF5.9_W13L6_rate68.42_all111300.csv"
   },
   "symbols": [
     {
       "code": "9302",
       "name": "三井倉庫ホールディングス",
       "industry": "nan",
-      "incomes": 36700,
-      "pf": 104.8,
+      "incomes": 37200,
+      "pf": 106.2,
       "winlose": "W2L0",
       "win_per": 100,
-      "plus_gain": 10480,
+      "plus_gain": 10620,
       "minus_gain": 0
     },
     {
@@ -192,12 +192,12 @@
       "code": "1802",
       "name": "大林組",
       "industry": "nan",
-      "incomes": -5200,
+      "incomes": -4800,
       "pf": 0.0,
       "winlose": "W0L1",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 1689
+      "minus_gain": 1560
     },
     {
       "code": "6479",
@@ -230,13 +230,13 @@
         "code": "1802",
         "name": "大林組",
         "mark": "返売",
-        "close": 3070
+        "close": 3074
       },
       {
         "code": "9302",
         "name": "三井倉庫ホールディングス",
         "mark": "返売",
-        "close": 3362
+        "close": 3367
       }
     ],
     "new_buy_count": 0
@@ -245,7 +245,7 @@
     "days": [
       {
         "date": "2026-09-01",
-        "pnl": 9600,
+        "pnl": 10500,
         "new_buy_count": 0,
         "sellback_count": 2,
         "new_buy": [],
@@ -254,15 +254,15 @@
             "code": "1802",
             "name": "大林組",
             "mark": "返売",
-            "close": 3070,
-            "pnl": -5200
+            "close": 3074,
+            "pnl": -4800
           },
           {
             "code": "9302",
             "name": "三井倉庫ホールディングス",
             "mark": "返売",
-            "close": 3362,
-            "pnl": 14800
+            "close": 3367,
+            "pnl": 15300
           }
         ]
       },
@@ -1362,9 +1362,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33468358702"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33469715218"
   }
 }
