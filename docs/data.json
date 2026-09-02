@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T14:23:36+09:00",
+  "generated_at": "2026-09-02T17:12:00+09:00",
   "mode": "LO",
   "summary": {
     "pf": 11.119,
@@ -339,19 +339,19 @@
         "code": "2670",
         "name": "エービーシー・マート",
         "mark": "新買",
-        "close": 2670
+        "close": 2664
       },
       {
         "code": "6141",
         "name": "ＤＭＧ　森精機",
         "mark": "新買",
-        "close": 2856
+        "close": 2841
       },
       {
         "code": "6254",
         "name": "野村マイクロ・サイエンス",
         "mark": "新買",
-        "close": 3320
+        "close": 3315
       }
     ],
     "sellback": [],
@@ -369,19 +369,19 @@
             "code": "2670",
             "name": "エービーシー・マート",
             "mark": "新買",
-            "close": 2670
+            "close": 2664
           },
           {
             "code": "6141",
             "name": "ＤＭＧ　森精機",
             "mark": "新買",
-            "close": 2856
+            "close": 2841
           },
           {
             "code": "6254",
             "name": "野村マイクロ・サイエンス",
             "mark": "新買",
-            "close": 3320
+            "close": 3315
           }
         ],
         "sellback": []
@@ -1223,19 +1223,19 @@
             "code": "2670",
             "name": "エービーシー・マート",
             "mark": "新買",
-            "close": 2670
+            "close": 2664
           },
           {
             "code": "6141",
             "name": "ＤＭＧ　森精機",
             "mark": "新買",
-            "close": 2856
+            "close": 2841
           },
           {
             "code": "6254",
             "name": "野村マイクロ・サイエンス",
             "mark": "新買",
-            "close": 3320
+            "close": 3315
           }
         ],
         "sellback": []
@@ -1648,9 +1648,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33594317512"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33607224396"
   }
 }
