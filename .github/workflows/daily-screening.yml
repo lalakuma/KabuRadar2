@@ -1,13 +1,11 @@
 name: Daily screening (cloud)
 
 on:
-  schedule:
-    # 平日 9:00 JST = 00:00 UTC（HI・場中・前場狙い）
-    - cron: "0 0 * * 1-5"
-    # 平日 10:00 JST = 01:00 UTC（LO・場中・午後場狙い）
-    - cron: "0 1 * * 1-5"
-    # 平日 16:00 JST = 07:00 UTC（LO・引け後）
-    - cron: "0 7 * * 1-5"
+  # KabuRadar3 ローカル本番へ移行済み。自動 schedule は無効（手動 workflow_dispatch のみ）。
+  # schedule:
+  #   - cron: "0 0 * * 1-5"
+  #   - cron: "0 1 * * 1-5"
+  #   - cron: "0 7 * * 1-5"
   workflow_dispatch:
     inputs:
       job:
@@ -132,22 +130,7 @@ jobs:
           publish_branch: gh-pages
           force_orphan: true
 
-      - name: LINE notify (optional)
-        if: success() && (env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'publish')
-        continue-on-error: true
-        env:
-          PYTHONPATH: src
-          TZ: Asia/Tokyo
-          KABURADAR_CONFIG: ${{ env.KABURADAR_CONFIG }}
-          KABURADAR_PAGES_URL: https://lalakuma.github.io/KabuRadar2
-          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-          LINE_USER_IDS: ${{ secrets.LINE_USER_IDS }}
-        run: |
-          if [ -n "$LINE_CHANNEL_ACCESS_TOKEN" ] && [ -n "$LINE_USER_IDS" ]; then
-            python src/kaburadar/cli/notify_line.py || echo "LINE notify skipped (non-fatal)."
-          else
-            echo "LINE secrets not set, skipping."
-          fi
+      # LINE 通知は KabuRadar3 ローカル本番のみ。クラウドからは送らない。
 
       - name: Commit results
         continue-on-error: true
