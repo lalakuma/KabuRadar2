@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:27:26+09:00",
+  "generated_at": "2026-09-03T17:21:27+09:00",
   "mode": "LO",
   "summary": {
     "pf": 9.631,
@@ -7,8 +7,8 @@
     "losses": 3,
     "win_rate": 85.71,
     "total_income": 210800,
-    "symbol_count": 28,
-    "neutral_count": 7,
+    "symbol_count": 29,
+    "neutral_count": 8,
     "source_file": "Y0_PF9.631_W18L3_rate85.71_all210800.csv"
   },
   "symbols": [
@@ -288,6 +288,17 @@
       "minus_gain": 0
     },
     {
+      "code": "7701",
+      "name": "島津製作所",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
       "code": "2264",
       "name": "森永乳業",
       "industry": "nan",
@@ -328,25 +339,37 @@
         "code": "3465",
         "name": "ケイアイスター不動産",
         "mark": "新買",
-        "close": 3305
+        "close": 3295
+      },
+      {
+        "code": "7701",
+        "name": "島津製作所",
+        "mark": "新買",
+        "close": 3895
       }
     ],
     "sellback": [],
-    "new_buy_count": 1
+    "new_buy_count": 2
   },
   "daily": {
     "days": [
       {
         "date": "2026-09-03",
         "pnl": 0,
-        "new_buy_count": 1,
+        "new_buy_count": 2,
         "sellback_count": 0,
         "new_buy": [
           {
             "code": "3465",
             "name": "ケイアイスター不動産",
             "mark": "新買",
-            "close": 3305
+            "close": 3295
+          },
+          {
+            "code": "7701",
+            "name": "島津製作所",
+            "mark": "新買",
+            "close": 3895
           }
         ],
         "sellback": []
@@ -1171,14 +1194,20 @@
       {
         "date": "2026-09-03",
         "pnl": 0,
-        "new_buy_count": 1,
+        "new_buy_count": 2,
         "sellback_count": 0,
         "new_buy": [
           {
             "code": "3465",
             "name": "ケイアイスター不動産",
             "mark": "新買",
-            "close": 3305
+            "close": 3295
+          },
+          {
+            "code": "7701",
+            "name": "島津製作所",
+            "mark": "新買",
+            "close": 3895
           }
         ],
         "sellback": []
@@ -1562,7 +1591,7 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 1,
+    "new_buy_count": 2,
     "exit_rsi": 70.0,
     "etf_rsi": {
       "1321": 16.56,
@@ -1597,9 +1626,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33718734523"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33732682903"
   }
 }
