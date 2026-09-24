@@ -25,7 +25,7 @@
 | やること | 頻度 |
 |----------|------|
 | **Web で結果を見る** | 毎日 · https://lalakuma.github.io/KabuRadar2/ （**今日**タブに買い/返売り） |
-| **手動実行** | Actions → Run workflow（`job`: full / analyze / publish） |
+| **手動実行** | Actions → Run workflow（`job` / `config_profile` / `price_menu`） |
 | **運用設定** | [runtime.json を編集](https://github.com/lalakuma/KabuRadar2/edit/master/config/runtime.json) |
 | **LINE でサマリー** | Secrets 設定後 · 解析成功のたび自動 |
 | Actions 成功確認 | 初回のみ / 障害時 |
