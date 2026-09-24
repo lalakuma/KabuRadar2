@@ -1,5 +1,7 @@
 # KabuRadar2 取扱説明書
 
+> **封印:** 本番運用は終了。現行は [KabuRadar3](https://github.com/lalakuma/KabuRadar3) です。本書は保管用です。
+
 本書は **KabuRadar2** の使い方を、初めて触る人でも迷わないようにまとめた取扱説明書です。  
 技術的な内部構成は [アーキテクチャ](architecture.md) を、設定項目の一覧は [設定リファレンス](configuration.md) を参照してください。
 

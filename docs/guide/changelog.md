@@ -2,6 +2,12 @@
 
 リファクタリング・整理の要点です（詳細は git log を参照）。
 
+## 2026-09 封印（運用終了）
+
+- 本番を **KabuRadar3（ローカル）** に移行済みのため、本リポジトリを封印
+- Actions の自動 schedule は無効のまま。リポジトリはアーカイブ（読み取り専用）想定
+- 後継: https://github.com/lalakuma/KabuRadar3
+
 ## 2026-09 株価更新期間を手動実行で選択可能に
 
 - `daily-screening` の `workflow_dispatch` に `price_menu` を追加（1〜6）
