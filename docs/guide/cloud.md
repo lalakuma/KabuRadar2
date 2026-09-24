@@ -11,7 +11,7 @@
   → GitHub Actions (Ubuntu)
   → git lfs pull で data/kaburadar.db を取得（初回・キャッシュミス時）
   → Actions cache で DB を実行間引き継ぎ（LFS push はしない）
-  → yfinance で過去5日分を取得 → SQLite に書込
+  → yfinance で株価取得（既定5日。空白補填時は手動で30日など） → SQLite に書込
   → 全銘柄バックテスト → 集計
   → docs/data.json 生成
   → gh-pages へデプロイ（Web 更新）

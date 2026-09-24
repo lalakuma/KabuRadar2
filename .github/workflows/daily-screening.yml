@@ -25,6 +25,18 @@ on:
         options:
           - lo
           - hi
+      price_menu:
+        description: "株価更新期間 (1=1日,2=10日,3=30日,4=100日,5=5年,6=5日)"
+        required: true
+        default: "6"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - "5"
+          - "6"
 
 permissions:
   contents: write
@@ -98,11 +110,15 @@ jobs:
             echo "Using config_lo.ini (RSI4反転=0)"
           fi
 
-      - name: Update prices (5 days)
+      - name: Update prices
         if: env.KABURADAR_JOB == 'full'
         env:
           PYTHONPATH: src
-        run: python src/kaburadar/cli/update_prices.py --menu 6
+        run: |
+          MENU="${{ github.event.inputs.price_menu }}"
+          if [ -z "$MENU" ]; then MENU="6"; fi
+          echo "Updating prices with --menu $MENU"
+          python src/kaburadar/cli/update_prices.py --menu "$MENU"
 
       - name: Analyze all symbols
         if: env.KABURADAR_JOB == 'full' || env.KABURADAR_JOB == 'analyze'
