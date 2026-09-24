@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-03T20:58:10+09:00",
+  "generated_at": "2026-09-25T05:16:15+09:00",
   "mode": "LO",
   "summary": {
-    "pf": 9.631,
-    "wins": 18,
-    "losses": 3,
-    "win_rate": 85.71,
-    "total_income": 210800,
-    "symbol_count": 29,
-    "neutral_count": 8,
-    "source_file": "Y0_PF9.631_W18L3_rate85.71_all210800.csv"
+    "pf": 64810.0,
+    "wins": 10,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_income": 154300,
+    "symbol_count": 16,
+    "neutral_count": 6,
+    "source_file": "Y0_PF64810_W10L0_rate100.00_all154300.csv"
   },
   "symbols": [
     {
@@ -38,33 +38,11 @@
       "code": "9302",
       "name": "三井倉庫ホールディングス",
       "industry": "nan",
-      "incomes": 23900,
-      "pf": 66.3,
+      "incomes": 24900,
+      "pf": 73.3,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 6630,
-      "minus_gain": 0
-    },
-    {
-      "code": "2871",
-      "name": "ニチレイ",
-      "industry": "nan",
-      "incomes": 21000,
-      "pf": 97.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 9770,
-      "minus_gain": 0
-    },
-    {
-      "code": "7846",
-      "name": "パイロットコーポレーション",
-      "industry": "nan",
-      "incomes": 13000,
-      "pf": 71.9,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 7190,
+      "plus_gain": 7330,
       "minus_gain": 0
     },
     {
@@ -79,17 +57,6 @@
       "minus_gain": 0
     },
     {
-      "code": "5393",
-      "name": "ニチアス",
-      "industry": "nan",
-      "incomes": 10300,
-      "pf": 30.7,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3070,
-      "minus_gain": 0
-    },
-    {
       "code": "7912",
       "name": "大日本印刷",
       "industry": "nan",
@@ -98,39 +65,6 @@
       "winlose": "W1L0",
       "win_per": 100,
       "plus_gain": 2970,
-      "minus_gain": 0
-    },
-    {
-      "code": "7276",
-      "name": "小糸製作所",
-      "industry": "nan",
-      "incomes": 8300,
-      "pf": 31.4,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 3140,
-      "minus_gain": 0
-    },
-    {
-      "code": "4042",
-      "name": "東ソー",
-      "industry": "nan",
-      "incomes": 7100,
-      "pf": 25.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2550,
-      "minus_gain": 0
-    },
-    {
-      "code": "4088",
-      "name": "エア・ウォーター",
-      "industry": "nan",
-      "incomes": 6900,
-      "pf": 26.6,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2660,
       "minus_gain": 0
     },
     {
@@ -145,25 +79,14 @@
       "minus_gain": 0
     },
     {
-      "code": "5471",
-      "name": "大同特殊鋼",
-      "industry": "nan",
-      "incomes": 6000,
-      "pf": 25.5,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 2550,
-      "minus_gain": 0
-    },
-    {
-      "code": "3186",
-      "name": "ネクステージ",
+      "code": "2264",
+      "name": "森永乳業",
       "industry": "nan",
       "incomes": 5000,
-      "pf": 14.6,
+      "pf": 40.2,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 1460,
+      "plus_gain": 4020,
       "minus_gain": 0
     },
     {
@@ -178,17 +101,6 @@
       "minus_gain": 0
     },
     {
-      "code": "6479",
-      "name": "ミネベアミツミ",
-      "industry": "nan",
-      "incomes": 2600,
-      "pf": 6.8,
-      "winlose": "W1L0",
-      "win_per": 100,
-      "plus_gain": 680,
-      "minus_gain": 0
-    },
-    {
       "code": "4587",
       "name": "ペプチドリーム",
       "industry": "nan",
@@ -200,19 +112,41 @@
       "minus_gain": 0
     },
     {
-      "code": "5301",
-      "name": "東海カーボン",
+      "code": "1802",
+      "name": "大林組",
       "industry": "nan",
-      "incomes": 1200,
-      "pf": 7.4,
+      "incomes": 1500,
+      "pf": 4.8,
       "winlose": "W1L0",
       "win_per": 100,
-      "plus_gain": 740,
+      "plus_gain": 480,
+      "minus_gain": 0
+    },
+    {
+      "code": "7649",
+      "name": "スギホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
       "minus_gain": 0
     },
     {
       "code": "6141",
       "name": "ＤＭＧ　森精機",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "8830",
+      "name": "住友不動産",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -233,8 +167,8 @@
       "minus_gain": 0
     },
     {
-      "code": "6254",
-      "name": "野村マイクロ・サイエンス",
+      "code": "2685",
+      "name": "アダストリア",
       "industry": "nan",
       "incomes": 0,
       "pf": 0.0,
@@ -242,253 +176,110 @@
       "win_per": 0,
       "plus_gain": 0,
       "minus_gain": 0
-    },
-    {
-      "code": "3391",
-      "name": "ツルハホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "7649",
-      "name": "スギホールディングス",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "3465",
-      "name": "ケイアイスター不動産",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "2670",
-      "name": "エービーシー・マート",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "7701",
-      "name": "島津製作所",
-      "industry": "nan",
-      "incomes": 0,
-      "pf": 0.0,
-      "winlose": "W0L0",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 0
-    },
-    {
-      "code": "2264",
-      "name": "森永乳業",
-      "industry": "nan",
-      "incomes": -1200,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 960
-    },
-    {
-      "code": "1802",
-      "name": "大林組",
-      "industry": "nan",
-      "incomes": -4900,
-      "pf": 0.0,
-      "winlose": "W0L1",
-      "win_per": 0,
-      "plus_gain": 0,
-      "minus_gain": 1600
     },
     {
       "code": "6544",
       "name": "ジャパンエレベーターサービスホールディングス",
       "industry": "nan",
-      "incomes": -11300,
+      "incomes": 0,
       "pf": 0.0,
-      "winlose": "W0L1",
+      "winlose": "W0L0",
       "win_per": 0,
       "plus_gain": 0,
-      "minus_gain": 7140
+      "minus_gain": 0
     }
   ],
   "today": {
-    "trade_date": "2026-09-03",
-    "new_buy": [
-      {
-        "code": "3465",
-        "name": "ケイアイスター不動産",
-        "mark": "新買",
-        "close": 3295
-      },
-      {
-        "code": "7701",
-        "name": "島津製作所",
-        "mark": "新買",
-        "close": 3895
-      }
-    ],
+    "trade_date": "2026-09-24",
+    "new_buy": [],
     "sellback": [],
-    "new_buy_count": 2
+    "new_buy_count": 0
   },
   "daily": {
     "days": [
       {
-        "date": "2026-09-03",
+        "date": "2026-09-24",
         "pnl": 0,
-        "new_buy_count": 2,
+        "new_buy_count": 0,
         "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "3465",
-            "name": "ケイアイスター不動産",
-            "mark": "新買",
-            "close": 3295
-          },
-          {
-            "code": "7701",
-            "name": "島津製作所",
-            "mark": "新買",
-            "close": 3895
-          }
-        ],
+        "new_buy": [],
         "sellback": []
       },
       {
-        "date": "2026-09-02",
+        "date": "2026-09-18",
         "pnl": 0,
-        "new_buy_count": 3,
+        "new_buy_count": 0,
         "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "2670",
-            "name": "エービーシー・マート",
-            "mark": "新買",
-            "close": 2664
-          },
-          {
-            "code": "6141",
-            "name": "ＤＭＧ　森精機",
-            "mark": "新買",
-            "close": 2841
-          },
-          {
-            "code": "6254",
-            "name": "野村マイクロ・サイエンス",
-            "mark": "新買",
-            "close": 3315
-          }
-        ],
+        "new_buy": [],
         "sellback": []
       },
       {
-        "date": "2026-09-01",
-        "pnl": -4900,
-        "new_buy_count": 2,
+        "date": "2026-09-17",
+        "pnl": 1500,
+        "new_buy_count": 0,
         "sellback_count": 1,
-        "new_buy": [
-          {
-            "code": "3391",
-            "name": "ツルハホールディングス",
-            "mark": "新買",
-            "close": 2253
-          },
-          {
-            "code": "7532",
-            "name": "パン・パシフィック・インターナショナルホールディングス",
-            "mark": "新買",
-            "close": 776
-          }
-        ],
+        "new_buy": [],
         "sellback": [
           {
             "code": "1802",
             "name": "大林組",
             "mark": "返売",
-            "close": 3065,
-            "pnl": -4900
+            "close": 3129,
+            "pnl": 1500
           }
         ]
       },
       {
-        "date": "2026-08-31",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-08-28",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-08-27",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-08-26",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-08-25",
-        "pnl": -11300,
+        "date": "2026-09-16",
+        "pnl": 24900,
         "new_buy_count": 0,
         "sellback_count": 1,
         "new_buy": [],
         "sellback": [
           {
-            "code": "6544",
-            "name": "ジャパンエレベーターサービスホールディングス",
+            "code": "9302",
+            "name": "三井倉庫ホールディングス",
             "mark": "返売",
-            "close": 1582,
-            "pnl": -11300
+            "close": 3397,
+            "pnl": 24900
           }
         ]
       },
       {
-        "date": "2026-08-24",
+        "date": "2026-09-15",
         "pnl": 0,
-        "new_buy_count": 1,
+        "new_buy_count": 5,
         "sellback_count": 0,
         "new_buy": [
+          {
+            "code": "2685",
+            "name": "アダストリア",
+            "mark": "新買",
+            "close": 3205
+          },
+          {
+            "code": "6141",
+            "name": "ＤＭＧ　森精機",
+            "mark": "新買",
+            "close": 2759
+          },
+          {
+            "code": "7532",
+            "name": "パン・パシフィック・インターナショナルホールディングス",
+            "mark": "新買",
+            "close": 727
+          },
           {
             "code": "7649",
             "name": "スギホールディングス",
             "mark": "新買",
-            "close": 1370
+            "close": 1289
+          },
+          {
+            "code": "8830",
+            "name": "住友不動産",
+            "mark": "新買",
+            "close": 3164
           }
         ],
         "sellback": []
@@ -581,9 +372,9 @@
       },
       {
         "date": "2026-08-05",
-        "pnl": 70700,
+        "pnl": 63500,
         "new_buy_count": 1,
-        "sellback_count": 4,
+        "sellback_count": 2,
         "new_buy": [
           {
             "code": "9302",
@@ -606,28 +397,14 @@
             "mark": "返売",
             "close": 973,
             "pnl": 1900
-          },
-          {
-            "code": "5301",
-            "name": "東海カーボン",
-            "mark": "返売",
-            "close": 1622,
-            "pnl": 1200
-          },
-          {
-            "code": "5471",
-            "name": "大同特殊鋼",
-            "mark": "返売",
-            "close": 2353,
-            "pnl": 6000
           }
         ]
       },
       {
         "date": "2026-08-04",
-        "pnl": 7600,
+        "pnl": 0,
         "new_buy_count": 1,
-        "sellback_count": 2,
+        "sellback_count": 0,
         "new_buy": [
           {
             "code": "6632",
@@ -636,22 +413,7 @@
             "close": 930
           }
         ],
-        "sellback": [
-          {
-            "code": "3186",
-            "name": "ネクステージ",
-            "mark": "返売",
-            "close": 3435,
-            "pnl": 5000
-          },
-          {
-            "code": "6479",
-            "name": "ミネベアミツミ",
-            "mark": "返売",
-            "close": 3847,
-            "pnl": 2600
-          }
-        ]
+        "sellback": []
       },
       {
         "date": "2026-08-03",
@@ -676,18 +438,11 @@
       },
       {
         "date": "2026-07-31",
-        "pnl": 38700,
+        "pnl": 28400,
         "new_buy_count": 0,
-        "sellback_count": 2,
+        "sellback_count": 1,
         "new_buy": [],
         "sellback": [
-          {
-            "code": "5393",
-            "name": "ニチアス",
-            "mark": "返売",
-            "close": 3359,
-            "pnl": 10300
-          },
           {
             "code": "6055",
             "name": "ジャパンマテリアル",
@@ -743,30 +498,15 @@
       },
       {
         "date": "2026-07-24",
-        "pnl": 27900,
+        "pnl": 0,
         "new_buy_count": 0,
-        "sellback_count": 2,
+        "sellback_count": 0,
         "new_buy": [],
-        "sellback": [
-          {
-            "code": "2871",
-            "name": "ニチレイ",
-            "mark": "返売",
-            "close": 2150,
-            "pnl": 21000
-          },
-          {
-            "code": "4088",
-            "name": "エア・ウォーター",
-            "mark": "返売",
-            "close": 2591,
-            "pnl": 6900
-          }
-        ]
+        "sellback": []
       },
       {
         "date": "2026-07-23",
-        "pnl": -1200,
+        "pnl": 5000,
         "new_buy_count": 0,
         "sellback_count": 1,
         "new_buy": [],
@@ -776,7 +516,7 @@
             "name": "森永乳業",
             "mark": "返売",
             "close": 1244,
-            "pnl": -1200
+            "pnl": 5000
           }
         ]
       },
@@ -798,82 +538,47 @@
       {
         "date": "2026-07-21",
         "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-07-17",
-        "pnl": 0,
-        "new_buy_count": 4,
+        "new_buy_count": 2,
         "sellback_count": 0,
         "new_buy": [
           {
-            "code": "5393",
-            "name": "ニチアス",
+            "code": "2264",
+            "name": "森永乳業",
             "mark": "新買",
-            "close": 3256
-          },
-          {
-            "code": "5471",
-            "name": "大同特殊鋼",
-            "mark": "新買",
-            "close": 2293
-          },
-          {
-            "code": "6479",
-            "name": "ミネベアミツミ",
-            "mark": "新買",
-            "close": 3821
+            "close": 1194
           },
           {
             "code": "6544",
             "name": "ジャパンエレベーターサービスホールディングス",
             "mark": "新買",
-            "close": 1695
+            "close": 1677
           }
         ],
         "sellback": []
       },
       {
-        "date": "2026-07-16",
-        "pnl": 13000,
+        "date": "2026-07-17",
+        "pnl": 0,
         "new_buy_count": 0,
-        "sellback_count": 1,
+        "sellback_count": 0,
         "new_buy": [],
-        "sellback": [
-          {
-            "code": "7846",
-            "name": "パイロットコーポレーション",
-            "mark": "返売",
-            "close": 1807,
-            "pnl": 13000
-          }
-        ]
+        "sellback": []
+      },
+      {
+        "date": "2026-07-16",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
       },
       {
         "date": "2026-07-15",
-        "pnl": 7100,
-        "new_buy_count": 1,
-        "sellback_count": 1,
-        "new_buy": [
-          {
-            "code": "2871",
-            "name": "ニチレイ",
-            "mark": "新買",
-            "close": 1940
-          }
-        ],
-        "sellback": [
-          {
-            "code": "4042",
-            "name": "東ソー",
-            "mark": "返売",
-            "close": 2789,
-            "pnl": 7100
-          }
-        ]
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
       },
       {
         "date": "2026-07-14",
@@ -886,28 +591,9 @@
       {
         "date": "2026-07-13",
         "pnl": 0,
-        "new_buy_count": 3,
+        "new_buy_count": 0,
         "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "3186",
-            "name": "ネクステージ",
-            "mark": "新買",
-            "close": 3385
-          },
-          {
-            "code": "4088",
-            "name": "エア・ウォーター",
-            "mark": "新買",
-            "close": 2522
-          },
-          {
-            "code": "5301",
-            "name": "東海カーボン",
-            "mark": "新買",
-            "close": 1610
-          }
-        ],
+        "new_buy": [],
         "sellback": []
       },
       {
@@ -929,16 +615,9 @@
       {
         "date": "2026-07-08",
         "pnl": 0,
-        "new_buy_count": 1,
+        "new_buy_count": 0,
         "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "4042",
-            "name": "東ソー",
-            "mark": "新買",
-            "close": 2718
-          }
-        ],
+        "new_buy": [],
         "sellback": []
       },
       {
@@ -951,26 +630,11 @@
       },
       {
         "date": "2026-07-06",
-        "pnl": 32200,
+        "pnl": 0,
         "new_buy_count": 0,
-        "sellback_count": 2,
+        "sellback_count": 0,
         "new_buy": [],
-        "sellback": [
-          {
-            "code": "7276",
-            "name": "小糸製作所",
-            "mark": "返売",
-            "close": 2647,
-            "pnl": 8300
-          },
-          {
-            "code": "9302",
-            "name": "三井倉庫ホールディングス",
-            "mark": "返売",
-            "close": 3603,
-            "pnl": 23900
-          }
-        ]
+        "sellback": []
       },
       {
         "date": "2026-07-03",
@@ -1007,34 +671,9 @@
       {
         "date": "2026-06-29",
         "pnl": 0,
-        "new_buy_count": 4,
+        "new_buy_count": 0,
         "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "2264",
-            "name": "森永乳業",
-            "mark": "新買",
-            "close": 1256
-          },
-          {
-            "code": "7276",
-            "name": "小糸製作所",
-            "mark": "新買",
-            "close": 2564
-          },
-          {
-            "code": "7846",
-            "name": "パイロットコーポレーション",
-            "mark": "新買",
-            "close": 1677
-          },
-          {
-            "code": "9302",
-            "name": "三井倉庫ホールディングス",
-            "mark": "新買",
-            "close": 3364
-          }
-        ],
+        "new_buy": [],
         "sellback": []
       },
       {
@@ -1108,177 +747,44 @@
         "sellback_count": 0,
         "new_buy": [],
         "sellback": []
-      },
-      {
-        "date": "2026-06-15",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-12",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-11",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-10",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-09",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-08",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-05",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-04",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-03",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-02",
-        "pnl": 0,
-        "new_buy_count": 0,
-        "sellback_count": 0,
-        "new_buy": [],
-        "sellback": []
       }
     ],
     "buy_days": [
       {
-        "date": "2026-09-03",
+        "date": "2026-09-15",
         "pnl": 0,
-        "new_buy_count": 2,
+        "new_buy_count": 5,
         "sellback_count": 0,
         "new_buy": [
           {
-            "code": "3465",
-            "name": "ケイアイスター不動産",
+            "code": "2685",
+            "name": "アダストリア",
             "mark": "新買",
-            "close": 3295
-          },
-          {
-            "code": "7701",
-            "name": "島津製作所",
-            "mark": "新買",
-            "close": 3895
-          }
-        ],
-        "sellback": []
-      },
-      {
-        "date": "2026-09-02",
-        "pnl": 0,
-        "new_buy_count": 3,
-        "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "2670",
-            "name": "エービーシー・マート",
-            "mark": "新買",
-            "close": 2664
+            "close": 3205
           },
           {
             "code": "6141",
             "name": "ＤＭＧ　森精機",
             "mark": "新買",
-            "close": 2841
-          },
-          {
-            "code": "6254",
-            "name": "野村マイクロ・サイエンス",
-            "mark": "新買",
-            "close": 3315
-          }
-        ],
-        "sellback": []
-      },
-      {
-        "date": "2026-09-01",
-        "pnl": -4900,
-        "new_buy_count": 2,
-        "sellback_count": 1,
-        "new_buy": [
-          {
-            "code": "3391",
-            "name": "ツルハホールディングス",
-            "mark": "新買",
-            "close": 2253
+            "close": 2759
           },
           {
             "code": "7532",
             "name": "パン・パシフィック・インターナショナルホールディングス",
             "mark": "新買",
-            "close": 776
-          }
-        ],
-        "sellback": [
-          {
-            "code": "1802",
-            "name": "大林組",
-            "mark": "返売",
-            "close": 3065,
-            "pnl": -4900
-          }
-        ]
-      },
-      {
-        "date": "2026-08-24",
-        "pnl": 0,
-        "new_buy_count": 1,
-        "sellback_count": 0,
-        "new_buy": [
+            "close": 727
+          },
           {
             "code": "7649",
             "name": "スギホールディングス",
             "mark": "新買",
-            "close": 1370
+            "close": 1289
+          },
+          {
+            "code": "8830",
+            "name": "住友不動産",
+            "mark": "新買",
+            "close": 3164
           }
         ],
         "sellback": []
@@ -1308,9 +814,9 @@
       },
       {
         "date": "2026-08-05",
-        "pnl": 70700,
+        "pnl": 63500,
         "new_buy_count": 1,
-        "sellback_count": 4,
+        "sellback_count": 2,
         "new_buy": [
           {
             "code": "9302",
@@ -1333,28 +839,14 @@
             "mark": "返売",
             "close": 973,
             "pnl": 1900
-          },
-          {
-            "code": "5301",
-            "name": "東海カーボン",
-            "mark": "返売",
-            "close": 1622,
-            "pnl": 1200
-          },
-          {
-            "code": "5471",
-            "name": "大同特殊鋼",
-            "mark": "返売",
-            "close": 2353,
-            "pnl": 6000
           }
         ]
       },
       {
         "date": "2026-08-04",
-        "pnl": 7600,
+        "pnl": 0,
         "new_buy_count": 1,
-        "sellback_count": 2,
+        "sellback_count": 0,
         "new_buy": [
           {
             "code": "6632",
@@ -1363,22 +855,7 @@
             "close": 930
           }
         ],
-        "sellback": [
-          {
-            "code": "3186",
-            "name": "ネクステージ",
-            "mark": "返売",
-            "close": 3435,
-            "pnl": 5000
-          },
-          {
-            "code": "6479",
-            "name": "ミネベアミツミ",
-            "mark": "返売",
-            "close": 3847,
-            "pnl": 2600
-          }
-        ]
+        "sellback": []
       },
       {
         "date": "2026-08-03",
@@ -1453,132 +930,22 @@
         "sellback": []
       },
       {
-        "date": "2026-07-17",
+        "date": "2026-07-21",
         "pnl": 0,
-        "new_buy_count": 4,
-        "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "5393",
-            "name": "ニチアス",
-            "mark": "新買",
-            "close": 3256
-          },
-          {
-            "code": "5471",
-            "name": "大同特殊鋼",
-            "mark": "新買",
-            "close": 2293
-          },
-          {
-            "code": "6479",
-            "name": "ミネベアミツミ",
-            "mark": "新買",
-            "close": 3821
-          },
-          {
-            "code": "6544",
-            "name": "ジャパンエレベーターサービスホールディングス",
-            "mark": "新買",
-            "close": 1695
-          }
-        ],
-        "sellback": []
-      },
-      {
-        "date": "2026-07-15",
-        "pnl": 7100,
-        "new_buy_count": 1,
-        "sellback_count": 1,
-        "new_buy": [
-          {
-            "code": "2871",
-            "name": "ニチレイ",
-            "mark": "新買",
-            "close": 1940
-          }
-        ],
-        "sellback": [
-          {
-            "code": "4042",
-            "name": "東ソー",
-            "mark": "返売",
-            "close": 2789,
-            "pnl": 7100
-          }
-        ]
-      },
-      {
-        "date": "2026-07-13",
-        "pnl": 0,
-        "new_buy_count": 3,
-        "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "3186",
-            "name": "ネクステージ",
-            "mark": "新買",
-            "close": 3385
-          },
-          {
-            "code": "4088",
-            "name": "エア・ウォーター",
-            "mark": "新買",
-            "close": 2522
-          },
-          {
-            "code": "5301",
-            "name": "東海カーボン",
-            "mark": "新買",
-            "close": 1610
-          }
-        ],
-        "sellback": []
-      },
-      {
-        "date": "2026-07-08",
-        "pnl": 0,
-        "new_buy_count": 1,
-        "sellback_count": 0,
-        "new_buy": [
-          {
-            "code": "4042",
-            "name": "東ソー",
-            "mark": "新買",
-            "close": 2718
-          }
-        ],
-        "sellback": []
-      },
-      {
-        "date": "2026-06-29",
-        "pnl": 0,
-        "new_buy_count": 4,
+        "new_buy_count": 2,
         "sellback_count": 0,
         "new_buy": [
           {
             "code": "2264",
             "name": "森永乳業",
             "mark": "新買",
-            "close": 1256
+            "close": 1194
           },
           {
-            "code": "7276",
-            "name": "小糸製作所",
-            "mark": "新買",
-            "close": 2564
-          },
-          {
-            "code": "7846",
-            "name": "パイロットコーポレーション",
+            "code": "6544",
+            "name": "ジャパンエレベーターサービスホールディングス",
             "mark": "新買",
             "close": 1677
-          },
-          {
-            "code": "9302",
-            "name": "三井倉庫ホールディングス",
-            "mark": "新買",
-            "close": 3364
           }
         ],
         "sellback": []
@@ -1591,13 +958,13 @@
     "entered_on": null,
     "etf": null,
     "min_new_buy_count": 7,
-    "new_buy_count": 2,
+    "new_buy_count": 0,
     "exit_rsi": 70.0,
     "etf_rsi": {
-      "1321": 16.56,
-      "1306": 30.99
+      "1321": 54.23,
+      "1306": 42.93
     },
-    "active_rsi": 30.99,
+    "active_rsi": 42.93,
     "signal": null
   },
   "runtime": {
@@ -1626,9 +993,9 @@
   "line_events": [],
   "run": {
     "source": "github-actions",
-    "event": "schedule",
+    "event": "workflow_dispatch",
     "repository": "lalakuma/KabuRadar2",
     "pages_url": "https://lalakuma.github.io/KabuRadar2",
-    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/33752333960"
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/36053427031"
   }
 }
