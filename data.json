@@ -1,0 +1,1001 @@
+{
+  "generated_at": "2026-09-25T05:16:15+09:00",
+  "mode": "LO",
+  "summary": {
+    "pf": 64810.0,
+    "wins": 10,
+    "losses": 0,
+    "win_rate": 100.0,
+    "total_income": 154300,
+    "symbol_count": 16,
+    "neutral_count": 6,
+    "source_file": "Y0_PF64810_W10L0_rate100.00_all154300.csv"
+  },
+  "symbols": [
+    {
+      "code": "3436",
+      "name": "ＳＵＭＣＯ",
+      "industry": "nan",
+      "incomes": 61600,
+      "pf": 164.0,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 16400,
+      "minus_gain": 0
+    },
+    {
+      "code": "6055",
+      "name": "ジャパンマテリアル",
+      "industry": "nan",
+      "incomes": 28400,
+      "pf": 125.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 12530,
+      "minus_gain": 0
+    },
+    {
+      "code": "9302",
+      "name": "三井倉庫ホールディングス",
+      "industry": "nan",
+      "incomes": 24900,
+      "pf": 73.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 7330,
+      "minus_gain": 0
+    },
+    {
+      "code": "6632",
+      "name": "ＪＶＣケンウッド",
+      "industry": "nan",
+      "incomes": 11400,
+      "pf": 109.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 10920,
+      "minus_gain": 0
+    },
+    {
+      "code": "7912",
+      "name": "大日本印刷",
+      "industry": "nan",
+      "incomes": 8900,
+      "pf": 29.7,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 2970,
+      "minus_gain": 0
+    },
+    {
+      "code": "9090",
+      "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+      "industry": "nan",
+      "incomes": 6100,
+      "pf": 69.3,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 6930,
+      "minus_gain": 0
+    },
+    {
+      "code": "2264",
+      "name": "森永乳業",
+      "industry": "nan",
+      "incomes": 5000,
+      "pf": 40.2,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 4020,
+      "minus_gain": 0
+    },
+    {
+      "code": "4516",
+      "name": "日本新薬",
+      "industry": "nan",
+      "incomes": 4600,
+      "pf": 12.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1280,
+      "minus_gain": 0
+    },
+    {
+      "code": "4587",
+      "name": "ペプチドリーム",
+      "industry": "nan",
+      "incomes": 1900,
+      "pf": 19.5,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 1950,
+      "minus_gain": 0
+    },
+    {
+      "code": "1802",
+      "name": "大林組",
+      "industry": "nan",
+      "incomes": 1500,
+      "pf": 4.8,
+      "winlose": "W1L0",
+      "win_per": 100,
+      "plus_gain": 480,
+      "minus_gain": 0
+    },
+    {
+      "code": "7649",
+      "name": "スギホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6141",
+      "name": "ＤＭＧ　森精機",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "8830",
+      "name": "住友不動産",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "7532",
+      "name": "パン・パシフィック・インターナショナルホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "2685",
+      "name": "アダストリア",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    },
+    {
+      "code": "6544",
+      "name": "ジャパンエレベーターサービスホールディングス",
+      "industry": "nan",
+      "incomes": 0,
+      "pf": 0.0,
+      "winlose": "W0L0",
+      "win_per": 0,
+      "plus_gain": 0,
+      "minus_gain": 0
+    }
+  ],
+  "today": {
+    "trade_date": "2026-09-24",
+    "new_buy": [],
+    "sellback": [],
+    "new_buy_count": 0
+  },
+  "daily": {
+    "days": [
+      {
+        "date": "2026-09-24",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-09-18",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-09-17",
+        "pnl": 1500,
+        "new_buy_count": 0,
+        "sellback_count": 1,
+        "new_buy": [],
+        "sellback": [
+          {
+            "code": "1802",
+            "name": "大林組",
+            "mark": "返売",
+            "close": 3129,
+            "pnl": 1500
+          }
+        ]
+      },
+      {
+        "date": "2026-09-16",
+        "pnl": 24900,
+        "new_buy_count": 0,
+        "sellback_count": 1,
+        "new_buy": [],
+        "sellback": [
+          {
+            "code": "9302",
+            "name": "三井倉庫ホールディングス",
+            "mark": "返売",
+            "close": 3397,
+            "pnl": 24900
+          }
+        ]
+      },
+      {
+        "date": "2026-09-15",
+        "pnl": 0,
+        "new_buy_count": 5,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "2685",
+            "name": "アダストリア",
+            "mark": "新買",
+            "close": 3205
+          },
+          {
+            "code": "6141",
+            "name": "ＤＭＧ　森精機",
+            "mark": "新買",
+            "close": 2759
+          },
+          {
+            "code": "7532",
+            "name": "パン・パシフィック・インターナショナルホールディングス",
+            "mark": "新買",
+            "close": 727
+          },
+          {
+            "code": "7649",
+            "name": "スギホールディングス",
+            "mark": "新買",
+            "close": 1289
+          },
+          {
+            "code": "8830",
+            "name": "住友不動産",
+            "mark": "新買",
+            "close": 3164
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-14",
+        "pnl": 17500,
+        "new_buy_count": 0,
+        "sellback_count": 2,
+        "new_buy": [],
+        "sellback": [
+          {
+            "code": "6632",
+            "name": "ＪＶＣケンウッド",
+            "mark": "返売",
+            "close": 1044,
+            "pnl": 11400
+          },
+          {
+            "code": "9090",
+            "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+            "mark": "返売",
+            "close": 880,
+            "pnl": 6100
+          }
+        ]
+      },
+      {
+        "date": "2026-08-13",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-12",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-10",
+        "pnl": 4600,
+        "new_buy_count": 0,
+        "sellback_count": 1,
+        "new_buy": [],
+        "sellback": [
+          {
+            "code": "4516",
+            "name": "日本新薬",
+            "mark": "返売",
+            "close": 3596,
+            "pnl": 4600
+          }
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-06",
+        "pnl": 8900,
+        "new_buy_count": 1,
+        "sellback_count": 1,
+        "new_buy": [
+          {
+            "code": "9090",
+            "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+            "mark": "新買",
+            "close": 819
+          }
+        ],
+        "sellback": [
+          {
+            "code": "7912",
+            "name": "大日本印刷",
+            "mark": "返売",
+            "close": 2998,
+            "pnl": 8900
+          }
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "pnl": 63500,
+        "new_buy_count": 1,
+        "sellback_count": 2,
+        "new_buy": [
+          {
+            "code": "9302",
+            "name": "三井倉庫ホールディングス",
+            "mark": "新買",
+            "close": 3148
+          }
+        ],
+        "sellback": [
+          {
+            "code": "3436",
+            "name": "ＳＵＭＣＯ",
+            "mark": "返売",
+            "close": 3756,
+            "pnl": 61600
+          },
+          {
+            "code": "4587",
+            "name": "ペプチドリーム",
+            "mark": "返売",
+            "close": 973,
+            "pnl": 1900
+          }
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "6632",
+            "name": "ＪＶＣケンウッド",
+            "mark": "新買",
+            "close": 930
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-03",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "1802",
+            "name": "大林組",
+            "mark": "新買",
+            "close": 3114
+          },
+          {
+            "code": "7912",
+            "name": "大日本印刷",
+            "mark": "新買",
+            "close": 2909
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-31",
+        "pnl": 28400,
+        "new_buy_count": 0,
+        "sellback_count": 1,
+        "new_buy": [],
+        "sellback": [
+          {
+            "code": "6055",
+            "name": "ジャパンマテリアル",
+            "mark": "返売",
+            "close": 2267,
+            "pnl": 28400
+          }
+        ]
+      },
+      {
+        "date": "2026-07-30",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-29",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4516",
+            "name": "日本新薬",
+            "mark": "新買",
+            "close": 3550
+          },
+          {
+            "code": "6055",
+            "name": "ジャパンマテリアル",
+            "mark": "新買",
+            "close": 1983
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-28",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "3436",
+            "name": "ＳＵＭＣＯ",
+            "mark": "新買",
+            "close": 3140
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-24",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-23",
+        "pnl": 5000,
+        "new_buy_count": 0,
+        "sellback_count": 1,
+        "new_buy": [],
+        "sellback": [
+          {
+            "code": "2264",
+            "name": "森永乳業",
+            "mark": "返売",
+            "close": 1244,
+            "pnl": 5000
+          }
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4587",
+            "name": "ペプチドリーム",
+            "mark": "新買",
+            "close": 954
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-21",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "2264",
+            "name": "森永乳業",
+            "mark": "新買",
+            "close": 1194
+          },
+          {
+            "code": "6544",
+            "name": "ジャパンエレベーターサービスホールディングス",
+            "mark": "新買",
+            "close": 1677
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-17",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-16",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-15",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-14",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-13",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-10",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-09",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-08",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-07",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-06",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-03",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-02",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-01",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-30",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-29",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-26",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-25",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-24",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-23",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-22",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-19",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-18",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-17",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      },
+      {
+        "date": "2026-06-16",
+        "pnl": 0,
+        "new_buy_count": 0,
+        "sellback_count": 0,
+        "new_buy": [],
+        "sellback": []
+      }
+    ],
+    "buy_days": [
+      {
+        "date": "2026-09-15",
+        "pnl": 0,
+        "new_buy_count": 5,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "2685",
+            "name": "アダストリア",
+            "mark": "新買",
+            "close": 3205
+          },
+          {
+            "code": "6141",
+            "name": "ＤＭＧ　森精機",
+            "mark": "新買",
+            "close": 2759
+          },
+          {
+            "code": "7532",
+            "name": "パン・パシフィック・インターナショナルホールディングス",
+            "mark": "新買",
+            "close": 727
+          },
+          {
+            "code": "7649",
+            "name": "スギホールディングス",
+            "mark": "新買",
+            "close": 1289
+          },
+          {
+            "code": "8830",
+            "name": "住友不動産",
+            "mark": "新買",
+            "close": 3164
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-06",
+        "pnl": 8900,
+        "new_buy_count": 1,
+        "sellback_count": 1,
+        "new_buy": [
+          {
+            "code": "9090",
+            "name": "ＡＺ-ＣＯＭ丸和ホールディングス",
+            "mark": "新買",
+            "close": 819
+          }
+        ],
+        "sellback": [
+          {
+            "code": "7912",
+            "name": "大日本印刷",
+            "mark": "返売",
+            "close": 2998,
+            "pnl": 8900
+          }
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "pnl": 63500,
+        "new_buy_count": 1,
+        "sellback_count": 2,
+        "new_buy": [
+          {
+            "code": "9302",
+            "name": "三井倉庫ホールディングス",
+            "mark": "新買",
+            "close": 3148
+          }
+        ],
+        "sellback": [
+          {
+            "code": "3436",
+            "name": "ＳＵＭＣＯ",
+            "mark": "返売",
+            "close": 3756,
+            "pnl": 61600
+          },
+          {
+            "code": "4587",
+            "name": "ペプチドリーム",
+            "mark": "返売",
+            "close": 973,
+            "pnl": 1900
+          }
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "6632",
+            "name": "ＪＶＣケンウッド",
+            "mark": "新買",
+            "close": 930
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-08-03",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "1802",
+            "name": "大林組",
+            "mark": "新買",
+            "close": 3114
+          },
+          {
+            "code": "7912",
+            "name": "大日本印刷",
+            "mark": "新買",
+            "close": 2909
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-29",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4516",
+            "name": "日本新薬",
+            "mark": "新買",
+            "close": 3550
+          },
+          {
+            "code": "6055",
+            "name": "ジャパンマテリアル",
+            "mark": "新買",
+            "close": 1983
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-28",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "3436",
+            "name": "ＳＵＭＣＯ",
+            "mark": "新買",
+            "close": 3140
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-22",
+        "pnl": 0,
+        "new_buy_count": 1,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "4587",
+            "name": "ペプチドリーム",
+            "mark": "新買",
+            "close": 954
+          }
+        ],
+        "sellback": []
+      },
+      {
+        "date": "2026-07-21",
+        "pnl": 0,
+        "new_buy_count": 2,
+        "sellback_count": 0,
+        "new_buy": [
+          {
+            "code": "2264",
+            "name": "森永乳業",
+            "mark": "新買",
+            "close": 1194
+          },
+          {
+            "code": "6544",
+            "name": "ジャパンエレベーターサービスホールディングス",
+            "mark": "新買",
+            "close": 1677
+          }
+        ],
+        "sellback": []
+      }
+    ]
+  },
+  "special": {
+    "enabled": true,
+    "state": "idle",
+    "entered_on": null,
+    "etf": null,
+    "min_new_buy_count": 7,
+    "new_buy_count": 0,
+    "exit_rsi": 70.0,
+    "etf_rsi": {
+      "1321": 54.23,
+      "1306": 42.93
+    },
+    "active_rsi": 42.93,
+    "signal": null
+  },
+  "runtime": {
+    "special_buy": {
+      "enabled": true,
+      "min_new_buy_count": 7,
+      "etf_default": "1306",
+      "etf_codes": [
+        "1321",
+        "1306"
+      ],
+      "exit_rsi": 70
+    },
+    "notify": {
+      "today_buy": true,
+      "today_sellback": true,
+      "special_buy_on": true,
+      "special_exit": true,
+      "summary_top": false
+    }
+  },
+  "controls": {
+    "actions_run_url": "https://github.com/lalakuma/KabuRadar2/actions/workflows/daily-screening.yml",
+    "runtime_edit_url": "https://github.com/lalakuma/KabuRadar2/edit/master/config/runtime.json"
+  },
+  "line_events": [],
+  "run": {
+    "source": "github-actions",
+    "event": "workflow_dispatch",
+    "repository": "lalakuma/KabuRadar2",
+    "pages_url": "https://lalakuma.github.io/KabuRadar2",
+    "workflow_url": "https://github.com/lalakuma/KabuRadar2/actions/runs/36053427031"
+  }
+}
